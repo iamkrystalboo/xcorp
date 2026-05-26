@@ -1,0 +1,6 @@
+- Phần footer hiện tại không có tách ra/không có phân biệt khoảng cách với section phía trên nó, hãy điều chỉnh lại phần này.
+- Thêm divider giữa section "The Real Difference" và section "Why XCorp works"
+- Thêm divider giữa bottom CTA và footer ở mỗi trang
+- Trang login, Create your account không cần footer
+- Thêm tab về Solutions navigate đến Problems/Use Cases để hỗ trợ khách hàng tìm kiếm giải pháp theo problems của họ. 
+- Bỏ tab Customers và Resources vì nó không còn cần thiết. 

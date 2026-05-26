@@ -1,0 +1,3 @@
+- Trang View All Products và See All Features tôi expect nó sẽ gộp lại thành 1 trang nhưng có nội dung đầy đủ 90% từ 2 trang này.
+- Ở tất cả các trang: homepage, products, products/.... Tôi expect giữa các section đều phải padding chuẩn, màu sắc phải có sự thay đổi từ section này qua section khác, không phải là 2 section có 2 màu giống nhau nằm gần nhau.
+- Trang Login còn đơn giản quá, hãy cải thiện UI về màu sắc, layout, CTA button trông chuyên nghiệp hơn. Emoji của nút sign in with google còn kì cục, hãy thay đổi. 

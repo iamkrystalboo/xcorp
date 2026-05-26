@@ -1,0 +1,8 @@
+- UI và animation tốt rồi đó, tuy nhiên cần lưu ý về mâu thuẫn màu sắc giữa hero section của homepage và các trang khác. Cụ thể màu sắc các element ở homepage và các trang khác chưa hoàn toàn đồng nhất, cần thống nhất lại theo đúng brand guidelines. (ví dụ: CTA nút, color palette, font size, v.v)
+- Các trang trong site này đều chưa có footer, hãy thêm footer vào site
+- Bỏ đi dòng "used by 2,400+ SME teams across Southeast Asia" (nó không đúng với thực tế)
+- Các button cần trông thực tế hơn và đừng bị quá "AI"
+- Hạn chế sử dụng các icon có sẵn trong toàn bộ site, nếu sử dụng icon thì phải design lại theo style của xcorp, hoặc design các icon "unique" hơn cho riêng xcorp
+- Màu tím và xanh dương của phần hero section có thể làm sáng hơn hoặc đổi màu cho na ná với logo của site
+- Kích thước logo phải được chỉnh to hơn nữa
+- UI của phần "What gets better for your team" hiện tại còn hơi sơ sài và chưa được nổi bật, hãy làm cho nó đẹp hơn, chuyên nghiệp hơn, "hit" vào pain points nhiều hơn.

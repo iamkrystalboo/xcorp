@@ -1,0 +1,14 @@
+- Bỏ trang View All Products, chỉ giữ lại See All Features
+- Cập nhật layout trang See All Features, áp dụng mental models để thêm content và hình ảnh cho trang này nhằm visualize mọi thứ trực quan hơn.
+- Trang See All Features:
+ + Goals & OKRs: cập nhật "Cascading OKRs
+Connect goals from company → team → individual. Everyone always knows how their work contributes." thành "Cascading OKRs
+Connect goals from company → group -> team → individual. Everyone always knows how their work contributes.". Cập nhật "Real-time Progress
+Live progress updates. Weekly check-ins auto-calculated. No manual tracking required." thành "Real-time Progress Live progress updates. Daily check-ins auto-calculated. No manual tracking required."
+ + Project Management: cập nhật "Kanban, List, Gantt, Table — switch views without switching tools. Same data, different perspectives." -> "Kanban, List, Gantt — switch views without switching tools. Same data, different perspectives.". Cập nhật "Dependencies & Blockers
+Flag dependencies, auto-detect blockers, alert your team 24h before a cascade happens." thành nội dung khác.
+ + HR & People Ops: Cập nhật "Request, approve, and track leave. Conflict detection built-in. Automatic notifications on every step." thành "Request, approve, and track leave. Automatic notifications on every step."
+ + Automation & Integrations: cập nhật "Slack Integration
+Receive updates in Slack. Approve leave requests and review blockers without leaving your channel." thành "Slack Integration
+Receive updates in Slack. Approve leave requests without leaving your channel."  Bỏ đi card về GitHub Integration.
+

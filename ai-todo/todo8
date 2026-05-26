@@ -1,0 +1,8 @@
+Về Interactive Demo:
+- Trang product-okr: bỏ field Starting Progress %, thêm option Group tại field Level, và thêm một số fields như: Metric, Timeline, Start Value, Expected Value. Thêm tính năng checkin cho 1 OKR bất kì và progress phải cập nhật tự động. Nút "+ Add OKR to cascade" đổi thành 2 nút "Cancel" và "Save".
+- Trang product-task-management: thêm tính năng trượt đầu/đuôi cho tab Gantt cho mỗi task
+- Trang product-workflow: cần thêm 1 số pieces về AI & Agents, Apps (Google Sheets, Slack, Notion, Gmail, Google Docs, Google Forms, Cloudinary, etc) và utility như router, code, http, tables, etc. Thêm tính năng xem run history.
+- Trang product-leave: cập nhật lại UI/UX, có các fields như: To (required), CC, Leave Type (required), Available, If Approved, From Date (required), To Date (required), Period (AM/PM), Reason Detail. Có 2 nút là Cancel và Submit Request.
+- Trang solutions-project managers: thay đổi interactive demo, không được liên quan đến việc inject blocker vì xcorp không có tính năng này.
+- Trang solutions-CEOs: thay đổi interactive demo, dashboard sẽ hiển thị các metrics liên quan đến OKRs
+- Trang scattered info & apps: thêm section interactive demo

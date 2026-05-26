@@ -1,0 +1,22 @@
+Ở homepage:
+- Bỏ đoạn này " 2,400+ Teams using XCorp" ở hero section 
+- Bỏ nội dung "🚧
+Sprint blocked — discovered at standup
+The engineering team has been stuck for 3 days. Nobody escalated. The blocker only surfaces when everyone's in the room." và "🔔
+Blockers auto-escalated after 24 hours XCorp detected the stuck task Friday evening and sent you an alert. The issue was resolved before Monday standup." và thay thế bằng 1 point khác ở section The Real Difference.
+- Ở section Why XCorp Works:
+ + Cập nhật "OKRs flow from company → team → individual automatically. Every task is connected to a goal. No more goals that live only in a deck." thành "OKRs flow from company → group -> team → individual automatically. Every task is connected to a goal. No more goals that live only in a deck."
+ + Bỏ nội dung "Blocker detection & auto-escalation
+XCorp monitors task dependencies and flags anything stuck for 24+ hours. Automatically notifies the right person before a blocker becomes a crisis.
+Fixes: "Nobody told me it was stuck""
+- Cập nhật lại nội dung "It even checks if approving the leave will impact a sprint deadline before you confirm.
+
+Fixes: "I approved leave then saw the deadline"" thành ý tưởng khác không liên quan đến sprint deadline, có thể đổi thành task assignment chẳng hạn.
+- Ở section Built For Your Role:
+ + Đổi "Product & Engineering" thành "Project Managers"
+ + Ở tab Leadership, bỏ đi nội dung "Blockers discovered in month 3, not week 1" và "Blockers escalated in 24h, not 24 days
+Automatic detection and notification. You know before it becomes a crisis."
+ + Ở tab Project Managers, bỏ đi nội dung "Auto-escalation after 24h of no movement
+XCorp detects stuck tasks and notifies the right person before it cascades." và "Blockers surface at standup — days too late" và thay thế bằng nội dung đúng hơn.
+- Sau khi chỉnh sửa các nội dung trên homepage thì kiểm tra luôn cả các trang liên quan, nếu có nội dung nào trùng lặp với homepage thì chỉnh sửa lại.
+- Các emoji icon sử dụng cho By Role và By Use Case thì bỏ đi, thay để bằng emoji khác nhìn thực tế và realistic hơn.

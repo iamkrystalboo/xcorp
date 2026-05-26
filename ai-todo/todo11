@@ -1,0 +1,81 @@
+- Home page
+    - Khung ảnh minh hoạ Gmail đang bị to so với phần headline và sub-headline trên hero section → cần thu height của khung này lại bằng cách thu height của từng mục tin nhắn trong ảnh.
+    - Các nội dung chung cấp, ví dụ “Fixes: abcdef” trong mỗi card ở phần Why XCorp Works phải align ngang hàng với nhau.
+    - Nút “See the HR & People Ops view” đang bị lệch so với card. Cần đồng bộ vị trí với “See the Leadership view” và “See the Project Manager view”.
+- See All Features page
+    - Trang này chưa đặc sắc và còn khá tĩnh, cần có sử chuyển động và animation để làm nổi bật các features của XCorp được nêu lên trong trang.
+    - Hero Section còn khá sơ sài, cần improve nhiều.
+    - Bottom CTA phải align 1 style chung với bottom CTA tại home page và nội dung CTA phải hiển thị bằng tiếng anh
+    - Các mục Goals & OKRs, Project Management, HR&People Ops và Automation & Integrations cần được sắp xếp hiển thị theo layout khác mới và hiện đại hơn cái hiện tại. Các cards tính năng trong mỗi mục này cũng cần được hiển thị nổi bật hơn.
+    - Các mục này và các cards cần được applied animations nhiều hơn để thấy được sự interaction và movement.
+- Goals & Performance page
+    - Cụm “**Q2 2026 — Company OKRs”** phải được đổi thành màu trắng để hiển thị rõ hơn trên nền hero section.
+    - Area cho cụm “What you get” đang hơi to so với cụm này, hãy điều chỉnh lại area hoặc điều chỉnh lại font-size của “What you get”.
+    - Mục Cascading OKRS: bên phần hình ảnh, cần thêm một phần cho Group → thể hiện được cấu trúc Company → Group → Team → Personal.
+    - Mục Flexible Check-ins: phần hình ảnh chỉ cần hiện thị OKR đó được checkin giá trị value hay chưa, không cần để trạng thái là updated hoặc manual hoặc overdue.
+    - Mục Performance Integration: phần hình ảnh nên thay đổi nội dung thành kiểu “cá nhân có các kpi giá trị overall progress như thế nào?, mỗi cá nhân gắn với kpi gì theo timeline”
+- Project & Task Management page
+    - Cụm “**Sprint 24 — Mobile v2”** phải được đổi thành màu trắng để hiển thị rõ hơn trên nền hero section.
+    - Bỏ đi cụm “**⚠ blocked by API**” vì XCorp không hỗ trợ thông báo kiểu này
+    - Mục Milestones & Dependencies cần phải được thay đổi hoàn toàn vì XCorp không hỗ trợ cho xem what blocks what. Có thể đổi thành nội dung liên quan đến Release / Task Finder / Backlog chẳng hạn.
+    - Mục Time Tracking & Workload: XCorp không hỗ trợ cho việc xem % của từng cá nhân nhưng hỗ trợ xem Gantt view hoặc Story point cá nhân cho từng project ⇒ thay đổi nội dung và hình ảnh ở mục này.
+    - Cập nhật Interactive demo theo nội dung mới được cập nhật và sẽ không còn liên quan tới các cụm nội dung như **“Blocked by API integration”.**
+- Automation Workflow page
+    - Cụm “**Leave approval — auto”** phải được đổi thành màu trắng để hiển thị rõ hơn trên nền hero section.
+    - Thêm nội dung về việc workflow auto này có +300 tools để integrate để làm nổi bật hơn nhưng không phải nằm trong 1 section mới.
+- HR & People Ops page
+    - Cụm “**June — at a glance”** phải được đổi thành màu trắng để hiển thị rõ hơn trên nền hero section.
+    - Mục Leave Management có thể đổi nội dung về việc xin request và approve/reject thủ công hoặc tự động ⇒ cập nhật luôn hình ảnh bên cạnh.
+    - Mục Interactive demo cần thêm 1 section về việc approve/reject request thủ công nữa. Kiểu sau khi có người request leave thì workflow thủ công diễn ra thế nào HOẶC workflow tự động diễn ra thế nào ⇒ khách hàng đều có thể xem chi tiết được phần này.
+
+---
+
+- Solutions >> For HR & People Ops page
+    - Cắt ngắn bớt nội dung để ít chữ lại, chỉ giữ lại những ý chính để khách hàng đọc vào hiểu liền và nhanh.
+    - Phần minh hoạ ở hero section của trang này cũng thay đổi để match hơn với nội dung từ trang HR & People Ops nhé
+    - Phần **LEAVE MANAGEMENT** của trang này cũng thay đổi để match hơn với nội dung từ trang HR & People Ops nhé
+- Solutions >> For HR & People Ops page
+    - Cắt ngắn bớt nội dung để ít chữ lại, chỉ giữ lại những ý chính để khách hàng đọc vào hiểu liền và nhanh.
+    - Phần minh hoạ ở hero section của trang này cũng thay đổi để match hơn với nội dung từ trang Project & Task Management nhé
+    - Phần Interactive demo → bỏ XCorp Auto-balance vì XCorp thực tế không hỗ trợ tính năng này
+- Solutions >> For CEOs & Leadership page
+    - Cắt ngắn bớt nội dung để ít chữ lại, chỉ giữ lại những ý chính để khách hàng đọc vào hiểu liền và nhanh.
+- Use case >> Scattered info & apps page
+    - Cắt ngắn bớt nội dung để ít chữ lại, chỉ giữ lại những ý chính để khách hàng đọc vào hiểu liền và nhanh.
+    - Cải thiện UI ảnh minh hoạ để nó được nổi bật hơn trên nền hero section. Áp dụng animation động để tạo cảm giác overwhelmed khi đứng giữa 7 apps.
+    - Interactive console: đổi thành 2 kiểu, search document và search task trong task finder theo epic/assignee v.v. ở các search bar khác nhau.
+- Use case >> Ghost OKRs page
+    - Cắt ngắn bớt nội dung để ít chữ lại, chỉ giữ lại những ý chính để khách hàng đọc vào hiểu liền và nhanh.
+    - Cải thiện UI ảnh minh hoạ để nó được nổi bật hơn trên nền hero section. Áp dụng animation động.
+- Use case >> Buried Leave Requests page
+    - Cắt ngắn bớt nội dung để ít chữ lại, chỉ giữ lại những ý chính để khách hàng đọc vào hiểu liền và nhanh.
+    - Cải thiện UI ảnh minh hoạ để nó được nổi bật hơn trên nền hero section. Áp dụng animation động.
+    - Mục One-click approval cần nói thêm về việc approve/reject request thủ công nữa. Kiểu sau khi có người request leave thì workflow thủ công diễn ra thế nào HOẶC workflow tự động diễn ra thế nào ⇒ khách hàng đều có thể xem chi tiết được phần này ⇒ cập nhật cả phần minh hoạ.
+    - Mục Coverage Intelligence nên được thay đổi thành việc xem được ai trong team leave/WFH để assign tasks cho đúng thời điểm.
+
+---
+
+- Pricing page
+    - Mục Need a custom plan? nên được làm nổi bật hơn với mục đích hướng khách hướng đến việc mua licensing package nếu họ có nhu cầu.
+    - UI trang này cần làm đẹp hơn và có interaction nhiều hơn cho khách hàng.
+
+---
+
+- Login page
+    - Các chỉ số lấy thực tế giống với chỉ số ở trang home, cần đồng bộ số liệu ở 2 trang này.
+    - XCorp không có testimonials → bỏ đi quote nằm ở đây.
+    - Add thêm animation.
+
+---
+
+- Create your account page
+    - Câu "**Join 2,400+ teams already using XCorp”** là phi thực tế → cần đổi thành câu khác.
+    - XCorp không có testimonials → bỏ đi quote nằm ở đây.
+    - Add thêm animation.
+    - Các fields nào required thì phải thêm dấu * sau labels.
+
+---
+
+- Footer
+    - Cột Product chỉ được hiển thị; All Features, Goals & Performance, Project Management, Automation Workflow, HR & People Ops và AI Assistant.
+    - Cột Solutions phải có divider giữa By Role (For HR & People Ops, For Project Managers, For CEOs & Leadership) và By Use Case (Scattered Info & Apps, Ghost OKRs, Burried Leave Requests)

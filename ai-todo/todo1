@@ -1,0 +1,7 @@
+- Cải thiện lại UI trang homepage, hiện tại UI còn quá đơn giản, hero section chưa hit và pain points của khách hàng. Pain points cần hit vào là "it's 9 am but your team doesn't know where everything stands", bên phải của hero section sẽ là 1 phần visualization với brief mô tả như sau "Hình ảnh minh hoạ diễn ra hộp thư gmal với nhiều thông báo khác nhau đến từ các app khác nhau như slack, asana, jira, v.v cần được xử lý về việc duỵệt phép, task blocked, ...
+- ở phần features hiện tại chưa hit vào được vấn đề 
+- cần bổ sung thêm các CTA nút để có thể điều hướng đến các trang start free trial, schedule a demo, v.v
+- Các màu sắc trong trang homepage quá đơn giản, cần tối ưu lại theo brand guidelines. Cần thêm các hiệu ứng cho website để trông hiện đại và chuyên nghiệp hơn. 
+- Bố cục của trang cần được tối ưu lại để trông gọn gàng và dễ đọc hơn.
+- Cần làm cho site có thể tối ưu cho cả Mobile và Desktop.
+- Phần How XCorp connects your entire organization cần được thay thế bằng dạng thông tin trước và sau khi dùng XCorp thông qua các vấn đề của SMEs trước khi dùng Xcorp và sau khi dùng XCorp. (các vấn đề này cần liên hệ mật thiết về vấn đề được nêu ra tại hero section)

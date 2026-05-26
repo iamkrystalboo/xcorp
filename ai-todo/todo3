@@ -1,0 +1,7 @@
+- Cải thiện UI của trang Features sao cho nó trông xịn sò và chuyên nghiệp hơn. Tránh việc sài các icon có sẵn, cố gắng thiết kế riêng và độc đáo cho xcorp.
+- Tối ưu lại trang Features sao cho thân thiện hơn với mobile và các thiết bị có kích thước nhỏ.
+- Phần footer của cả site cần cập nhật lại đúng links cho Solutions (chỉ có cho 3 roles)
+- Các modal Start Free Trial và Schedule A Demo chưa được tối ưu cho mobile, cần tối ưu lại và UI các model này chưa được chuyên nghiệp, không nên đặt các icon/emoji vào đây, field nào required thì phải có biểu tượng * tại labels.
+- Màu sắc hero section trang chủ chưa đồng nhất với các trang khác, hãy đổi màu lại và làm cho nó đẹp hơn, xanh hơn giống logo xcorp
+- Màu sắc giữa các section nên có sự chuyển đổi nhẹ hoặc tương phản (tuỳ từng trang) để trông ưng mắt, UX tốt hơn và đẹp hơn, hiện tại màu sắc giữa các section như tách rời nhau ra vậy.
+- Add thêm một số animation và interactive phù hợp với style chung của trang
