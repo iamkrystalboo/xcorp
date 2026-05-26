@@ -10465,38 +10465,117 @@
         </div>
       </div>
       <!-- Right form panel -->
-      <div class="login-panel-right">
-        <div class="login-box">
-          <div class="login-header">
-            <div class="login-title">Create your account</div>
-            <div class="login-subtitle">30 days free · No credit card required</div>
+      <div class="login-panel-right" style="background: #EBF5FF;">
+        <div class="login-box" style="max-width: 600px;">
+          <!-- Logo matching the image -->
+          <div class="lpl-logo" style="margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+            <div class="lpl-logo-mark" style="background: linear-gradient(135deg, var(--brand-blue), var(--brand-orange)); width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="lpl-logo-name" style="font-size: 16px; font-weight: 800; color: #0F172A; text-transform: uppercase; letter-spacing: 0.05em;">XCorp</div>
           </div>
-          <form onsubmit="handleSignup(event)">
-            <div class="form-row">
-              <div class="form-group" style="margin: 0 0 16px;">
-                <label>First Name <span style="color:var(--danger);">*</span></label>
-                <input type="text" placeholder="Nguyen" required />
+
+          <form onsubmit="handleSignup(event)" style="display: flex; flex-direction: column; gap: 16px;">
+            <!-- SECTION 1: Fill company data -->
+            <div class="form-section">
+              <h3 style="font-size: 16px; font-weight: 700; color: #1E6FD9; margin: 0 0 12px 0; border-bottom: 2px solid #1E6FD9; padding-bottom: 6px; text-transform: none;">Fill company data</h3>
+              
+              <div class="form-row" style="margin-bottom: 12px;">
+                <div class="form-group">
+                  <label>Organization name <span style="color:var(--danger);">*</span></label>
+                  <input type="text" placeholder="Enter organization name" required style="background: white;" />
+                </div>
+                <div class="form-group">
+                  <label>Company Type</label>
+                  <select style="background: white;">
+                    <option value="company">Company</option>
+                    <option value="non-profit">Non-Profit</option>
+                    <option value="agency">Agency</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-group" style="margin: 0 0 16px;">
-                <label>Last Name <span style="color:var(--danger);">*</span></label>
-                <input type="text" placeholder="Van A" required />
+
+              <div class="form-row" style="margin-bottom: 12px;">
+                <div class="form-group">
+                  <label>Company domain <span style="color:var(--danger);">*</span></label>
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <input type="text" placeholder="Enter company domain" required style="flex: 1; background: white;" />
+                    <span style="font-size: 12px; color: var(--text-secondary); font-weight: 600; white-space: nowrap;">.staging.xcorp.app</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Organization size</label>
+                  <select style="background: white;">
+                    <option value="">Select organization size</option>
+                    <option value="1-10">1 – 10 people</option>
+                    <option value="11-50">11 – 50 people</option>
+                    <option value="51-200">51 – 200 people</option>
+                    <option value="200+">200+ people</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Country</label>
+                  <select style="background: white;">
+                    <option value="">Select country</option>
+                    <option value="vn">Vietnam</option>
+                    <option value="us">United States</option>
+                    <option value="sg">Singapore</option>
+                    <option value="jp">Japan</option>
+                    <option value="au">Australia</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Timezone</label>
+                  <select style="background: white;">
+                    <option value="">Select timezone</option>
+                    <option value="gmt7">GMT+7 (Asia/Ho_Chi_Minh)</option>
+                    <option value="gmt8">GMT+8 (Asia/Singapore)</option>
+                    <option value="gmt0">GMT+0 (Europe/London)</option>
+                    <option value="gmt-5">GMT-5 (US/Eastern)</option>
+                    <option value="gmt-8">GMT-8 (US/Pacific)</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="form-group">
-              <label>Work Email <span style="color:var(--danger);">*</span></label>
-              <input type="email" placeholder="you@company.com" required />
+
+            <!-- SECTION 2: Your user account -->
+            <div class="form-section" style="margin-top: 8px;">
+              <h3 style="font-size: 16px; font-weight: 700; color: #1E6FD9; margin: 0 0 12px 0; border-bottom: 2px solid #1E6FD9; padding-bottom: 6px; text-transform: none;">Your user account</h3>
+              
+              <div class="form-row" style="margin-bottom: 12px;">
+                <div class="form-group">
+                  <label>First Name <span style="color:var(--danger);">*</span></label>
+                  <input type="text" placeholder="Enter first name" required style="background: white;" />
+                </div>
+                <div class="form-group">
+                  <label>Last Name <span style="color:var(--danger);">*</span></label>
+                  <input type="text" placeholder="Enter last name" required style="background: white;" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" placeholder="Enter phone number" style="background: white;" />
+                </div>
+                <div class="form-group">
+                  <label>Password <span style="color:var(--danger);">*</span></label>
+                  <input type="password" placeholder="Enter password" required style="background: white;" />
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Company Name <span style="color:var(--danger);">*</span></label>
-              <input type="text" placeholder="Your Company" required />
-            </div>
-            <div class="form-group">
-              <label>Password <span style="color:var(--danger);">*</span></label>
-              <input type="password" placeholder="Min. 8 characters" required />
-            </div>
-            <button type="submit" class="login-btn">Create free account</button>
+
+            <!-- Submit Button (Arrow) -->
+            <button type="submit" class="submit-arrow-btn" style="width: 44px; height: 44px; border-radius: 8px; background: #3B82F6; color: white; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 20px; font-weight: bold; margin-top: 16px; margin-left: auto; transition: background-color 0.2s, transform 0.1s;" onmouseover="this.style.backgroundColor='#2563EB'; this.style.transform='scale(1.05)';" onmouseout="this.style.backgroundColor='#3B82F6'; this.style.transform='scale(1)';" onmousedown="this.style.transform='scale(0.95)';">➔</button>
           </form>
-          <div class="divider">Or sign up with</div>
+
+          <div class="divider" style="margin: 24px 0 16px;">Or sign up with</div>
           <button type="button" class="google-btn" onclick="handleGoogleSignUp()">
             <svg width="18" height="18" viewBox="0 0 48 48">
               <path fill="#EA4335"
@@ -10510,7 +10589,7 @@
             </svg>
             Sign up with Google
           </button>
-          <div class="login-footer">
+          <div class="login-footer" style="margin-top: 20px;">
             Already have an account? <a onclick="switchPage('login'); return false;">Sign in</a>
           </div>
         </div>
