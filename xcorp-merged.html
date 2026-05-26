@@ -4291,12 +4291,12 @@
     .form-group select,
     .form-group textarea {
       padding: 10px 13px;
-      border: 1.5px solid var(--border);
+      border: 1px solid #CBD5E1;
       border-radius: 8px;
       font-size: 14px;
       font-family: inherit;
       color: var(--text-primary);
-      background: #FAFAFA;
+      background: white;
       transition: border-color 0.2s ease, box-shadow 0.2s ease;
       outline: none;
       width: 100%;
@@ -4309,6 +4309,87 @@
       border-color: var(--accent);
       box-shadow: 0 0 0 3px var(--accent-light);
       background: white;
+    }
+
+    .form-group select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: white url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 12px center;
+      background-size: 16px;
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    /* Domain input styling */
+    .domain-input-wrapper {
+      display: flex;
+      align-items: stretch;
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .domain-input-wrapper:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+    .domain-input-wrapper input {
+      flex: 1;
+      border: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      outline: none !important;
+      margin: 0 !important;
+      padding: 10px 13px !important;
+    }
+    .domain-input-wrapper .domain-suffix {
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      background: #F1F5F9;
+      border-left: 1px solid #E2E8F0;
+      font-size: 13px;
+      color: #64748B;
+      font-weight: 600;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    /* Premium B2B SaaS submit button */
+    .premium-submit-btn {
+      padding: 14px 24px;
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      width: 100%;
+      background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%);
+      color: white;
+      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      font-family: inherit;
+    }
+    .premium-submit-btn:hover {
+      background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(30, 64, 175, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    }
+    .premium-submit-btn:hover .btn-arrow {
+      transform: translateX(4px);
+    }
+    .premium-submit-btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 6px rgba(30, 64, 175, 0.1);
     }
 
     .modal-submit-btn {
@@ -10485,11 +10566,11 @@
               <div class="form-row" style="margin-bottom: 12px;">
                 <div class="form-group">
                   <label>Organization name <span style="color:var(--danger);">*</span></label>
-                  <input type="text" placeholder="Enter organization name" required style="background: white;" />
+                  <input type="text" placeholder="Enter organization name" required name="orgName" />
                 </div>
                 <div class="form-group">
                   <label>Company Type</label>
-                  <select style="background: white;">
+                  <select name="companyType">
                     <option value="company">Company</option>
                     <option value="non-profit">Non-Profit</option>
                     <option value="agency">Agency</option>
@@ -10501,14 +10582,14 @@
               <div class="form-row" style="margin-bottom: 12px;">
                 <div class="form-group">
                   <label>Company domain <span style="color:var(--danger);">*</span></label>
-                  <div style="display: flex; align-items: center; gap: 6px;">
-                    <input type="text" placeholder="Enter company domain" required style="flex: 1; background: white;" />
-                    <span style="font-size: 12px; color: var(--text-secondary); font-weight: 600; white-space: nowrap;">.staging.xcorp.app</span>
+                  <div class="domain-input-wrapper">
+                    <input type="text" placeholder="Enter company domain" required name="companyDomain" />
+                    <span class="domain-suffix">.xcorp.app</span>
                   </div>
                 </div>
                 <div class="form-group">
                   <label>Organization size</label>
-                  <select style="background: white;">
+                  <select name="companySize">
                     <option value="">Select organization size</option>
                     <option value="1-10">1 – 10 people</option>
                     <option value="11-50">11 – 50 people</option>
@@ -10521,7 +10602,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <label>Country</label>
-                  <select style="background: white;">
+                  <select name="country">
                     <option value="">Select country</option>
                     <option value="vn">Vietnam</option>
                     <option value="us">United States</option>
@@ -10532,7 +10613,7 @@
                 </div>
                 <div class="form-group">
                   <label>Timezone</label>
-                  <select style="background: white;">
+                  <select name="timezone">
                     <option value="">Select timezone</option>
                     <option value="gmt7">GMT+7 (Asia/Ho_Chi_Minh)</option>
                     <option value="gmt8">GMT+8 (Asia/Singapore)</option>
@@ -10551,28 +10632,34 @@
               <div class="form-row" style="margin-bottom: 12px;">
                 <div class="form-group">
                   <label>First Name <span style="color:var(--danger);">*</span></label>
-                  <input type="text" placeholder="Enter first name" required style="background: white;" />
+                  <input type="text" placeholder="Enter first name" required name="firstName" />
                 </div>
                 <div class="form-group">
                   <label>Last Name <span style="color:var(--danger);">*</span></label>
-                  <input type="text" placeholder="Enter last name" required style="background: white;" />
+                  <input type="text" placeholder="Enter last name" required name="lastName" />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label>Phone Number</label>
-                  <input type="tel" placeholder="Enter phone number" style="background: white;" />
+                  <input type="tel" placeholder="Enter phone number" name="phone" />
                 </div>
                 <div class="form-group">
                   <label>Password <span style="color:var(--danger);">*</span></label>
-                  <input type="password" placeholder="Enter password" required style="background: white;" />
+                  <input type="password" placeholder="Enter password" required name="password" />
                 </div>
               </div>
             </div>
 
-            <!-- Submit Button (Arrow) -->
-            <button type="submit" class="submit-arrow-btn" style="width: 44px; height: 44px; border-radius: 8px; background: #3B82F6; color: white; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 20px; font-weight: bold; margin-top: 16px; margin-left: auto; transition: background-color 0.2s, transform 0.1s;" onmouseover="this.style.backgroundColor='#2563EB'; this.style.transform='scale(1.05)';" onmouseout="this.style.backgroundColor='#3B82F6'; this.style.transform='scale(1)';" onmousedown="this.style.transform='scale(0.95)';">➔</button>
+            <!-- Submit Button -->
+            <button type="submit" class="premium-submit-btn">
+              <span>Start 30-day free trial</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;" class="btn-arrow">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
           </form>
 
           <div class="divider" style="margin: 24px 0 16px;">Or sign up with</div>
@@ -10599,7 +10686,7 @@
 
   <!-- ============= MODALS ============= -->
   <div class="modal-overlay" id="freetrial-modal">
-    <div class="modal-content">
+    <div class="modal-content" style="max-width: 680px;">
       <div class="modal-header">
         <h3 class="modal-title">Start your free trial</h3>
         <p class="modal-desc">30 days of full access. No credit card required.</p>
@@ -10607,26 +10694,108 @@
       <button class="modal-close" onclick="closeModal()">✕</button>
       <div class="modal-body">
         <form class="modal-form" onsubmit="handleFreeTrialSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name <span class="required-star">*</span></label>
-              <input type="text" placeholder="Nguyen" name="firstName" required />
+          <!-- SECTION 1: Fill company data -->
+          <div class="form-section">
+            <h3 style="font-size: 16px; font-weight: 700; color: #1E6FD9; margin: 0 0 12px 0; border-bottom: 2px solid #1E6FD9; padding-bottom: 6px; text-transform: none;">Fill company data</h3>
+            
+            <div class="form-row" style="margin-bottom: 12px;">
+              <div class="form-group">
+                <label>Organization name <span style="color:var(--danger);">*</span></label>
+                <input type="text" placeholder="Enter organization name" required name="orgName" />
+              </div>
+              <div class="form-group">
+                <label>Company Type</label>
+                <select name="companyType">
+                  <option value="company">Company</option>
+                  <option value="non-profit">Non-Profit</option>
+                  <option value="agency">Agency</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Last Name <span class="required-star">*</span></label>
-              <input type="text" placeholder="Van A" name="lastName" required />
+
+            <div class="form-row" style="margin-bottom: 12px;">
+              <div class="form-group">
+                <label>Company domain <span style="color:var(--danger);">*</span></label>
+                <div class="domain-input-wrapper">
+                  <input type="text" placeholder="Enter company domain" required name="companyDomain" />
+                  <span class="domain-suffix">.xcorp.app</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Organization size</label>
+                <select name="companySize">
+                  <option value="">Select organization size</option>
+                  <option value="1-10">1 – 10 people</option>
+                  <option value="11-50">11 – 50 people</option>
+                  <option value="51-200">51 – 200 people</option>
+                  <option value="200+">200+ people</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Country</label>
+                <select name="country">
+                  <option value="">Select country</option>
+                  <option value="vn">Vietnam</option>
+                  <option value="us">United States</option>
+                  <option value="sg">Singapore</option>
+                  <option value="jp">Japan</option>
+                  <option value="au">Australia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Timezone</label>
+                <select name="timezone">
+                  <option value="">Select timezone</option>
+                  <option value="gmt7">GMT+7 (Asia/Ho_Chi_Minh)</option>
+                  <option value="gmt8">GMT+8 (Asia/Singapore)</option>
+                  <option value="gmt0">GMT+0 (Europe/London)</option>
+                  <option value="gmt-5">GMT-5 (US/Eastern)</option>
+                  <option value="gmt-8">GMT-8 (US/Pacific)</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <label>Work Email <span class="required-star">*</span></label>
-            <input type="email" placeholder="you@company.com" name="workEmail" required />
+
+          <!-- SECTION 2: Your user account -->
+          <div class="form-section" style="margin-top: 8px;">
+            <h3 style="font-size: 16px; font-weight: 700; color: #1E6FD9; margin: 0 0 12px 0; border-bottom: 2px solid #1E6FD9; padding-bottom: 6px; text-transform: none;">Your user account</h3>
+            
+            <div class="form-row" style="margin-bottom: 12px;">
+              <div class="form-group">
+                <label>First Name <span style="color:var(--danger);">*</span></label>
+                <input type="text" placeholder="Enter first name" required name="firstName" />
+              </div>
+              <div class="form-group">
+                <label>Last Name <span style="color:var(--danger);">*</span></label>
+                <input type="text" placeholder="Enter last name" required name="lastName" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter phone number" name="phone" />
+              </div>
+              <div class="form-group">
+                <label>Password <span style="color:var(--danger);">*</span></label>
+                <input type="password" placeholder="Enter password" required name="password" />
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label>Company Name <span class="required-star">*</span></label>
-            <input type="text" placeholder="Your Company" name="company" required />
-          </div>
-          <button type="submit" class="modal-submit-btn">Create free account</button>
-          <p class="modal-privacy-note">By signing up, you agree to our Terms of Service and Privacy Policy.</p>
+
+          <!-- Submit Button -->
+          <button type="submit" class="premium-submit-btn">
+            <span>Start 30-day free trial</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;" class="btn-arrow">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <p class="modal-privacy-note" style="margin-top: 8px;">By signing up, you agree to our Terms of Service and Privacy Policy.</p>
         </form>
       </div>
     </div>
@@ -12243,7 +12412,10 @@
     function handleFreeTrialSubmit(e) {
       e.preventDefault();
       const formData = new FormData(e.target);
-      alert(`Free trial for ${formData.get('firstName')} at ${formData.get('email')}! Check your email for next steps.`);
+      const firstName = formData.get('firstName') || 'User';
+      const lastName = formData.get('lastName') || '';
+      const domain = formData.get('companyDomain') || 'company';
+      alert(`Free trial for ${firstName} ${lastName} at ${domain}.xcorp.app! Check your email for next steps.`);
       closeModal();
     }
 
