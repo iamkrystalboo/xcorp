@@ -68,11 +68,11 @@ test('typing indicator has bounce animation', html.includes('aiTypingBounce'));
 console.log('\n👥 AI Role Tabs:');
 test('aiRoleTabs container exists', html.includes('id="aiRoleTabs"'));
 test('aiRolePanel container exists', html.includes('id="aiRolePanel"'));
-test('aiRoleData JS object defined', html.includes('const aiRoleData'));
+test('aiRoleContent JS object defined', html.includes('const aiRoleContent'));
 test('CEO role data exists', html.includes("ceo: ["));
 test('Lead role data exists', html.includes("lead: ["));
 test('HR role data exists', html.includes("hr: ["));
-test('renderAiRolePanel function defined', html.includes('function renderAiRolePanel'));
+test('uses standard renderRole function', html.includes("renderRole('aiRolePanel',"));
 
 // ==================== 5. NAVIGATION ====================
 console.log('\n🔗 Navigation Wiring:');

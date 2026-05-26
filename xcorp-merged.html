@@ -9110,11 +9110,11 @@
           </div>
           <div class="hero-visual">
             <!-- AI Chat mockup -->
-            <div style="background:var(--bg-secondary); border-radius:12px; border:1px solid rgba(255,255,255,0.1); overflow:hidden;">
-              <div style="display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid rgba(255,255,255,0.08);">
+            <div style="background:#FFFFFF; border-radius:12px; border:1px solid var(--border); box-shadow:var(--shadow-lg); overflow:hidden;">
+              <div style="display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid var(--border); background:var(--bg-secondary);">
                 <div style="width:26px; height:26px; border-radius:8px; background:linear-gradient(135deg,#8B5CF6,#6366F1); display:flex; align-items:center; justify-content:center; font-size:11px; color:white; font-weight:800;">✦</div>
                 <div>
-                  <div style="font-size:12px; font-weight:600; color:#F8FAFC;">XCorp AI</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--text-primary);">XCorp AI</div>
                   <div style="font-size:10px; color:var(--success);">● Online</div>
                 </div>
               </div>
@@ -9123,25 +9123,25 @@
                 <div style="align-self:flex-end; background:var(--accent); color:white; padding:8px 12px; border-radius:10px 10px 3px 10px; font-size:11px; max-width:75%;">Who has leave next week?</div>
                 <div style="display:flex; gap:8px; align-items:start;">
                   <div style="width:22px; height:22px; border-radius:6px; background:linear-gradient(135deg,#8B5CF6,#6366F1); display:flex; align-items:center; justify-content:center; font-size:9px; color:white; font-weight:800; flex-shrink:0;">✦</div>
-                  <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); padding:10px 12px; border-radius:3px 10px 10px 10px; font-size:11px; color:#CBD5E1; flex:1;">
-                    <div style="margin-bottom:8px;">Found <b style="color:#F8FAFC;">3 team members</b> on leave next week:</div>
+                  <div style="background:var(--bg-secondary); border:1px solid var(--border); padding:10px 12px; border-radius:3px 10px 10px 10px; font-size:11px; color:var(--text-primary); flex:1;">
+                    <div style="margin-bottom:8px; color:var(--text-primary);">Found <b style="color:var(--text-primary);">3 team members</b> on leave next week:</div>
                     <div style="display:grid; gap:4px;">
-                      <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.06);"><span>🟢 Linh Trần</span><span style="color:#94A3B8;">Mon–Wed</span></div>
-                      <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.06);"><span>🟡 Minh Hoàng</span><span style="color:#94A3B8;">Thu–Fri</span></div>
-                      <div style="display:flex; justify-content:space-between; padding:4px 0;"><span>🔵 Bảo Ngọc</span><span style="color:#94A3B8;">Full week</span></div>
+                      <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border); color:var(--text-primary);"><span>🟢 Linh Trần</span><span style="color:var(--text-secondary);">Mon–Wed</span></div>
+                      <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border); color:var(--text-primary);"><span>🟡 Minh Hoàng</span><span style="color:var(--text-secondary);">Thu–Fri</span></div>
+                      <div style="display:flex; justify-content:space-between; padding:4px 0; color:var(--text-primary);"><span>🔵 Bảo Ngọc</span><span style="color:var(--text-secondary);">Full week</span></div>
                     </div>
-                    <div style="margin-top:8px; font-size:10px; color:#64748B;">⚠ <b style="color:#FCD34D;">Coverage gap</b> on Thursday — only 2 of 6 engineers available.</div>
+                    <div style="margin-top:8px; font-size:10px; color:var(--text-secondary);">⚠ <b style="color:var(--warning-strong, #D97706);">Coverage gap</b> on Thursday — only 2 of 6 engineers available.</div>
                   </div>
                 </div>
               </div>
               <!-- Typing indicator -->
               <div style="padding:6px 16px 14px; display:flex; gap:8px; align-items:center;">
-                <div style="background:rgba(255,255,255,0.04); border-radius:20px; padding:8px 14px; display:flex; gap:4px;">
+                <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:20px; padding:8px 14px; display:flex; gap:4px;">
                   <div style="width:6px; height:6px; border-radius:50%; background:#8B5CF6; animation: aiTypingBounce 1.4s ease-in-out infinite;"></div>
                   <div style="width:6px; height:6px; border-radius:50%; background:#8B5CF6; animation: aiTypingBounce 1.4s ease-in-out infinite 0.15s;"></div>
                   <div style="width:6px; height:6px; border-radius:50%; background:#8B5CF6; animation: aiTypingBounce 1.4s ease-in-out infinite 0.3s;"></div>
                 </div>
-                <span style="font-size:10px; color:#64748B;">XCorp AI is thinking…</span>
+                <span style="font-size:10px; color:var(--text-secondary);">XCorp AI is thinking…</span>
               </div>
             </div>
           </div>
@@ -12265,43 +12265,32 @@
     });
 
     // AI Role Tabs
-    const aiRoleData = {
+    const aiRoleContent = {
       ceo: [
-        { icon: '📊', title: '"Show me company OKR progress"', desc: 'Instant executive summary of all company-level objectives with health indicators.' },
-        { icon: '⚠️', title: '"What needs my attention today?"', desc: 'AI surfaces escalations, stale goals, and blocked initiatives requiring leadership action.' },
-        { icon: '📈', title: '"Compare Q1 vs Q2 performance"', desc: 'Trend analysis across teams, velocity, and goal completion rates — no spreadsheets needed.' }
+        '<strong>"Show me company OKR progress"</strong> — Get an instant executive summary of all company-level objectives with health indicators.',
+        '<strong>"What needs my attention today?"</strong> — Surface escalations, stale goals, and blocked initiatives requiring leadership action.',
+        '<strong>"Compare Q1 vs Q2 performance"</strong> — Trend analysis across teams, velocity, and goal completion rates with zero manual calculations.'
       ],
       lead: [
-        { icon: '🏋️', title: '"Who on my team is overloaded?"', desc: 'Real-time workload analysis with rebalancing suggestions based on capacity and deadlines.' },
-        { icon: '📋', title: '"Summarize this sprint"', desc: 'Tasks completed, velocity, blockers, and what\'s carrying over — in one clean summary.' },
-        { icon: '🎯', title: '"How are my team\'s OKRs tracking?"', desc: 'Drill into team-level goals with linked tasks, check-in status, and predicted outcomes.' }
+        '<strong>"Who on my team is overloaded?"</strong> — Real-time workload analysis with rebalancing suggestions based on capacity and deadlines.',
+        '<strong>"Summarize this sprint"</strong> — Completed tasks, velocity, blockers, and carry-over items compiled into one clean summary.',
+        '<strong>"How are my team\'s OKRs tracking?"</strong> — Drill into team-level goals with linked tasks, check-in status, and predicted outcomes.'
       ],
       hr: [
-        { icon: '🗓️', title: '"Who\'s on leave next week?"', desc: 'Complete leave calendar with coverage analysis and automatic conflict detection.' },
-        { icon: '📝', title: '"Generate attendance report for June"', desc: 'AI compiles check-in data, overtime hours, and absence patterns into a ready-to-export report.' },
-        { icon: '🔔', title: '"Any pending leave approvals?"', desc: 'Lists all pending requests with policy check results and recommended actions.' }
+        '<strong>"Who\'s on leave next week?"</strong> — Complete leave calendar with coverage analysis and automatic conflict detection.',
+        '<strong>"Generate attendance report for June"</strong> — Compiles check-in data, overtime hours, and absence patterns into a ready-to-export report.',
+        '<strong>"Any pending leave approvals?"</strong> — Lists all pending requests with policy check results and recommended actions.'
       ]
     };
 
     const aiRoleTabsContainer = document.getElementById('aiRoleTabs');
-    const aiRolePanel = document.getElementById('aiRolePanel');
-    function renderAiRolePanel(role) {
-      if (!aiRolePanel) return;
-      const items = aiRoleData[role] || [];
-      aiRolePanel.innerHTML = items.map(item => `
-        <div class="role-card">
-          <div class="role-card-ico">${item.icon}</div>
-          <div><b>${item.title}</b><br><span style="color:var(--text-secondary); font-size:13px;">${item.desc}</span></div>
-        </div>
-      `).join('');
-    }
     if (aiRoleTabsContainer) {
-      renderAiRolePanel('ceo');
+      renderRole('aiRolePanel', aiRoleContent.ceo);
       aiRoleTabsContainer.querySelectorAll('.role-tab').forEach(tab => {
         tab.addEventListener('click', () => {
           aiRoleTabsContainer.querySelectorAll('.role-tab').forEach(t => t.classList.remove('active'));
           tab.classList.add('active');
-          renderAiRolePanel(tab.dataset.role);
+          renderRole('aiRolePanel', aiRoleContent[tab.dataset.role]);
         });
       });
     }
