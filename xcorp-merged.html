@@ -10465,30 +10465,49 @@
         </div>
       </div>
       <!-- Right form panel -->
+      <!-- Right form panel -->
       <div class="login-panel-right" style="background: #EBF5FF;">
-        <div class="login-box">
-          <div class="login-header">
-            <div class="login-title">Welcome back</div>
-            <div class="login-subtitle">Sign in to your XCorp account</div>
+        <div class="login-box" style="max-width: 480px;">
+          <!-- Logo matching the image -->
+          <div class="lpl-logo" style="margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+            <div class="lpl-logo-mark" style="background: linear-gradient(135deg, var(--brand-blue), var(--brand-orange)); width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="lpl-logo-name" style="font-size: 16px; font-weight: 800; color: #0F172A; text-transform: uppercase; letter-spacing: 0.05em;">XCorp</div>
           </div>
-          <form onsubmit="handleLogin(event)">
+
+          <div class="login-header" style="margin-bottom: 24px;">
+            <h2 class="login-title" style="font-size: 24px; font-weight: 800; color: #0F172A; margin: 0 0 6px 0;">Welcome back</h2>
+            <p class="login-subtitle" style="font-size: 14px; color: #64748B; margin: 0;">Sign in to your XCorp account</p>
+          </div>
+          
+          <form onsubmit="handleLogin(event)" style="display: flex; flex-direction: column; gap: 16px;">
             <div class="form-group">
-              <label>Work Email</label>
+              <label>Work Email <span style="color:var(--danger);">*</span></label>
               <input type="email" placeholder="you@company.com" required />
             </div>
             <div class="form-group">
-              <label>Password</label>
+              <label>Password <span style="color:var(--danger);">*</span></label>
               <input type="password" placeholder="Enter your password" required />
             </div>
-            <div class="login-extras">
-              <label class="login-remember">
-                <input type="checkbox"> Remember me
+            <div class="login-extras" style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; margin-top: -4px;">
+              <label class="login-remember" style="display: flex; align-items: center; gap: 6px; color: #64748B; font-weight: 500; cursor: pointer;">
+                <input type="checkbox" style="width: auto; margin: 0;"> Remember me
               </label>
-              <a class="login-forgot" href="#" onclick="return false;">Forgot password?</a>
+              <a class="login-forgot" href="#" onclick="return false;" style="color: var(--accent); font-weight: 600; text-decoration: none;">Forgot password?</a>
             </div>
-            <button type="submit" class="login-btn">Sign in</button>
+            <button type="submit" class="premium-submit-btn">
+              <span>Sign in to your account</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;" class="btn-arrow">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
           </form>
-          <div class="divider">Or continue with</div>
+          
+          <div class="divider" style="margin: 24px 0 16px;">Or continue with</div>
           <button type="button" class="google-btn" onclick="handleGoogleSignIn()">
             <svg width="18" height="18" viewBox="0 0 48 48">
               <path fill="#EA4335"
@@ -10502,7 +10521,7 @@
             </svg>
             Sign in with Google
           </button>
-          <div class="login-footer">
+          <div class="login-footer" style="margin-top: 20px;">
             Don't have an account? <a onclick="switchPage('signup'); return false;">Create one free</a>
           </div>
         </div>
