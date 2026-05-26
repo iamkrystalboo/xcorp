@@ -238,7 +238,7 @@
     }
 
     .nav-dropdown.solutions {
-      min-width: 320px;
+      min-width: 620px;
     }
 
     .nav-dropdown.open {
@@ -5826,50 +5826,53 @@
             </svg>
           </button>
           <div class="nav-dropdown solutions" id="solutionsDropdown">
-            <div class="dd-grid single">
-              <div class="dd-section-label">By Role</div>
-              <div class="dd-item" data-page="solution-hr">
-                <div class="dd-item-ico">👩‍💼</div>
-                <div>
-                  <div class="dd-item-title">For HR &amp; People Ops</div>
-                  <div class="dd-item-sub">Leave, timesheets, attendance</div>
+            <div class="dd-grid">
+              <div style="display: flex; flex-direction: column; gap: 4px;">
+                <div class="dd-section-label" style="padding-left: 0;">By Role</div>
+                <div class="dd-item" data-page="solution-hr">
+                  <div class="dd-item-ico">👩‍💼</div>
+                  <div>
+                    <div class="dd-item-title">For HR &amp; People Ops</div>
+                    <div class="dd-item-sub">Leave, timesheets, attendance</div>
+                  </div>
+                </div>
+                <div class="dd-item" data-page="solution-pm">
+                  <div class="dd-item-ico">📋</div>
+                  <div>
+                    <div class="dd-item-title">For Project Managers</div>
+                    <div class="dd-item-sub">Boards, dependencies, integrations</div>
+                  </div>
+                </div>
+                <div class="dd-item" data-page="solution-ceo">
+                  <div class="dd-item-ico purple">🏢</div>
+                  <div>
+                    <div class="dd-item-title">For CEOs &amp; Leadership</div>
+                    <div class="dd-item-sub">Visibility, OKRs, decisions</div>
+                  </div>
                 </div>
               </div>
-              <div class="dd-item" data-page="solution-pm">
-                <div class="dd-item-ico">📋</div>
-                <div>
-                  <div class="dd-item-title">For Project Managers</div>
-                  <div class="dd-item-sub">Boards, dependencies, integrations</div>
+              <div style="display: flex; flex-direction: column; gap: 4px;">
+                <div class="dd-section-label" style="padding-left: 0;">By Use Case</div>
+                <div class="dd-item" data-page="usecase-scattered">
+                  <div class="dd-item-ico">🔀</div>
+                  <div>
+                    <div class="dd-item-title">Scattered Info &amp; Apps</div>
+                    <div class="dd-item-sub">Unify your fragmented tools</div>
+                  </div>
                 </div>
-              </div>
-              <div class="dd-item" data-page="solution-ceo">
-                <div class="dd-item-ico purple">🏢</div>
-                <div>
-                  <div class="dd-item-title">For CEOs &amp; Leadership</div>
-                  <div class="dd-item-sub">Visibility, OKRs, decisions</div>
+                <div class="dd-item" data-page="usecase-okrs">
+                  <div class="dd-item-ico purple">👻</div>
+                  <div>
+                    <div class="dd-item-title">Ghost OKRs</div>
+                    <div class="dd-item-sub">Turn forgotten goals into daily action</div>
+                  </div>
                 </div>
-              </div>
-              <div class="dd-section-label"
-                style="margin-top: 10px; border-top: 1px solid var(--border); padding-top: 10px;">By Use Case</div>
-              <div class="dd-item" data-page="usecase-scattered">
-                <div class="dd-item-ico">🔀</div>
-                <div>
-                  <div class="dd-item-title">Scattered Info &amp; Apps</div>
-                  <div class="dd-item-sub">Unify your fragmented tools</div>
-                </div>
-              </div>
-              <div class="dd-item" data-page="usecase-okrs">
-                <div class="dd-item-ico purple">👻</div>
-                <div>
-                  <div class="dd-item-title">Ghost OKRs</div>
-                  <div class="dd-item-sub">Turn forgotten goals into daily action</div>
-                </div>
-              </div>
-              <div class="dd-item" data-page="usecase-leave">
-                <div class="dd-item-ico" style="background:var(--success-light);color:var(--success);">⏳</div>
-                <div>
-                  <div class="dd-item-title">Buried Leave Requests</div>
-                  <div class="dd-item-sub">Never lose an approval again</div>
+                <div class="dd-item" data-page="usecase-leave">
+                  <div class="dd-item-ico" style="background:var(--success-light);color:var(--success);">⏳</div>
+                  <div>
+                    <div class="dd-item-title">Buried Leave Requests</div>
+                    <div class="dd-item-sub">Never lose an approval again</div>
+                  </div>
                 </div>
               </div>
             </div>
