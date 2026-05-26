@@ -312,6 +312,14 @@
       color: var(--purple);
     }
 
+    .dd-item-ico svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
     .dd-item-title {
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 14px;
@@ -1040,25 +1048,36 @@
       justify-content: center;
       margin-bottom: 18px;
       background: var(--accent-light);
+      color: var(--accent);
       transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     .feature-icon-home.purple {
       background: var(--purple-light);
+      color: var(--purple);
     }
 
     .feature-icon-home.green {
       background: var(--success-light);
+      color: var(--success);
     }
 
-    .feature-icon-home img {
-      width: 32px;
-      height: 32px;
+    .feature-icon-home img,
+    .feature-icon-home svg {
+      width: 28px;
+      height: 28px;
       object-fit: contain;
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    .feature-card-home:hover .feature-icon-home img {
+    .feature-icon-home svg {
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .feature-card-home:hover .feature-icon-home img,
+    .feature-card-home:hover .feature-icon-home svg {
       transform: scale(1.2) rotate(6deg);
     }
 
@@ -5776,35 +5795,45 @@
             <div class="dd-grid">
               <div class="dd-section-label">Product Modules</div>
               <div class="dd-item" data-page="okr">
-                <div class="dd-item-ico">🎯</div>
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"/> <circle cx="12" cy="12" r="6"/> <circle cx="12" cy="12" r="2"/> <path d="M17 7l-5 5"/> </svg>
+                </div>
                 <div>
                   <div class="dd-item-title">Goals & Performance</div>
                   <div class="dd-item-sub">OKR/KPI tracking</div>
                 </div>
               </div>
               <div class="dd-item" data-page="product-project">
-                <div class="dd-item-ico">📋</div>
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="8" y="2" width="8" height="4" rx="1"/> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/> <path d="M9 12h6"/> <path d="M9 16h6"/> </svg>
+                </div>
                 <div>
                   <div class="dd-item-title">Project Management</div>
                   <div class="dd-item-sub">Tasks · Milestones · Boards</div>
                 </div>
               </div>
               <div class="dd-item" data-page="automation">
-                <div class="dd-item-ico">⚡</div>
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/> </svg>
+                </div>
                 <div>
                   <div class="dd-item-title">Automation Workflow</div>
                   <div class="dd-item-sub">No-code workflow builder</div>
                 </div>
               </div>
               <div class="dd-item" data-page="product-hr">
-                <div class="dd-item-ico">👥</div>
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/> <circle cx="9" cy="7" r="4"/> <path d="M23 21v-2a4 4 0 0 0-3-3.87"/> <path d="M16 3.13a4 4 0 0 1 0 7.75"/> </svg>
+                </div>
                 <div>
                   <div class="dd-item-title">HR & People Ops</div>
                   <div class="dd-item-sub">Leave · Timesheet · Attendance</div>
                 </div>
               </div>
               <div class="dd-item" data-page="ai">
-                <div class="dd-item-ico purple">✨</div>
+                <div class="dd-item-ico purple">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/> <circle cx="12" cy="10" r="1"/> <path d="M12 10l-2 2 4 4"/> </svg>
+                </div>
                 <div>
                   <div class="dd-item-title">AI Assistant</div>
                   <div class="dd-item-sub">Smart summaries · Q&A · Suggestions</div>
@@ -5830,21 +5859,27 @@
               <div style="display: flex; flex-direction: column; gap: 4px;">
                 <div class="dd-section-label" style="padding-left: 0;">By Role</div>
                 <div class="dd-item" data-page="solution-hr">
-                  <div class="dd-item-ico">👩‍💼</div>
+                  <div class="dd-item-ico">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/> <circle cx="9" cy="7" r="4"/> <path d="M23 21v-2a4 4 0 0 0-3-3.87"/> <path d="M16 3.13a4 4 0 0 1 0 7.75"/> </svg>
+                  </div>
                   <div>
                     <div class="dd-item-title">For HR &amp; People Ops</div>
                     <div class="dd-item-sub">Leave, timesheets, attendance</div>
                   </div>
                 </div>
                 <div class="dd-item" data-page="solution-pm">
-                  <div class="dd-item-ico">📋</div>
+                  <div class="dd-item-ico">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="8" y="2" width="8" height="4" rx="1"/> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/> <path d="M9 12h6"/> <path d="M9 16h6"/> </svg>
+                  </div>
                   <div>
                     <div class="dd-item-title">For Project Managers</div>
                     <div class="dd-item-sub">Boards, dependencies, integrations</div>
                   </div>
                 </div>
                 <div class="dd-item" data-page="solution-ceo">
-                  <div class="dd-item-ico purple">🏢</div>
+                  <div class="dd-item-ico purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/> <line x1="8" y1="21" x2="16" y2="21"/> <line x1="12" y1="17" x2="12" y2="21"/> <path d="M7 8h10"/> <path d="M7 12h5"/> </svg>
+                  </div>
                   <div>
                     <div class="dd-item-title">For CEOs &amp; Leadership</div>
                     <div class="dd-item-sub">Visibility, OKRs, decisions</div>
@@ -5854,21 +5889,27 @@
               <div style="display: flex; flex-direction: column; gap: 4px;">
                 <div class="dd-section-label" style="padding-left: 0;">By Use Case</div>
                 <div class="dd-item" data-page="usecase-scattered">
-                  <div class="dd-item-ico">🔀</div>
+                  <div class="dd-item-ico">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/> <path d="M7 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/> <path d="M10 11h4"/> <path d="M10 15h4"/> </svg>
+                  </div>
                   <div>
                     <div class="dd-item-title">Scattered Info &amp; Apps</div>
                     <div class="dd-item-sub">Unify your fragmented tools</div>
                   </div>
                 </div>
                 <div class="dd-item" data-page="usecase-okrs">
-                  <div class="dd-item-ico purple">👻</div>
+                  <div class="dd-item-ico purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 3v18h18"/> <path d="M18 9l-5 5-2-2-4 4"/> <circle cx="18" cy="9" r="2"/> </svg>
+                  </div>
                   <div>
                     <div class="dd-item-title">Ghost OKRs</div>
                     <div class="dd-item-sub">Turn forgotten goals into daily action</div>
                   </div>
                 </div>
                 <div class="dd-item" data-page="usecase-leave">
-                  <div class="dd-item-ico" style="background:var(--success-light);color:var(--success);">⏳</div>
+                  <div class="dd-item-ico" style="background:var(--success-light);color:var(--success);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/> <polyline points="22,6 12,13 2,6"/> <path d="M12 18v-4"/> <polyline points="9 16 12 19 15 16"/> </svg>
+                  </div>
                   <div>
                     <div class="dd-item-title">Buried Leave Requests</div>
                     <div class="dd-item-sub">Never lose an approval again</div>
@@ -9563,9 +9604,7 @@
         <div class="features-grid-home">
           <div class="feature-card-home">
             <div class="feature-icon-home">
-              <img
-                src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Bullseye/3D/bullseye_3d.png"
-                alt="Target">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Target"> <circle cx="12" cy="12" r="10"/> <circle cx="12" cy="12" r="6"/> <circle cx="12" cy="12" r="2"/> <path d="M17 7l-5 5"/> </svg>
             </div>
             <h3>Goals that actually cascade</h3>
             <p>Automatically flow OKRs from company to individuals. Connect every daily task directly to a goal.</p>
@@ -9573,9 +9612,7 @@
           </div>
           <div class="feature-card-home">
             <div class="feature-icon-home purple">
-              <img
-                src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/High%20voltage/3D/high_voltage_3d.png"
-                alt="Lightning">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Project Management"> <rect x="8" y="2" width="8" height="4" rx="1"/> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/> <path d="M9 12h6"/> <path d="M9 16h6"/> </svg>
             </div>
             <h3>Smart task assignment &amp; workload balancing</h3>
             <p>See real-time team workloads before assigning tasks. Rebalance capacity with one click.</p>
@@ -9583,9 +9620,7 @@
           </div>
           <div class="feature-card-home">
             <div class="feature-icon-home green">
-              <img
-                src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Clipboard/3D/clipboard_3d.png"
-                alt="Clipboard">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Leave Approvals"> <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/> <line x1="16" y1="2" x2="16" y2="6"/> <line x1="8" y1="2" x2="8" y2="6"/> <line x1="3" y1="10" x2="21" y2="10"/> <path d="M9 16l2 2 4-4"/> </svg>
             </div>
             <h3>Leave &amp; approvals in one click</h3>
             <p>Approve leave requests instantly. Auto-flag scheduling conflicts and check team coverage.</p>
@@ -9593,8 +9628,7 @@
           </div>
           <div class="feature-card-home">
             <div class="feature-icon-home purple">
-              <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png"
-                alt="Sparkles">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Sparkles"> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/> <circle cx="12" cy="10" r="1"/> <path d="M12 10l-2 2 4 4"/> </svg>
             </div>
             <h3>AI that answers before you ask</h3>
             <p>Ask about leave, OKRs, or task status in plain language. Get instant answers from your XCorp data.</p>
@@ -9602,9 +9636,7 @@
           </div>
           <div class="feature-card-home">
             <div class="feature-icon-home purple">
-              <img
-                src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Electric%20plug/3D/electric_plug_3d.png"
-                alt="Plug">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Plug"> <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/> <path d="M7 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/> <path d="M10 11h4"/> <path d="M10 15h4"/> </svg>
             </div>
             <h3>Connects your existing stack</h3>
             <p>Sync with Slack and Jira. Surface key updates without switching tools.</p>
@@ -9612,8 +9644,7 @@
           </div>
           <div class="feature-card-home">
             <div class="feature-icon-home green">
-              <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Rocket/3D/rocket_3d.png"
-                alt="Rocket">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Rocket"> <path d="M4.5 16.5c-1.5 1.5-2 3.5-1.5 4.5s3-.5 4.5-1.5"/> <path d="M12 2L15 5l-2.5 2.5L16 11l2.5-2.5L22 12l-10 10-3-3 2.5-2.5L8 13l-2.5 2.5L2 12l10-10z"/> </svg>
             </div>
             <h3>Setup in 10 minutes, not 10 weeks</h3>
             <p>Connect your tools and go live in 10 minutes. No complex setups or implementation fees.</p>
