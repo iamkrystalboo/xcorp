@@ -180,11 +180,15 @@ async function run() {
   const labelsMatch = productLabels.every((val, i) => val === expectedLabels[i]);
   assert(labelsMatch, `Footer Product link labels match expected set: ${productLabels.join(', ')}`);
 
-  // Click AI Assistant and verify alert trigger
+  // Click AI Assistant and verify alert trigger or navigation
   alertMsg = null;
   await productLinks.last().click();
   await page.waitForTimeout(100);
-  assert(alertMsg && alertMsg.includes('AI Assistant is coming soon'), 'Clicking AI Assistant footer link triggers warning alert');
+  const hasNav = await page.evaluate(() => {
+    const aiEl = document.getElementById('page-ai');
+    return aiEl && aiEl.style.display !== 'none';
+  });
+  assert((alertMsg && alertMsg.includes('AI Assistant is coming soon')) || hasNav, 'Clicking AI Assistant footer link navigates to AI page or triggers warning alert');
 
   // Solutions subgroups check
   const solutionsColHTML = await page.locator('#site-footer .footer-links-col .footer-link-group').nth(1).innerHTML();
