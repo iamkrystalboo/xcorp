@@ -1,0 +1,169 @@
+<div class="login-container">
+  <!-- Left branding panel -->
+  <div class="login-panel-left">
+    <div class="lpl-logo">
+      <img src="/xcorp-logo.png" alt="XCorp" style="height: 36px; width: auto; filter: brightness(0) invert(1);">
+    </div>
+    <div class="lpl-headline">Join growing teams <br>already using <span>XCorp</span></div>
+    <div class="lpl-sub">Set up in 10 minutes. No credit card required. Get 30 days of full access free.</div>
+    <div class="lpl-stats">
+      <div class="lpl-stat">
+        <div class="lpl-stat-num">4.9★</div>
+        <div class="lpl-stat-label">Average rating</div>
+      </div>
+      <div class="lpl-stat">
+        <div class="lpl-stat-num">68%</div>
+        <div class="lpl-stat-label">Less time in status meetings</div>
+      </div>
+      <div class="lpl-stat">
+        <div class="lpl-stat-num">10 min</div>
+        <div class="lpl-stat-label">Average setup time</div>
+      </div>
+      <div class="lpl-stat">
+        <div class="lpl-stat-num">3 tools</div>
+        <div class="lpl-stat-label">Replaced per team</div>
+      </div>
+    </div>
+  </div>
+  <!-- Right form panel -->
+  <div class="login-panel-right" style="background: #EBF5FF;">
+    <div class="login-box" style="max-width: 600px;">
+      <div class="lpl-logo" style="margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+        <img src="/xcorp-logo.png" alt="XCorp" style="height: 32px; width: auto;">
+      </div>
+
+      <form (submit)="handleSignup($event)" style="display: flex; flex-direction: column; gap: 16px;">
+        <!-- SECTION 1: Fill company data -->
+        <div class="form-section">
+          <h3 style="font-size: 16px; font-weight: 700; color: #1E6FD9; margin: 0 0 12px 0; border-bottom: 2px solid #1E6FD9; padding-bottom: 6px; text-transform: none;">Fill company data</h3>
+          
+          <div class="form-row" style="margin-bottom: 12px; display: flex; gap: 16px;">
+            <div class="form-group" style="flex: 1;">
+              <label>Organization name <span style="color:var(--danger);">*</span></label>
+              <input type="text" name="orgName" [(ngModel)]="orgName" placeholder="Enter organization name" required />
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label>Company Type</label>
+              <select name="companyType" [(ngModel)]="companyType" class="form-select">
+                <option value="company">Company</option>
+                <option value="non-profit">Non-Profit</option>
+                <option value="agency">Agency</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-bottom: 12px; display: flex; gap: 16px;">
+            <div class="form-group" style="flex: 1;">
+              <label>Company domain <span style="color:var(--danger);">*</span></label>
+              <div class="domain-input-wrapper">
+                <input type="text" name="companyDomain" [(ngModel)]="companyDomain" placeholder="Enter company domain" required />
+                <span class="domain-suffix">.xcorp.app</span>
+              </div>
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label>Organization size</label>
+              <select name="companySize" [(ngModel)]="companySize" class="form-select">
+                <option value="">Select organization size</option>
+                <option value="1-10">1 – 10 people</option>
+                <option value="11-50">11 – 50 people</option>
+                <option value="51-200">51 – 200 people</option>
+                <option value="200+">200+ people</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row" style="display: flex; gap: 16px;">
+            <div class="form-group" style="flex: 1;">
+              <label>Country</label>
+              <select name="country" [(ngModel)]="country" class="form-select">
+                <option value="">Select country</option>
+                <option value="vn">Vietnam</option>
+                <option value="us">United States</option>
+                <option value="sg">Singapore</option>
+                <option value="jp">Japan</option>
+                <option value="au">Australia</option>
+              </select>
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label>Timezone</label>
+              <select name="timezone" [(ngModel)]="timezone" class="form-select">
+                <option value="">Select timezone</option>
+                <option value="gmt7">GMT+7 (Asia/Ho_Chi_Minh)</option>
+                <option value="gmt8">GMT+8 (Asia/Singapore)</option>
+                <option value="gmt0">GMT+0 (Europe/London)</option>
+                <option value="gmt-5">GMT-5 (US/Eastern)</option>
+                <option value="gmt-8">GMT-8 (US/Pacific)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: Your user account -->
+        <div class="form-section" style="margin-top: 8px;">
+          <h3 style="font-size: 16px; font-weight: 700; color: #1E6FD9; margin: 0 0 12px 0; border-bottom: 2px solid #1E6FD9; padding-bottom: 6px; text-transform: none;">Your user account</h3>
+          
+          <div class="form-row" style="margin-bottom: 12px; display: flex; gap: 16px;">
+            <div class="form-group" style="flex: 1;">
+              <label>First Name <span style="color:var(--danger);">*</span></label>
+              <input type="text" name="firstName" [(ngModel)]="firstName" placeholder="Enter first name" required />
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label>Last Name <span style="color:var(--danger);">*</span></label>
+              <input type="text" name="lastName" [(ngModel)]="lastName" placeholder="Enter last name" required />
+            </div>
+          </div>
+
+          <div class="form-row" style="display: flex; gap: 16px;">
+            <div class="form-group" style="flex: 1;">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" [(ngModel)]="phone" placeholder="Enter phone number" />
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label>Password <span style="color:var(--danger);">*</span></label>
+              <input type="password" name="password" [(ngModel)]="password" placeholder="Enter password" required />
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="premium-submit-btn">
+          <span>Start 30-day free trial</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;" class="btn-arrow">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </form>
+
+      <div class="divider" style="margin: 24px 0 16px;">Or sign up with</div>
+      <button type="button" class="google-btn" (click)="handleGoogleSignUp()">
+        <svg width="18" height="18" viewBox="0 0 48 48">
+          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+        </svg>
+        Sign up with Google
+      </button>
+      <div class="login-footer" style="margin-top: 20px;">
+        Already have an account? <a routerLink="/login">Sign in</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast-container">
+  <div class="toast" [class.show]="toastShow">
+    <div class="toast-icon success">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="toast-content">
+      <p class="toast-title">{{ toastTitle }}</p>
+      <p class="toast-desc" [innerHTML]="toastDesc"></p>
+    </div>
+  </div>
+</div>

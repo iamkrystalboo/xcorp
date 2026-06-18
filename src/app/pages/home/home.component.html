@@ -1,0 +1,598 @@
+<div class="page-home-container">
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <!-- Left: Copy -->
+        <div class="hero-content-left">
+          <h1 class="hero-title headline-hero">It's 9 AM — does your team know where everything stands?</h1>
+          <p class="hero-subtitle subhead">Drowning in notifications from Slack, Asana, and Jira? XCorp unifies your tasks, leave approvals, and OKRs into one clear dashboard for every manager, every morning.</p>
+          <div class="cta-row">
+            <button id="hero-cta-trial" class="btn btn-primary" (click)="openFreeTrial()">Start Free Trial</button>
+            <button id="hero-cta-demo" class="btn btn-secondary" (click)="openDemo()">Schedule a Demo</button>
+          </div>
+          <div class="microcopy body-small">
+            <span>No credit card required</span><span class="dot">·</span><span>30-day free trial</span><span class="dot">·</span><span>Setup in 10 minutes</span>
+          </div>
+        </div>
+
+        <!-- Right: Gmail inbox chaos visualization -->
+        <div class="hero-visual">
+          <div class="inbox-mock">
+            <div class="inbox-header">
+              <div class="inbox-title body-main">
+                <div class="gmail-icon">G</div>
+                Inbox
+              </div>
+              <span class="inbox-badge-count body-small">47 unread</span>
+            </div>
+            <div class="inbox-chaos-label body-small">
+              <span class="warning-icon">⚠</span> MONDAY 9:02 AM — NOTIFICATIONS PILING UP
+            </div>
+            <div class="inbox-list">
+              <div class="inbox-item unread">
+                <div class="inbox-app-icon slack">💬</div>
+                <div class="inbox-content">
+                  <div class="inbox-sender body-small">Slack – #engineering <span class="time caption-text">9:01</span></div>
+                  <div class="inbox-subject body-main">🚨 Sprint blocker: API integration stuck</div>
+                  <div class="inbox-preview caption-text">@pm-lead the payment gateway task is still blocked since last week...</div>
+                </div>
+                <span class="inbox-tag urgent body-small">BLOCKED</span>
+              </div>
+              <div class="inbox-item unread">
+                <div class="inbox-app-icon hr">👥</div>
+                <div class="inbox-content">
+                  <div class="inbox-sender body-small">HR System – Leave Request <span class="time caption-text">8:54</span></div>
+                  <div class="inbox-subject body-main">Minh Tuan requests 3 days leave (Thu–Sat)</div>
+                  <div class="inbox-preview caption-text">Approval pending. Project deadline: this Friday...</div>
+                </div>
+                <span class="inbox-tag approval body-small">PENDING</span>
+              </div>
+              <div class="inbox-item unread">
+                <div class="inbox-app-icon jira">J</div>
+                <div class="inbox-content">
+                  <div class="inbox-sender body-small">Jira – Sprint 14 <span class="time caption-text">8:47</span></div>
+                  <div class="inbox-subject body-main">5 tickets overdue — Sprint ends Friday</div>
+                  <div class="inbox-preview caption-text">XCORP-241, XCORP-238, XCORP-235 are past due...</div>
+                </div>
+                <span class="inbox-tag urgent body-small">OVERDUE</span>
+              </div>
+              <div class="inbox-item">
+                <div class="inbox-app-icon asana">A</div>
+                <div class="inbox-content">
+                  <div class="inbox-sender body-small">Asana – Q2 Goals <span class="time caption-text">8:30</span></div>
+                  <div class="inbox-subject body-main">[Action required] OKR check-in overdue</div>
+                  <div class="inbox-preview caption-text">Team hasn't updated progress on Revenue Goal for 12 days...</div>
+                </div>
+                <span class="inbox-tag blocked body-small">12d LATE</span>
+              </div>
+              <div class="inbox-item">
+                <div class="inbox-app-icon email">✉</div>
+                <div class="inbox-content">
+                  <div class="inbox-sender body-small">CEO – Urgent <span class="time caption-text">8:15</span></div>
+                  <div class="inbox-subject body-main">Where are we on Q2 targets? Board meeting Friday</div>
+                  <div class="inbox-preview caption-text">I need a full status update before noon today. Can you compile...</div>
+                </div>
+                <span class="inbox-tag info body-small">URGENT</span>
+              </div>
+            </div>
+            <div class="inbox-xcorp-bar body-main">
+              <div class="xmark">X</div>
+              <span><b class="inbox-xcorp-bold">XCorp</b> would've surfaced all of this — in one dashboard, before 9 AM.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL PROOF TICKER -->
+  <div class="social-proof-bar">
+    <div class="social-proof-track body-main">
+      <div class="social-proof-item"><span class="sp-stat">68%</span> <span class="sp-dot"></span> Less time in status meetings</div>
+      <div class="social-proof-item"><span class="sp-stat">4.9★</span> <span class="sp-dot"></span> Average rating</div>
+      <div class="social-proof-item"><span class="sp-stat">10 min</span> <span class="sp-dot"></span> Average setup time</div>
+      <div class="social-proof-item"><span class="sp-stat">$0</span> <span class="sp-dot"></span> To start — 30-day free trial</div>
+      <div class="social-proof-item"><span class="sp-stat">3 tools</span> <span class="sp-dot"></span> Replaced per team on average</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="social-proof-item"><span class="sp-stat">68%</span> <span class="sp-dot"></span> Less time in status meetings</div>
+      <div class="social-proof-item"><span class="sp-stat">4.9★</span> <span class="sp-dot"></span> Average rating</div>
+      <div class="social-proof-item"><span class="sp-stat">10 min</span> <span class="sp-dot"></span> Average setup time</div>
+      <div class="social-proof-item"><span class="sp-stat">$0</span> <span class="sp-dot"></span> To start — 30-day free trial</div>
+      <div class="social-proof-item"><span class="sp-stat">3 tools</span> <span class="sp-dot"></span> Replaced per team on average</div>
+    </div>
+  </div>
+
+  <!-- BEFORE / AFTER SME COMPARISON -->
+  <div class="before-after-section">
+    <div class="wrap">
+      <div class="ba-head">
+        <div class="eyebrow-dark body-small">The Real Difference</div>
+        <h2 class="section-title">Monday morning, <span class="highlight-blue">before &amp; after</span> XCorp</h2>
+        <p class="section-subtitle">The same situations — completely different outcomes for SME managers</p>
+      </div>
+      <div class="ba-grid">
+        <!-- BEFORE -->
+        <div class="ba-card before">
+          <div class="ba-card-label body-small">
+          <span>BEFORE XCORP — THE 9AM CHAOS</span>
+          <svg class="ba-label-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+        </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">47 unread notifications across 4 apps</div>
+              <div class="ba-item-desc body-small">Spend your morning digging through Slack, Jira, and Asana just to find out what happened.</div>
+            </div>
+          </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">Leave request buried in email since Thursday</div>
+              <div class="ba-item-desc body-small">Pending approvals slip through the cracks, delaying critical end-of-week deadlines.</div>
+            </div>
+          </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">OKR progress unknown — nobody updated since week 2</div>
+              <div class="ba-item-desc body-small">Quarterly goals are set but forgotten because progress tracking lives in stale spreadsheets.</div>
+            </div>
+          </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.003 9.003 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">CEO wants Q2 status — you spend 2 hours compiling</div>
+              <div class="ba-item-desc body-small">Spend hours manually copy-pasting data across systems to compile a basic status report.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AFTER -->
+        <div class="ba-card after">
+          <div class="ba-card-label body-small">
+          <span>AFTER XCORP — THE 9AM CLARITY</span>
+          <svg class="ba-label-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+        </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="3" width="7" height="5" rx="1" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="12" width="7" height="9" rx="1" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="16" width="7" height="5" rx="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">One dashboard — everything that needs your attention</div>
+              <div class="ba-item-desc body-small">See only the key alerts and actions that require your attention today in a single view.</div>
+            </div>
+          </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">Leave approved in 1 tap — conflict flagged automatically</div>
+              <div class="ba-item-desc body-small">Review leave requests with instant scheduling conflict detection and one-click approvals.</div>
+            </div>
+          </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H17"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">OKR progress auto-updated from real work</div>
+              <div class="ba-item-desc body-small">Task completion automatically rolls up to update your key results in real time.</div>
+            </div>
+          </div>
+          <div class="ba-item">
+            <div class="ba-item-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 10.742l1.636-1.636a4.5 4.5 0 016.364 6.364l-1.636 1.636a4.5 4.5 0 01-6.364 0M15.316 13.258l-1.636 1.636a4.5 4.5 0 01-6.364-6.364l1.636-1.636a4.5 4.5 0 016.364 0"/></svg>
+            </div>
+            <div class="ba-item-text">
+              <div class="ba-item-title body-main">Q2 status ready — live, always up to date</div>
+              <div class="ba-item-desc body-small">Share a single, live XCorp link with leadership. No manual status report compiling, ever.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION DIVIDER -->
+  <div class="wrap" style="padding: 0;">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- FEATURES SECTION -->
+  <div class="features-section-home">
+    <div class="wrap">
+      <div class="features-head-home">
+        <div class="eyebrow body-small">Why XCorp Works</div>
+        <h2 class="section-title">Not another tool — <span class="highlight-blue">a command center</span></h2>
+        <p class="section-subtitle">Built for SME managers who are done context-switching between 5 apps just to answer "how are we doing?"</p>
+      </div>
+      <div class="features-grid-home">
+        <!-- 1. Goals (Orange) -->
+        <div class="feature-card-home">
+          <div class="feature-icon-home orange">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"/> <circle cx="12" cy="12" r="6"/> <circle cx="12" cy="12" r="2"/> <path d="M17 7l-5 5"/> </svg>
+          </div>
+          <h3>Goals that actually cascade</h3>
+          <p>Automatically flow OKRs from company to individuals. Connect every daily task directly to a goal.</p>
+          <span class="pain-tag">Fixes: "Why are we working on this?"</span>
+        </div>
+
+        <!-- 2. Smart Task (Purple) -->
+        <div class="feature-card-home">
+          <div class="feature-icon-home purple">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="8" y="2" width="8" height="4" rx="1"/> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/> <path d="M9 12h6"/> <path d="M9 16h6"/> </svg>
+          </div>
+          <h3>Smart task assignment &amp; workload balancing</h3>
+          <p>See real-time workloads before assigning tasks. Rebalance capacity with one click.</p>
+          <span class="pain-tag">Fixes: "I didn't know they were already at full capacity"</span>
+        </div>
+
+        <!-- 3. Leave & Approvals (Green) -->
+        <div class="feature-card-home">
+          <div class="feature-icon-home green">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/> <line x1="16" y1="2" x2="16" y2="6"/> <line x1="8" y1="2" x2="8" y2="6"/> <line x1="3" y1="10" x2="21" y2="10"/> <path d="M9 16l2 2 4-4"/> </svg>
+          </div>
+          <h3>Leave &amp; approvals in one click</h3>
+          <p>Approve leave requests instantly. Auto-flag scheduling conflicts and check team coverage.</p>
+          <span class="pain-tag">Fixes: "I approved leave then realized nobody covered their tasks"</span>
+        </div>
+
+        <!-- 4. AI Assistant (Blue) -->
+        <div class="feature-card-home">
+          <div class="feature-icon-home blue">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/> <circle cx="12" cy="10" r="1"/> <path d="M12 10l-2 2 4 4"/> </svg>
+          </div>
+          <h3>AI that answers before you ask</h3>
+          <p>Ask about leave, OKRs, or task status in plain language. Get instant answers from your XCorp data.</p>
+          <span class="pain-tag">Fixes: "I spent 20 minutes finding a simple number"</span>
+        </div>
+
+        <!-- 5. Integrations (Mint) -->
+        <div class="feature-card-home">
+          <div class="feature-icon-home mint">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/> <path d="M7 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/> <path d="M10 11h4"/> <path d="M10 15h4"/> </svg>
+          </div>
+          <h3>Connects your existing stack</h3>
+          <p>Sync with Slack and Jira. Surface key updates without switching tools.</p>
+          <span class="pain-tag">Fixes: "I have to check 5 apps every morning"</span>
+        </div>
+
+        <!-- 6. Setup (Green) -->
+        <div class="feature-card-home">
+          <div class="feature-icon-home green">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M4.5 16.5c-1.5 1.5-2 3.5-1.5 4.5s3-.5 4.5-1.5"/> <path d="M12 2L15 5l-2.5 2.5L16 11l2.5-2.5L22 12l-10 10-3-3 2.5-2.5L8 13l-2.5 2.5L2 12l10-10z"/> </svg>
+          </div>
+          <h3>Setup in 10 minutes, not 10 weeks</h3>
+          <p>Connect your tools and go live in 10 minutes. No complex setups or implementation fees.</p>
+          <span class="pain-tag">Fixes: "Tools are too complex to set up"</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLE-BASED OUTCOMES (Tab UI) -->
+  <div class="role-outcomes-section">
+    <div class="wrap">
+      <div class="ro-head">
+        <div class="eyebrow body-small">Built For Your Role</div>
+        <h2 class="section-title ro-title">What gets better <span class="highlight-blue">for your team</span></h2>
+        <p class="section-subtitle ro-subtitle">Different roles, same problem: too many tools, too little visibility. Here's what changes.</p>
+      </div>
+
+      <div class="ro-tabs">
+        <button class="ro-tab body-main" [class.active]="activeTab === 'leadership'" (click)="switchTab('leadership')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+          </svg>
+          Leadership
+        </button>
+        <button class="ro-tab body-main" [class.active]="activeTab === 'product'" (click)="switchTab('product')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1" />
+            <rect x="14" y="3" width="7" height="7" rx="1" />
+            <rect x="3" y="14" width="7" height="7" rx="1" />
+            <path d="M14 17.5h7M17.5 14v7" />
+          </svg>
+          Project Managers
+        </button>
+        <button class="ro-tab body-main" [class.active]="activeTab === 'hr'" (click)="switchTab('hr')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          HR &amp; People Ops
+        </button>
+      </div>
+
+      <!-- Leadership Panel -->
+      <div class="ro-panel" [class.active]="activeTab === 'leadership'">
+        <div class="ro-panel-cards">
+          <!-- BEFORE Card -->
+          <div class="ro-card-before">
+            <div class="ro-card-header">
+              <span class="ro-card-label-before body-small">BEFORE XCORP</span>
+              <svg class="ro-header-icon-before" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+            </div>
+            <blockquote class="ro-pain-quote body-main">
+              &ldquo;The board meeting is Friday. I asked for a Q2 status update on Monday. I’m still waiting.”
+            </blockquote>
+            <div class="ro-pain-list">
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Strategic decisions made on stale data</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Team capacity invisible — overwork only surfaces when people burn out</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">2 hours compiling reports before every board meeting</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">No early warning when a quarter goes off-track</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- WITH XCORP Card -->
+          <div class="ro-card-after">
+            <div class="ro-card-header">
+              <span class="ro-card-label-after body-small">WITH XCORP</span>
+              <svg class="ro-header-icon-after" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+            </div>
+            <div class="ro-solution-list">
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Live org dashboard, always current</div>
+                  <div class="ro-si-desc body-small">Every goal, project, and team status — one screen. No chasing updates.</div>
+                </div>
+              </div>
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Team workload visible at a glance</div>
+                  <div class="ro-si-desc body-small">See who’s overloaded and who has capacity. Redistribute work before burnout happens.</div>
+                </div>
+              </div>
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Board reports generated in seconds</div>
+                  <div class="ro-si-desc body-small">Share a live XCorp link. Real-time data, no manual compilation, ever.</div>
+                </div>
+              </div>
+            </div>
+            <div class="ro-link-wrapper">
+              <a class="ro-arrow-link body-main" (click)="navigateToCEO()">See the Leadership view &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Panel -->
+      <div class="ro-panel" [class.active]="activeTab === 'product'">
+        <div class="ro-panel-cards">
+          <!-- BEFORE Card -->
+          <div class="ro-card-before">
+            <div class="ro-card-header">
+              <span class="ro-card-label-before body-small">BEFORE XCORP</span>
+              <svg class="ro-header-icon-before" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+            </div>
+            <blockquote class="ro-pain-quote body-main">
+              &ldquo;We’re three days from the deadline and I just found out the API task has been blocked since last Monday.”
+            </blockquote>
+            <div class="ro-pain-list">
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Blockers surface at standup — days too late</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Context-switching between Jira, Asana, Slack, and email</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Sprint goals disconnected from company OKRs</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Dependency cascades caught too late to recover</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- WITH XCORP Card -->
+          <div class="ro-card-after">
+            <div class="ro-card-header">
+              <span class="ro-card-label-after body-small">WITH XCORP</span>
+              <svg class="ro-header-icon-after" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+            </div>
+            <div class="ro-solution-list">
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Workload heatmap across every team member</div>
+                  <div class="ro-si-desc body-small">See who’s stretched thin, who has bandwidth, and redistribute tasks before deadlines slip.</div>
+                </div>
+              </div>
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Kanban, Gantt, and List — one platform</div>
+                  <div class="ro-si-desc body-small">Switch views without switching tools. Dependencies tracked automatically.</div>
+                </div>
+              </div>
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6" />
+                    <line x1="8" y1="12" x2="21" y2="12" />
+                    <line x1="8" y1="18" x2="21" y2="18" />
+                    <line x1="3" y1="6" x2="3.01" y2="6" />
+                    <line x1="3" y1="12" x2="3.01" y2="12" />
+                    <line x1="3" y1="18" x2="3.01" y2="18" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Tasks tied directly to OKRs</div>
+                  <div class="ro-si-desc body-small">Every sprint item connected to a goal. Your team always knows what matters most.</div>
+                </div>
+              </div>
+            </div>
+            <div class="ro-link-wrapper">
+              <a class="ro-arrow-link body-main" (click)="navigateToPM()">See the Project Manager view &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HR Panel -->
+      <div class="ro-panel" [class.active]="activeTab === 'hr'">
+        <div class="ro-panel-cards">
+          <!-- BEFORE Card -->
+          <div class="ro-card-before">
+            <div class="ro-card-header">
+              <span class="ro-card-label-before body-small">BEFORE XCORP</span>
+              <svg class="ro-header-icon-before" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+            </div>
+            <blockquote class="ro-pain-quote body-main">
+              &ldquo;I spent half my week manually tracking leave balances in spreadsheets. It was slow, frustrating, and prone to payroll errors.”
+            </blockquote>
+            <div class="ro-pain-list">
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Leave approvals buried in email threads</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">No real-time leave balance calculations</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Timesheets collected manually, prone to errors</span>
+              </div>
+              <div class="ro-pain-item">
+                <span class="ro-pain-dot"></span>
+                <span class="body-small">Performance data siloed from actual work output</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- WITH XCORP Card -->
+          <div class="ro-card-after">
+            <div class="ro-card-header">
+              <span class="ro-card-label-after body-small">WITH XCORP</span>
+              <svg class="ro-header-icon-after" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+            </div>
+            <div class="ro-solution-list">
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Self-service leave &amp; balance tracking</div>
+                  <div class="ro-si-desc body-small">Employees request leave and view balances instantly. Accruals and routing follow your policies.</div>
+                </div>
+              </div>
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Automated timesheets &amp; attendance</div>
+                  <div class="ro-si-desc body-small">Track hours worked, export payroll-ready data. No manual collection.</div>
+                </div>
+              </div>
+              <div class="ro-solution-item">
+                <div class="ro-si-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10" />
+                    <line x1="12" y1="20" x2="12" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="14" />
+                  </svg>
+                </div>
+                <div class="ro-si-text">
+                  <div class="ro-si-title body-main">Performance connected to real work data</div>
+                  <div class="ro-si-desc body-small">Reviews backed by OKR contributions, task completion, and actual output.</div>
+                </div>
+              </div>
+            </div>
+            <div class="ro-link-wrapper">
+              <a class="ro-arrow-link body-main" (click)="navigateToHR()">See the HR &amp; People Ops view &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLUE CARD BOTTOM CTA -->
+  <div class="cta-blue-card-section">
+    <div class="wrap">
+      <div class="cta-blue-card">
+        <h3 class="section-title cta-blue-title">Stop the 9AM chaos. Get clarity from day one.</h3>
+        <p class="section-subtitle cta-blue-subtitle">No implementation consultant. No 6-month rollout. Cancel anytime.</p>
+        <div class="cta-row">
+          <button id="bottom-cta-trial" class="btn btn-primary btn-inverse" (click)="openFreeTrial()">Start Free Trial &mdash; 30 days</button>
+          <button id="bottom-cta-demo" class="btn btn-secondary btn-inverse" (click)="openDemo()">Schedule a Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

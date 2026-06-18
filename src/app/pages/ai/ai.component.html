@@ -1,0 +1,267 @@
+<section class="page" id="page-ai">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/features">← See all features</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">AI Assistant</div>
+          <h1 class="headline">Stop hunting for status updates across 5 different apps. <span class="highlight">Just ask.</span></h1>
+          <p class="subhead">Ask XCorp anything. Get answers in plain language. Your AI-powered copilot instantly retrieves leave balances, OKR status, task summaries, and team insights without you switching tools.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">No credit card required<span class="dot">·</span>Setup in under 10 minutes<span class="dot">·</span>Vietnamese support</div>
+        </div>
+        <div class="hero-visual">
+          <!-- AI Chat mockup -->
+          <div style="background:#FFFFFF; border-radius:12px; border:1px solid #E2E8F0; box-shadow:var(--shadow-lg); overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
+              <div style="width:26px; height:26px; border-radius:8px; background:linear-gradient(135deg,#8B5CF6,#6366F1); display:flex; align-items:center; justify-content:center; font-size:11px; color:white; font-weight:800;">✦</div>
+              <div>
+                <div style="font-size:12px; font-weight:600; color:#0F172A;">XCorp AI</div>
+                <div style="font-size:10px; color:var(--success);">● Online</div>
+              </div>
+            </div>
+            <!-- Chat messages -->
+            <div style="padding:14px 16px; display:flex; flex-direction:column; gap:10px;">
+              <div style="align-self:flex-end; background:var(--accent); color:white; padding:8px 12px; border-radius:10px 10px 3px 10px; font-size:11px; max-width:75%;">Who has leave next week?</div>
+              <div style="display:flex; gap:8px; align-items:start;">
+                <div style="width:22px; height:22px; border-radius:6px; background:linear-gradient(135deg,#8B5CF6,#6366F1); display:flex; align-items:center; justify-content:center; font-size:9px; color:white; font-weight:800; flex-shrink:0;">✦</div>
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:10px 12px; border-radius:3px 10px 10px 10px; font-size:11px; color:#334155; flex:1;">
+                  <div style="margin-bottom:8px; color:#334155;">Found <b style="color:#0F172A;">3 team members</b> on leave next week:</div>
+                  <div style="display:grid; gap:4px;">
+                    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid #E2E8F0; color:#334155;"><span>🟢 Linh Trần</span><span style="color:#64748B;">Mon–Wed</span></div>
+                    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid #E2E8F0; color:#334155;"><span>🟡 Minh Hoàng</span><span style="color:#64748B;">Thu–Fri</span></div>
+                    <div style="display:flex; justify-content:space-between; padding:4px 0; color:#334155;"><span>🔵 Bảo Ngọc</span><span style="color:#64748B;">Full week</span></div>
+                  </div>
+                  <div style="margin-top:8px; font-size:10px; color:#475569;">⚠ <b style="color:#B45309;">Coverage gap</b> on Thursday — only 2 of 6 engineers available.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Typing indicator -->
+            <div style="padding:6px 16px 14px; display:flex; gap:8px; align-items:center;">
+              <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:20px; padding:8px 14px; display:flex; gap:4px;">
+                <div style="width:6px; height:6px; border-radius:50%; background:#8B5CF6; animation: aiTypingBounce 1.4s ease-in-out infinite;"></div>
+                <div style="width:6px; height:6px; border-radius:50%; background:#8B5CF6; animation: aiTypingBounce 1.4s ease-in-out infinite 0.15s;"></div>
+                <div style="width:6px; height:6px; border-radius:50%; background:#8B5CF6; animation: aiTypingBounce 1.4s ease-in-out infinite 0.3s;"></div>
+              </div>
+              <span style="font-size:10px; color:#64748B;">XCorp AI is thinking…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAIN -->
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>"Managers waste 30+ minutes every morning digging through dashboards. XCorp AI gives them any answer in a single question."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">What you get</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Instant Answers</span>
+          <h3>Ask about anything. Get live data back.</h3>
+          <p>Leave balances, task status, OKR progress — ask in plain English and XCorp AI pulls real-time data from every module.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="align-self:flex-end; background:var(--accent); color:white; padding:8px 12px; border-radius:10px 10px 3px 10px; font-size:12px;">How many leave days does Minh have left?</div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); padding:10px 14px; border-radius:3px 10px 10px 10px; font-size:12px;">
+              <div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
+                <div style="width:20px; height:20px; border-radius:6px; background:linear-gradient(135deg,#8B5CF6,#6366F1); display:flex; align-items:center; justify-content:center; font-size:8px; color:white; font-weight:800;">✦</div>
+                <b style="font-size:11px; color:var(--text-secondary);">XCorp AI</b>
+              </div>
+              Minh Hoàng has <b style="color:var(--accent);">12 days</b> remaining out of 18 annual leave days.
+              <div style="margin-top:6px; padding:6px 10px; background:var(--accent-light); border-radius:6px; font-size:11px; color:var(--accent);">📋 3 days used · 3 days planned (Jun 12–14)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Smart Summaries</span>
+          <h3>Weekly digests, generated automatically.</h3>
+          <p>Every Monday, get an AI-written summary of team progress, blockers hit, upcoming deadlines, and goals that need attention.</p>
+        </div>
+        <div class="mock">
+          <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.06em;">📊 Weekly Summary — Jun 2–6</div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:start; gap:8px; padding:8px 10px; background:var(--bg-secondary); border-radius:8px;">
+              <span style="font-size:14px;">✅</span>
+              <div>
+                <b style="font-size:12px;">8 tasks completed</b>
+                <div style="font-size:11px; color:var(--text-secondary);">Sprint 24 velocity: 34 SP (↑12%)</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:start; gap:8px; padding:8px 10px; background:var(--warning-light); border-radius:8px;">
+              <span style="font-size:14px;">⚠️</span>
+              <div>
+                <b style="font-size:12px;">2 OKRs at risk</b>
+                <div style="font-size:11px; color:var(--text-secondary);">Revenue goal at 32% with 3 weeks left</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:start; gap:8px; padding:8px 10px; background:var(--danger-light); border-radius:8px;">
+              <span style="font-size:14px;">🔴</span>
+              <div>
+                <b style="font-size:12px;">3 overdue tasks</b>
+                <div style="font-size:11px; color:var(--text-secondary);">API integration blocked since Jun 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Task & OKR Q&A</span>
+          <h3>Deep-dive into projects without opening a board.</h3>
+          <p>"What's blocking Sprint 24?" — and XCorp AI shows you the blockers, owners, and due dates in one clean answer.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="align-self:flex-end; background:var(--accent); color:white; padding:8px 12px; border-radius:10px 10px 3px 10px; font-size:12px;">What's blocking Sprint 24?</div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); padding:10px 14px; border-radius:3px 10px 10px 10px; font-size:12px;">
+              <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px;">
+                <div style="width:20px; height:20px; border-radius:6px; background:linear-gradient(135deg,#8B5CF6,#6366F1); display:flex; align-items:center; justify-content:center; font-size:8px; color:white; font-weight:800;">✦</div>
+                <b style="font-size:11px; color:var(--text-secondary);">XCorp AI</b>
+              </div>
+              Found <b>2 blockers</b> in Sprint 24:
+              <div style="margin-top:8px; display:flex; flex-direction:column; gap:6px;">
+                <div class="mock-row" style="margin:0;">
+                  <div style="display:flex; align-items:center; gap:6px;"><span class="pill bad">blocked</span> <b>Payment Gateway API</b></div>
+                  <span style="font-size:11px; color:var(--text-secondary);">→ Minh · 5 days overdue</span>
+                </div>
+                <div class="mock-row" style="margin:0;">
+                  <div style="display:flex; align-items:center; gap:6px;"><span class="pill warn">at risk</span> <b>Auth v2 migration</b></div>
+                  <span style="font-size:11px; color:var(--text-secondary);">→ Linh · Due Friday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Proactive Alerts</span>
+          <h3>AI flags risks before you even ask.</h3>
+          <p>Overdue tasks, coverage gaps, stale OKRs — XCorp AI surfaces problems early so you can fix them before they escalate.</p>
+        </div>
+        <div class="mock">
+          <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.06em;">🔔 Proactive Alerts — Today</div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div class="mock-row" style="margin:0;">
+              <div style="display:flex; align-items:center; gap:8px;"><span style="font-size:14px;">🔴</span> <div><b>3 tasks overdue</b><div style="font-size:11px; color:var(--text-secondary);">Sprint 24 · Last updated 5 days ago</div></div></div>
+              <span class="pill bad">critical</span>
+            </div>
+            <div class="mock-row" style="margin:0;">
+              <div style="display:flex; align-items:center; gap:8px;"><span style="font-size:14px;">⚠️</span> <div><b>Coverage gap Thursday</b><div style="font-size:11px; color:var(--text-secondary);">Only 2/6 engineers available</div></div></div>
+              <span class="pill warn">warning</span>
+            </div>
+            <div class="mock-row" style="margin:0;">
+              <div style="display:flex; align-items:center; gap:8px;"><span style="font-size:14px;">👻</span> <div><b>Revenue OKR stale</b><div style="font-size:11px; color:var(--text-secondary);">No update for 6 weeks · 32% progress</div></div></div>
+              <span class="pill neutral">stale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE DEMO: AI CHATBOT -->
+  <div class="demo-section">
+    <div class="wrap">
+      <div class="demo-head">
+        <span class="strip-pill">Interactive demo</span>
+        <h2>Try the XCorp AI Assistant.</h2>
+        <p>Click a suggested prompt or type your own question — watch the AI respond with real-time data from your XCorp workspace.</p>
+      </div>
+      <div class="demo-frame">
+        <div class="ai-demo">
+          <!-- Sidebar: Prompt Chips -->
+          <div class="ai-sidebar">
+            <div class="ai-sidebar-title">Suggested prompts</div>
+            <button *ngFor="let chip of suggestedPrompts" class="ai-prompt-chip" (click)="sendPrompt(chip.query)">
+              {{ chip.label }}
+            </button>
+          </div>
+          <!-- Chat Panel -->
+          <div class="ai-chat-panel">
+            <div class="ai-chat-header">
+              <div class="ai-chat-avatar">✦</div>
+              <div class="ai-chat-header-info">XCorp AI Assistant <br><small>● Online — ready to help</small></div>
+            </div>
+            <div class="ai-chat-messages" id="aiChatMessages">
+              <div *ngFor="let msg of messages" class="ai-msg" [class.user]="msg.isUser" [class.bot]="!msg.isUser">
+                <div class="ai-msg-avatar">{{ msg.isUser ? 'You' : '✦' }}</div>
+                <div class="ai-msg-bubble" [innerHTML]="msg.content"></div>
+              </div>
+              <!-- Typing Indicator inside message container -->
+              <div *ngIf="isTyping" class="ai-msg bot">
+                <div class="ai-msg-avatar">✦</div>
+                <div class="ai-msg-bubble">
+                  <div class="ai-typing">
+                    <div class="ai-typing-dot"></div>
+                    <div class="ai-typing-dot"></div>
+                    <div class="ai-typing-dot"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ai-chat-input-row">
+              <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Ask XCorp AI anything…" [(ngModel)]="userInput" (keydown.enter)="sendMessage()">
+              <button class="ai-chat-send" id="aiChatSend" (click)="sendMessage()">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLE TABS -->
+  <div class="role-section">
+    <div class="wrap">
+      <div class="role-head">
+        <span class="strip-pill">Built for your role</span>
+        <h2>AI that understands your priorities.</h2>
+      </div>
+      <div class="role-tabs-row" id="aiRoleTabs">
+        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="setRole('ceo')">CEO</button>
+        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="setRole('lead')">Team lead</button>
+        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="setRole('hr')">HR / Ops</button>
+      </div>
+      <div class="role-panel" id="aiRolePanel">
+        <ul>
+          <li *ngFor="let item of roleContent[activeRole]">
+            <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5L8 14.5L16 5.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span [innerHTML]="item"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Ready to work smarter with AI?</h3>
+      <p>30-day free trial · No credit card required</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial</button>
+        <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</section>

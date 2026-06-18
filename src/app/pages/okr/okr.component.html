@@ -1,0 +1,366 @@
+<div class="page-okr-container">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/features">← See all features</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Goals & Performance</div>
+          <h1 class="headline">Stop reporting OKRs in PowerPoint.</h1>
+          <p class="subhead">Connect company strategy to daily execution. Set OKRs at every level, track progress in real time, and get automated reminders before check-ins.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">No credit card required<span class="dot">·</span>Setup in under 10 minutes<span class="dot">·</span>Vietnamese support</div>
+        </div>
+        <div class="hero-visual">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <div style="font-size:13px; font-weight:600; color:#fff;">Q2 2026 — Company OKRs</div>
+            <span class="pill accent">3 active</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:14px;">
+            <div style="background:var(--bg-secondary); border-radius:8px; padding:10px;">
+              <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:22px;">12</div>
+              <div style="font-size:11px; color:var(--text-secondary);">Active OKRs</div>
+            </div>
+            <div style="background:var(--bg-secondary); border-radius:8px; padding:10px;">
+              <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:22px;">74%</div>
+              <div style="font-size:11px; color:var(--text-secondary);">Avg progress</div>
+            </div>
+            <div style="background:var(--bg-secondary); border-radius:8px; padding:10px;">
+              <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:22px; color:var(--danger);">3</div>
+              <div style="font-size:11px; color:var(--text-secondary);">Need attention</div>
+            </div>
+          </div>
+          <div style="background:var(--bg-secondary); border-radius:8px; padding:12px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+              <div style="font-size:12px;"><span class="pill accent" style="margin-right:6px;">Company</span><b>Grow ARR to $2M</b></div>
+              <b style="color:var(--success); font-size:12px;">82%</b>
+            </div>
+            <div class="bar" style="margin-bottom:10px;"><span class="good" style="width:82%"></span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+              <div style="font-size:12px;"><span class="pill" style="background:var(--purple-light); color:var(--purple); margin-right:6px;">Team</span><b>Launch mobile app v2</b></div>
+              <b style="color:var(--warning); font-size:12px;">55%</b>
+            </div>
+            <div class="bar" style="margin-bottom:10px;"><span class="warn" style="width:55%"></span></div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+              <div style="font-size:12px;"><span class="pill neutral" style="margin-right:6px;">Individual</span><b>4 client reviews</b></div>
+              <b style="color:var(--danger); font-size:12px;">25%</b>
+            </div>
+            <div class="bar"><span class="bad" style="width:25%"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAIN -->
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>Goals get set in week 1 of the quarter. By week 12, you find out which team missed — not because nobody tried, but because nobody could see the full picture in time to do anything about it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">What you get</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Cascading OKRs</span>
+          <h3>Align from company down to every individual.</h3>
+          <p>Every person sees how their work ladders up. No guesswork, no misalignment, no "I didn't know that was the priority" in week 11.</p>
+        </div>
+        <div class="mock">
+          <div style="background:var(--accent-light); border-left:4px solid var(--accent); border-radius:8px; padding:12px; margin-bottom:8px;">
+            <div style="font-size:11px; font-weight:700; color:var(--accent); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px;">Company</div>
+            <b style="font-size:13px;">Grow ARR to $2M by EOQ</b>
+          </div>
+          <div style="background:var(--bg-secondary); border-left:4px solid var(--text-secondary); border-radius:8px; padding:12px; margin-left:15px; margin-bottom:8px;">
+            <div style="font-size:11px; font-weight:700; color:var(--text-secondary); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px;">Group — Business</div>
+            <b style="font-size:13px;">Expand enterprise sales pipeline</b>
+          </div>
+          <div style="background:var(--purple-light); border-left:4px solid var(--purple); border-radius:8px; padding:12px; margin-left:30px; margin-bottom:8px;">
+            <div style="font-size:11px; font-weight:700; color:var(--purple); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px;">Team — Sales</div>
+            <b style="font-size:13px;">Close 40 enterprise deals</b>
+          </div>
+          <div style="background:var(--bg-secondary); border-left:4px solid var(--text-secondary); border-radius:8px; padding:12px; margin-left:45px;">
+            <div style="font-size:11px; font-weight:700; color:var(--text-secondary); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px;">Individual — Hoa</div>
+            <b style="font-size:13px;">Close 8 enterprise deals this quarter</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Flexible check-ins</span>
+          <h3>Auto-nudge, but let humans update on their terms.</h3>
+          <p>We remind people when check-ins are due. We don't badger them. Updates feel like a 30-second moment, not another meeting.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:28px; height:28px; border-radius:50%; background:var(--accent-light); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700;">TN</div>
+              <div><b>Trần Ngọc</b>
+                <div style="font-size:11px; color:var(--text-secondary);">Auto check-in · Mon 09:00</div>
+              </div>
+            </div>
+            <span class="pill good">Checked In</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:28px; height:28px; border-radius:50%; background:#dcfce7; color:var(--success); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700;">BL</div>
+              <div><b>Bảo Linh</b>
+                <div style="font-size:11px; color:var(--text-secondary);">Manual update · Tue 14:32</div>
+              </div>
+            </div>
+            <span class="pill good">Checked In</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:28px; height:28px; border-radius:50%; background:var(--border); color:var(--text-secondary); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700;">MH</div>
+              <div><b>Minh Hoàng</b>
+                <div style="font-size:11px; color:var(--text-secondary);">Auto check-in · Mon 09:00</div>
+              </div>
+            </div>
+            <span class="pill neutral">Pending</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Live progress tracking</span>
+          <h3>From yearly goals to monthly — always real-time.</h3>
+          <p>No waiting for end-of-quarter reports. The dashboard updates as the work happens. Catch problems in week 3, not week 13.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; gap:4px; background:var(--bg-secondary); padding:3px; border-radius:8px; margin-bottom:14px; border:1px solid var(--border); width:fit-content;">
+            <span style="padding:5px 12px; background:white; border:1px solid var(--border); border-radius:6px; font-size:11px; font-weight:600;">Quarterly</span>
+            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">Yearly</span>
+            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">Monthly</span>
+          </div>
+          <div style="padding:6px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
+              <b>Product</b><b style="color:var(--success);">88%</b>
+            </div>
+            <div class="bar"><span class="good" style="width:88%"></span></div>
+          </div>
+          <div style="padding:6px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
+              <b>Sales</b><b style="color:var(--warning);">61%</b>
+            </div>
+            <div class="bar"><span class="warn" style="width:61%"></span></div>
+          </div>
+          <div style="padding:6px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
+              <b>HR</b><b style="color:var(--success);">75%</b>
+            </div>
+            <div class="bar"><span class="good" style="width:75%"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Performance integration</span>
+          <h3>Reviews tied directly to OKR outcomes.</h3>
+          <p>Performance reviews stop being subjective. Each person's goals, results, and impact are already in the system — no spreadsheet archaeology needed.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:14px;">
+            <div>
+              <b style="font-size:14px;">Individual KPI Progress</b>
+              <div style="font-size:11px; color:var(--text-secondary); margin-top:2px;">Target timelines &amp; metrics</div>
+            </div>
+            <b style="color:var(--success); font-size:14px;">85% overall</b>
+          </div>
+          <div style="padding:8px 0; border-bottom:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+              <span><b>Core Platform Uplink</b> (Due Q2 End)</span>
+              <b style="color:var(--success);">90%</b>
+            </div>
+            <div class="bar"><span class="good" style="width:90%"></span></div>
+          </div>
+          <div style="padding:8px 0; border-bottom:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+              <span><b>User Activation Rate</b> (Due Mid-Q2)</span>
+              <b style="color:var(--success);">100%</b>
+            </div>
+            <div class="bar"><span class="good" style="width:100%"></span></div>
+          </div>
+          <div style="padding:8px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+              <span><b>Design System Integration</b> (Due Q2 End)</span>
+              <b style="color:var(--warning);">65%</b>
+            </div>
+            <div class="bar"><span class="warn" style="width:65%"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE DEMO: OKR CASCADE BUILDER -->
+  <div class="demo-section">
+    <div class="wrap">
+      <div class="demo-head">
+        <span class="strip-pill">Interactive demo</span>
+        <h2>Build an OKR cascade. Watch it roll up.</h2>
+        <p>Add a company objective. Add team OKRs underneath. Drag the sliders or input updates to update progress — parent roll-ups recalculate live.</p>
+      </div>
+      <div class="demo-frame">
+        <div class="okr-demo">
+          <!-- LEFT: ADD FORM -->
+          <div class="okr-form">
+            <h4>Add OKR</h4>
+            
+            <div class="okr-field">
+              <label>Level</label>
+              <div class="okr-level-tabs">
+                <button type="button" class="okr-level-tab" [class.active]="selectedLevel === 'company'" (click)="changeLevel('company')">Company</button>
+                <button type="button" class="okr-level-tab" [class.active]="selectedLevel === 'group'" (click)="changeLevel('group')">Group</button>
+                <button type="button" class="okr-level-tab" [class.active]="selectedLevel === 'team'" (click)="changeLevel('team')">Team</button>
+                <button type="button" class="okr-level-tab" [class.active]="selectedLevel === 'individual'" (click)="changeLevel('individual')">Individual</button>
+              </div>
+            </div>
+
+            <div class="okr-field">
+              <label>Title</label>
+              <input type="text" [(ngModel)]="okrTitle" placeholder="e.g. Close 40 enterprise deals">
+            </div>
+
+            <div class="okr-field" *ngIf="selectedLevel !== 'company'">
+              <label>Parent OKR</label>
+              <select [(ngModel)]="okrParent">
+                <option value="" disabled>Select parent OKR</option>
+                <option *ngFor="let p of getPotentialParents()" [value]="p.id">{{ p.title }} ({{ p.level }})</option>
+                <option *ngIf="getPotentialParents().length === 0" disabled>No parents available — add one first</option>
+              </select>
+            </div>
+
+            <div class="okr-field">
+              <label>Metric</label>
+              <input type="text" [(ngModel)]="okrMetric" placeholder="e.g. enterprise deals">
+            </div>
+
+            <div class="okr-field">
+              <label>Timeline</label>
+              <input type="text" [(ngModel)]="okrTimeline" placeholder="e.g. Q2 2026">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <div class="okr-field">
+                <label>Start Value</label>
+                <input type="number" [(ngModel)]="okrStartValue">
+              </div>
+              <div class="okr-field">
+                <label>Expected Value</label>
+                <input type="number" [(ngModel)]="okrExpectedValue">
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 8px; margin-top: 16px;">
+              <button type="button" class="okr-add-btn" style="background: var(--bg-secondary); border: 1px solid var(--border); color: var(--text-primary);" (click)="resetForm()">Cancel</button>
+              <button type="button" class="okr-add-btn" (click)="handleAddOkr()">Save</button>
+            </div>
+
+            <div style="font-size:11px; color:var(--text-muted); text-align:center; margin-top:12px;">
+              💡 Try: add a Team OKR under "Grow ARR to $2M", then input check-in updates — watch the Company % change.
+            </div>
+          </div>
+
+          <!-- RIGHT: TREE -->
+          <div class="okr-tree">
+            <h4>
+              <span>OKR Cascade</span>
+              <small>{{ okrData.length }} OKRs · Company Avg: {{ getCompanyAvg() }}%</small>
+            </h4>
+            
+            <div class="okr-tree-body">
+              <div *ngIf="okrData.length === 0" class="okr-empty">
+                No OKRs yet. Add one using the form on the left.
+              </div>
+              
+              <div *ngFor="let node of getOrderedOkrData()" class="okr-node" [ngClass]="'level-' + node.level">
+                <div class="okr-node-head">
+                  <div class="okr-node-title">
+                    <span class="okr-level-pill" [ngClass]="node.level">{{ node.level }}</span>
+                    <span>{{ node.title }}</span>
+                    <span *ngIf="node.timeline" style="font-size: 10px; color: var(--text-secondary); margin-left: 8px; background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;">{{ node.timeline }}</span>
+                  </div>
+                  <div class="okr-node-progress">
+                    <div class="okr-node-pct" [style.color]="'var(--ds-color-status-' + (getNodeColor(calculateProgress(node.id)) === 'good' ? 'success' : getNodeColor(calculateProgress(node.id)) === 'warn' ? 'warning' : 'danger') + ')'" style="font-weight:700;">
+                      {{ calculateProgress(node.id) }}%
+                    </div>
+                    <button class="okr-node-del" title="Remove" (click)="handleDelete(node.id)">✕</button>
+                  </div>
+                </div>
+
+                <!-- Leaf Node check-in -->
+                <div *ngIf="!hasChildren(node.id)" class="okr-checkin-row" style="margin-top: 8px; display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+                  <div style="display: flex; gap: 6px; align-items: center;">
+                    <span style="font-size: 11px; color: var(--text-secondary);">Current:</span>
+                    <input type="number" #checkinInput [value]="getLeafValue(node)" style="width: 70px; padding: 2px 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; background: var(--bg-secondary); color: var(--text-primary);">
+                    <span style="font-size: 11px; color: var(--text-secondary);">/ {{ node.expectedValue }} {{ node.metric }}</span>
+                  </div>
+                  <button class="btn btn-primary" style="padding: 2px 8px; font-size: 11px; border-radius: 4px;" (click)="handleCheckin(node, checkinInput.value)">Check-in</button>
+                </div>
+
+                <!-- Parent node note -->
+                <div *ngIf="hasChildren(node.id)" class="okr-node-meta">
+                  ↑ Rolled up from {{ getChildrenCount(node.id) }} child OKR(s)
+                </div>
+
+                <div class="bar" style="margin-top:8px;">
+                  <span [ngClass]="getNodeColor(calculateProgress(node.id))" [style.width.%]="calculateProgress(node.id)"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLE TABS -->
+  <div class="role-section">
+    <div class="wrap">
+      <div class="role-head">
+        <span class="strip-pill">Built for your role</span>
+        <h2>Goals work differently for everyone.</h2>
+      </div>
+      <div class="role-tabs-row">
+        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">CEO</button>
+        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">Team lead</button>
+        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">HR / Ops</button>
+      </div>
+      <div class="role-panel">
+        <ul>
+          <li *ngFor="let item of roleContent[activeRole]">
+            <svg class="check" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10.5L8 14.5L16 5.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{ item }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM CTA -->
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Ready to align your team?</h3>
+      <p>Free trial · No credit card · Setup in 10 minutes</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+        <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</div>

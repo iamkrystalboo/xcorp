@@ -1,0 +1,420 @@
+<div class="modal-overlay" [class.active]="modalService.activeModal() !== null" (click)="close()">
+  <div class="modal-content" [style.max-width]="modalService.activeModal() === 'freetrial' ? '560px' : '520px'"
+    (click)="$event.stopPropagation()">
+
+    <!-- Success Feedback Overlay -->
+    <div *ngIf="showSuccess" class="modal-success-screen">
+      <button class="modal-close success-close-btn" (click)="close()">✕</button>
+      <div class="success-wrapper">
+        <div class="success-icon-wrapper">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h4 class="success-title">{{ successTitle }}</h4>
+        <div class="success-detail-card">
+          <div class="success-detail-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <p class="success-detail-text">{{ successDesc }}</p>
+        </div>
+        <button type="button" class="btn-close-modal" (click)="close()">Close</button>
+      </div>
+    </div>
+
+    <!-- Free Trial Modal -->
+    <ng-container *ngIf="!showSuccess && modalService.activeModal() === 'freetrial'">
+
+      <!-- ========== PHASE 1: Email Input ========== -->
+      <ng-container *ngIf="emailStepPhase === 'email'">
+        <div class="modal-header">
+          <h3 class="modal-title">Start your free trial</h3>
+          <p class="modal-desc">30 days of full access. No credit card required.</p>
+        </div>
+        <button class="modal-close" (click)="close()">✕</button>
+        <div class="modal-body">
+          <div class="email-step-wrapper">
+            <div class="email-step-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M22 4L12 13L2 4"></path>
+              </svg>
+            </div>
+            <h4 class="email-step-title">Enter your business email</h4>
+            <p class="email-step-desc">We'll send you instructions to set up your account.</p>
+            <form class="modal-form email-form" (submit)="handleEmailSubmit($event)">
+              <div class="form-group">
+                <label>Business Email <span class="required-star">*</span></label>
+                <input type="email" placeholder="you@company.com" required [(ngModel)]="businessEmail"
+                  name="businessEmail" id="businessEmail" />
+              </div>
+              <button type="submit" class="premium-submit-btn">
+                <span>Continue</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <p class="modal-privacy-note">We respect your privacy. No spam, ever.</p>
+            </form>
+          </div>
+        </div>
+      </ng-container>
+
+      <!-- ========== PHASE 2: Confirmation Screen ========== -->
+      <ng-container *ngIf="emailStepPhase === 'confirmation'">
+        <div class="modal-header">
+          <h3 class="modal-title">Registration Successful!</h3>
+          <p class="modal-desc">Welcome to xCorp</p>
+        </div>
+        <button class="modal-close" (click)="close()">✕</button>
+        <div class="modal-body">
+          <div class="confirmation-wrapper">
+            <div class="confirmation-icon-wrapper">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h4 class="confirmation-title">Thank you for signing up!</h4>
+            <p class="confirmation-message">
+              We're excited to welcome you to xCorp!
+            </p>
+            <div class="confirmation-email-notice">
+              <div class="email-notice-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="M22 4L12 13L2 4"></path>
+                </svg>
+              </div>
+              <p class="email-notice-text">
+                To set up your account, please follow the instructions we've sent to
+                <strong>{{ businessEmail }}</strong>.
+              </p>
+            </div>
+            <div class="simulated-link-box">
+              <span class="simulated-label">🧪 Prototype Test — Simulated email link:</span>
+              <a class="simulated-confirm-link" [href]="'/signup/confirm?token=demo-token-123&email=' + businessEmail">
+                Click here to confirm your account
+              </a>
+            </div>
+            <button type="button" class="btn-close-modal" (click)="close()">Close</button>
+          </div>
+        </div>
+      </ng-container>
+
+      <!-- ========== PHASE 3: Existing Form (Company Profile + User Account) ========== -->
+      <ng-container *ngIf="emailStepPhase === 'form'">
+        <div class="modal-header">
+          <h3 class="modal-title">Set up your workspace</h3>
+          <p class="modal-desc">Complete your profile to get started with xCorp.</p>
+        </div>
+        <button class="modal-close" (click)="close()">✕</button>
+        <div class="modal-body">
+
+          <!-- Step Selection Bar -->
+          <div class="step-selection-bar">
+            <button type="button" class="step-tab" [class.active]="currentStep === 1" (click)="setStep(1)">
+              <span class="step-badge">1</span>
+              <span class="step-text">Company Profile</span>
+            </button>
+            <div class="step-line" [class.active]="currentStep === 2"></div>
+            <button type="button" class="step-tab" [class.active]="currentStep === 2" (click)="setStep(2)"
+              [disabled]="!isCompanyStepValid()">
+              <span class="step-badge">2</span>
+              <span class="step-text">User Account</span>
+            </button>
+          </div>
+
+          <form class="modal-form" (submit)="handleFreeTrialSubmit($event)">
+            <!-- STEP 1: Fill company data -->
+            <div class="form-section" *ngIf="currentStep === 1">
+              <h3 class="section-title">Fill company data</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Organization name <span class="required-star">*</span></label>
+                  <input type="text" placeholder="Enter organization name" required [(ngModel)]="freeTrialData.orgName"
+                    name="orgName" />
+                </div>
+                <div class="form-group">
+                  <label>Company Type</label>
+                  <select [(ngModel)]="freeTrialData.companyType" name="companyType">
+                    <option value="company">Company</option>
+                    <option value="school">School</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Company domain <span class="required-star">*</span></label>
+                  <div class="domain-input-wrapper">
+                    <input type="text" placeholder="Enter company domain" required
+                      [(ngModel)]="freeTrialData.companyDomain" name="companyDomain" />
+                    <span class="domain-suffix">.xcorp.app</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Organization size</label>
+                  <select [(ngModel)]="freeTrialData.companySize" name="companySize">
+                    <option value="">Select organization size</option>
+                    <option value="1-10">1 – 10 people</option>
+                    <option value="11-50">11 – 50 people</option>
+                    <option value="51-200">51 – 200 people</option>
+                    <option value="200+">200+ people</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Country</label>
+                  <select [(ngModel)]="freeTrialData.country" name="country">
+                    <option value="">Select country</option>
+                    <option value="vn">Vietnam</option>
+                    <option value="us">United States</option>
+                    <option value="sg">Singapore</option>
+                    <option value="jp">Japan</option>
+                    <option value="au">Australia</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Timezone</label>
+                  <select [(ngModel)]="freeTrialData.timezone" name="timezone">
+                    <option value="">Select timezone</option>
+                    <option value="gmt7">GMT+7 (Asia/Ho_Chi_Minh)</option>
+                    <option value="gmt8">GMT+8 (Asia/Singapore)</option>
+                    <option value="gmt0">GMT+0 (Europe/London)</option>
+                    <option value="gmt-5">GMT-5 (US/Eastern)</option>
+                    <option value="gmt-8">GMT-8 (US/Pacific)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Continue CTA Button -->
+              <button type="button" class="premium-submit-btn" [disabled]="!isCompanyStepValid()" (click)="nextStep()">
+                <span>Continue to Account Info</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <!-- STEP 2: Your user account -->
+            <div class="form-section" *ngIf="currentStep === 2">
+              <h3 class="section-title">Your user account</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name <span class="required-star">*</span></label>
+                  <input type="text" placeholder="Enter first name" required [(ngModel)]="freeTrialData.firstName"
+                    name="firstName" />
+                </div>
+                <div class="form-group">
+                  <label>Last Name <span class="required-star">*</span></label>
+                  <input type="text" placeholder="Enter last name" required [(ngModel)]="freeTrialData.lastName"
+                    name="lastName" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" placeholder="Enter phone number" [(ngModel)]="freeTrialData.phone" name="phone" />
+                </div>
+                <div class="form-group">
+                  <label>Password <span class="required-star">*</span></label>
+                  <input type="password" placeholder="Enter password" required [(ngModel)]="freeTrialData.password"
+                    name="password" />
+                </div>
+              </div>
+
+              <!-- Back and Submit button group -->
+              <div class="step-btn-group">
+                <button type="button" class="btn-step-back" (click)="prevStep()">
+                  ← Back
+                </button>
+                <button type="submit" class="premium-submit-btn">
+                  <span>Start 30-day free trial</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+              <p class="modal-privacy-note">By signing up, you agree to our Terms of Service and Privacy Policy.</p>
+            </div>
+          </form>
+        </div>
+      </ng-container>
+
+    </ng-container>
+
+    <!-- Schedule Demo Modal -->
+    <ng-container *ngIf="modalService.activeModal() === 'demo'">
+      <div class="modal-header">
+        <h3 class="modal-title">Schedule a demo</h3>
+        <p class="modal-desc">Our team will walk you through XCorp and answer all your questions.</p>
+      </div>
+      <button class="modal-close" (click)="close()">✕</button>
+      <div class="modal-body">
+        <form class="modal-form" (submit)="handleScheduleDemoSubmit($event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name <span class="required-star">*</span></label>
+              <input type="text" placeholder="Nguyen" [(ngModel)]="demoData.firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name <span class="required-star">*</span></label>
+              <input type="text" placeholder="Van A" [(ngModel)]="demoData.lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Work Email <span class="required-star">*</span></label>
+            <input type="email" placeholder="you@company.com" [(ngModel)]="demoData.workEmail" name="workEmail"
+              required />
+          </div>
+          <div class="form-group">
+            <label>Company Name <span class="required-star">*</span></label>
+            <input type="text" placeholder="Your Company" [(ngModel)]="demoData.company" name="company" required />
+          </div>
+          <div class="form-group">
+            <label>Team Size</label>
+            <select [(ngModel)]="demoData.teamSize" name="teamSize">
+              <option value="">Select team size</option>
+              <option value="1-10">1 – 10 people</option>
+              <option value="11-50">11 – 50 people</option>
+              <option value="51-200">51 – 200 people</option>
+              <option value="200+">200+ people</option>
+            </select>
+          </div>
+          <button type="submit" class="modal-submit-btn">Book a demo</button>
+          <p class="modal-privacy-note">We'll respond within 1 business day to confirm your slot.</p>
+        </form>
+      </div>
+    </ng-container>
+
+    <!-- Contact Sales Modal -->
+    <ng-container *ngIf="modalService.activeModal() === 'sales'">
+      <div class="modal-header">
+        <h3 class="modal-title">Talk to our team</h3>
+        <p class="modal-desc">Let us know about your needs. We'll respond within 24 hours.</p>
+      </div>
+      <button class="modal-close" (click)="close()">✕</button>
+      <div class="modal-body">
+        <form class="modal-form" (submit)="handleContactSalesSubmit($event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name <span class="required-star">*</span></label>
+              <input type="text" placeholder="Nguyen" [(ngModel)]="salesData.firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name <span class="required-star">*</span></label>
+              <input type="text" placeholder="Van A" [(ngModel)]="salesData.lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Work Email <span class="required-star">*</span></label>
+            <input type="email" placeholder="you@company.com" [(ngModel)]="salesData.workEmail" name="workEmail"
+              required />
+          </div>
+          <div class="form-group">
+            <label>Company Name <span class="required-star">*</span></label>
+            <input type="text" placeholder="Your Company" [(ngModel)]="salesData.company" name="company" required />
+          </div>
+          <button type="submit" class="modal-submit-btn">Send message</button>
+          <p class="modal-privacy-note">We take your privacy seriously. No spam, ever.</p>
+        </form>
+      </div>
+    </ng-container>
+
+    <!-- Request Quote Modal -->
+    <ng-container *ngIf="modalService.activeModal() === 'quote'">
+      <div class="modal-header">
+        <h3 class="modal-title">Request custom quote</h3>
+        <p class="modal-desc">Review your selected plan modules and submit a request to our sales team.</p>
+      </div>
+      <button class="modal-close" (click)="close()">✕</button>
+      <div class="modal-body">
+
+        <!-- Summary of selections -->
+        <div class="quote-summary-card" *ngIf="modalService.quoteData() as data">
+          <div class="summary-title-row">
+            <span class="summary-plan-label">Plan Configuration</span>
+            <span class="summary-user-count">{{ data.users }} users</span>
+          </div>
+
+          <div class="summary-details">
+            <div class="summary-detail-item">
+              <span class="detail-label">Base Tier:</span>
+              <span class="detail-value">{{ data.tier | uppercase }} Plan</span>
+            </div>
+
+            <div class="summary-detail-item">
+              <span class="detail-label">Modules Selected ({{ data.modules.length }}):</span>
+              <div class="summary-module-tags" *ngIf="data.modules.length > 0">
+                <span class="summary-module-tag" *ngFor="let mod of data.modules">
+                  <span class="tag-check">✓</span> {{ mod }}
+                </span>
+              </div>
+              <span class="summary-no-modules" *ngIf="data.modules.length === 0">Base features only</span>
+            </div>
+
+            <div class="summary-detail-item price-details">
+              <span class="detail-label">Estimated Price:</span>
+              <div class="summary-price-display">
+                <span class="price-value-large">$<strong>{{ data.pricePerUser }}</strong>/user/mo</span>
+                <span class="price-total-sub">(Total <strong>${{ data.priceTotal }}</strong>/mo)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submission Form -->
+        <form class="modal-form" (submit)="handleQuoteSubmit($event)">
+          <div class="form-group">
+            <label>Your Name <span class="required-star">*</span></label>
+            <input type="text" placeholder="Enter your full name" required [(ngModel)]="quoteFormData.name"
+              name="name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Work Email <span class="required-star">*</span></label>
+              <input type="email" placeholder="you@company.com" required [(ngModel)]="quoteFormData.email"
+                name="email" />
+            </div>
+            <div class="form-group">
+              <label>Company Name <span class="required-star">*</span></label>
+              <input type="text" placeholder="Enter company name" required [(ngModel)]="quoteFormData.company"
+                name="company" />
+            </div>
+          </div>
+
+          <button type="submit" class="premium-submit-btn">
+            <span>Submit Quote Request</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <p class="modal-privacy-note">We will review your configuration and contact you within 24 hours.</p>
+        </form>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

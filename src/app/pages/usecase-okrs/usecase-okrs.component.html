@@ -1,0 +1,195 @@
+<section class="page" id="page-usecase-okrs">
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/home">← All solutions</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Use Case · Ghost OKRs</div>
+          <h1 class="headline">Your OKRs are <span class="highlight">invisible</span> to the people doing the work.</h1>
+          <p class="subhead">Goals belong in daily work, not forgotten spreadsheets. Connect your team's tasks directly to strategic OKRs.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">Free 30-day trial<span class="dot">·</span>No credit card<span class="dot">·</span>Vietnamese support</div>
+        </div>
+        <div class="hero-visual">
+          <!-- Ghost OKR visualization -->
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+              <div style="font-size:13px; font-weight:600; color:#F8FAFC;">Q3 OKR Health</div>
+              <span style="background:rgba(239,68,68,0.2); color:#FCA5A5; font-size:10px; font-weight:700; padding:3px 8px; border-radius:999px;">⚠️ At risk</span>
+            </div>
+            <div class="ghost-okr-card" style="border-radius:10px; padding:14px; margin-bottom:8px; animation-delay: 0s;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:12px; font-weight:600; color:#1E293B;">🎯 Revenue $2M → $3M</span>
+                <span style="font-size:11px; color:#EF4444; font-weight:600;">32%</span>
+              </div>
+              <div style="height:5px; background:#E2E8F0; border-radius:3px;">
+                <div style="height:100%; width:32%; background:#EF4444; border-radius:3px;"></div>
+              </div>
+              <div style="font-size:10px; color:#64748B; margin-top:6px;">Last updated: 6 weeks ago 😰</div>
+            </div>
+            <div class="ghost-okr-card" style="border-radius:10px; padding:14px; margin-bottom:8px; animation-delay: 1s;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:12px; font-weight:600; color:#1E293B;">🚀 Ship 3 features</span>
+                <span style="font-size:11px; color:#D97706; font-weight:600;">33%</span>
+              </div>
+              <div style="height:5px; background:#E2E8F0; border-radius:3px;">
+                <div style="height:100%; width:33%; background:#F59E0B; border-radius:3px;"></div>
+              </div>
+              <div style="font-size:10px; color:#64748B; margin-top:6px;">No linked tasks found</div>
+            </div>
+            <div class="ghost-okr-card" style="border-radius:10px; padding:14px; animation-delay: 2s;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:12px; font-weight:600; color:#1E293B;">📊 NPS 40 → 55</span>
+                <span style="font-size:11px; color:#94A3B8; font-weight:600;">0%</span>
+              </div>
+              <div style="height:5px; background:#E2E8F0; border-radius:3px;">
+                <div style="height:100%; width:0%; background:#94A3B8; border-radius:3px;"></div>
+              </div>
+              <div style="font-size:10px; color:#EF4444; margin-top:6px;">⚠️ Nobody assigned</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pain quote -->
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>"OKRs were ghosts in a spreadsheet. XCorp auto-syncs tasks to goals so everyone knows how their daily work drives company targets."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature strips -->
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">How XCorp Makes OKRs Real</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill danger">The Problem</span>
+          <h3>Bridging strategy &amp; tasks.</h3>
+          <p>Slide decks and spreadsheets leave goals disconnected from actual daily tasks. XCorp links strategy straight to execution boards.</p>
+        </div>
+        <div class="mock">
+          <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.06em;">Where OKRs live today</div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:8px;"><span>📊</span> <b>Google Slides</b></div>
+            <span class="pill bad">set & forget</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:8px;"><span>📋</span> <b>Google Sheets</b></div>
+            <span class="pill warn">stale data</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:8px;"><span>🗃️</span> <b>Task boards</b></div>
+            <span class="pill bad">no link to goals</span>
+          </div>
+          <div style="text-align:center; padding:12px; color:var(--text-muted); font-size:12px; font-style:italic;">Zero connection between strategy and execution</div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Cascading OKRs</span>
+          <h3>Auto-updating progress.</h3>
+          <p>Tasks completed in sprints automatically update OKR progress. No spreadsheet updates or manual follow-ups required.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+            <b style="font-size:14px;">OKR → Task Cascade</b>
+            <span class="pill accent">auto-synced</span>
+          </div>
+          <div style="border-left:3px solid var(--accent); padding-left:14px; margin-bottom:10px;">
+            <div style="font-size:13px; font-weight:700; color:var(--text-primary);">🎯 Ship 3 features in Q3</div>
+            <div style="font-size:11px; color:var(--accent); font-weight:600;">67% — 2/3 shipped</div>
+          </div>
+          <div style="border-left:3px solid var(--success); padding-left:14px; margin-left:16px; margin-bottom:6px;">
+            <div class="mock-row" style="padding:4px 0;">
+              <span style="font-size:12px;">✅ Feature A — SSO</span>
+              <span class="pill good">shipped</span>
+            </div>
+            <div class="mock-row" style="padding:4px 0;">
+              <span style="font-size:12px;">✅ Feature B — API v2</span>
+              <span class="pill good">shipped</span>
+            </div>
+            <div class="mock-row" style="padding:4px 0;">
+              <span style="font-size:12px;">🔄 Feature C — Mobile</span>
+              <span class="pill warn">in progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill purple">Weekly Pulse</span>
+          <h3>Rapid check-ins.</h3>
+          <p>Auto-generated progress summaries let team leads complete OKR check-ins in under two minutes each week.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; justify-content:space-between; margin-bottom:14px;">
+            <b style="font-size:14px;">Weekly OKR Pulse</b>
+            <span class="pill good">auto-generated</span>
+          </div>
+          <div style="background:var(--bg-secondary); border-radius:8px; padding:12px; margin-bottom:8px;">
+            <div style="font-size:11px; color:var(--text-muted); font-weight:600; margin-bottom:6px;">THIS WEEK'S PROGRESS</div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+              <span>Revenue goal</span>
+              <span style="color:var(--success); font-weight:600;">+$45k ↑</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+              <span>Features shipped</span>
+              <span style="color:var(--accent); font-weight:600;">2/3 done</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:12px;">
+              <span>NPS score</span>
+              <span style="color:var(--warning); font-weight:600;">needs attention</span>
+            </div>
+          </div>
+          <div style="text-align:center; font-size:11px; color:var(--accent); font-weight:600;">⚡ Auto-sent to leadership every Monday 9 AM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="role-section" style="background:var(--bg-secondary); padding:64px 0;">
+    <div class="wrap">
+      <div class="role-head" style="text-align:center; margin-bottom:32px;">
+        <span class="strip-pill purple">Impact</span>
+        <h2 style="margin-top:16px;">OKRs that actually drive daily work.</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px;">
+        <div class="role-panel" style="background:white; border:1px solid var(--border); border-radius:14px; padding:28px; text-align:center;">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--accent);">3.5×</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Higher OKR completion rate</div>
+        </div>
+        <div class="role-panel" style="background:white; border:1px solid var(--border); border-radius:14px; padding:28px; text-align:center;">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--success);">95%</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Teams with weekly OKR visibility</div>
+        </div>
+        <div class="role-panel" style="background:white; border:1px solid var(--border); border-radius:14px; padding:28px; text-align:center;">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--purple);">0</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Manual OKR update emails needed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Make OKRs real. Not just a slide deck.</h3>
+      <p>Free 30-day trial · No credit card · Vietnamese support included</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+        <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,225 @@
+<section class="page" id="page-solution-hr">
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/home">← All solutions</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Solutions · For HR &amp; People Ops</div>
+          <h1 class="headline">Everything your HR team needs. Nothing they don't.</h1>
+          <p class="subhead">Automate leave requests, timesheets, and check-ins. Let your HR team focus on people rather than endless spreadsheets.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">Free 30-day trial<span class="dot">·</span>No credit card<span class="dot">·</span>Vietnamese support</div>
+        </div>
+        <div class="hero-visual">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <div style="font-size:13px; font-weight:600; color:#fff;">June — at a glance</div>
+            <span class="strip-pill">live</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:14px;">
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
+              <div style="font-size:22px; font-weight:700; color:var(--text-primary);">47</div>
+              <div style="font-size:11px; color:var(--text-secondary);">Headcount</div>
+            </div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
+              <div style="font-size:22px; font-weight:700; color:var(--text-primary);">12</div>
+              <div style="font-size:11px; color:var(--text-secondary);">On leave</div>
+            </div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
+              <div style="font-size:22px; font-weight:700; color:var(--success);">98%</div>
+              <div style="font-size:11px; color:var(--text-secondary);">Check-in rate</div>
+            </div>
+          </div>
+          <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
+            <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">Pending</div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; padding:6px 0; border-bottom:1px solid var(--border);">
+              <span><span class="avatar">BL</span>Bảo Linh — 1 day</span><span class="pill warn">awaiting</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; padding:6px 0;">
+              <span><span class="avatar">MH</span>Minh Hoàng — half day</span><span class="pill good">auto-approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>Excel tracking, missing timesheets, and manual calculations consume hours of HR time weekly. XCorp does it in minutes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">What changes</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Leave management</span>
+          <h3>Automated leave approvals.</h3>
+          <p>Submit requests, auto-approve simple leaves, and update balances instantly with zero manual spreadsheets.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row">
+            <div><b>Annual leave</b>
+              <div style="font-size:11px; color:var(--text-secondary);">12 / 15 days remaining</div>
+            </div>
+            <div class="bar" style="width:100px;"><span class="good" style="width:80%;"></span></div>
+          </div>
+          <div class="mock-row">
+            <div><b>Sick leave</b>
+              <div style="font-size:11px; color:var(--text-secondary);">5 / 5 days remaining</div>
+            </div>
+            <div class="bar" style="width:100px;"><span class="good" style="width:100%;"></span></div>
+          </div>
+          <div class="mock-row">
+            <div><b>Personal</b>
+              <div style="font-size:11px; color:var(--text-secondary);">2 / 3 days remaining</div>
+            </div>
+            <div class="bar" style="width:100px;"><span class="warn" style="width:66%;"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Timesheet & attendance</span>
+          <h3>Payroll-ready timesheets.</h3>
+          <p>Sync daily check-ins automatically and export to Vietnamese payroll format in a single click.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row" style="border:none; padding-bottom:8px;">
+            <b style="font-size:14px;">June timesheet</b>
+            <span class="pill good">payroll-ready</span>
+          </div>
+          <div class="mock-row">
+            <div>Trần Ngọc</div>
+            <span class="mono" style="font-size:12px;">168h · 0 OT</span>
+          </div>
+          <div class="mock-row">
+            <div>Bảo Linh</div>
+            <span class="mono" style="font-size:12px;">160h · 4h OT</span>
+          </div>
+          <div class="mock-row">
+            <div>Minh Hoàng</div>
+            <span class="mono" style="font-size:12px;">152h · 2 leave</span>
+          </div>
+          <div class="mock-row" style="border:none; padding-top:10px;">
+            <button class="btn btn-primary" style="font-size:12px; padding:8px 14px;" (click)="exportCSV()">↓ Export CSV</button>
+            <span style="font-size:11px; color:var(--text-secondary);">Vietnamese format</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE: HR WEEK SIMULATOR -->
+  <div class="demo-section">
+    <div class="wrap">
+      <div class="demo-head">
+        <span class="strip-pill">Interactive simulator</span>
+        <h2>A week in HR's life — before vs after xcorp.</h2>
+        <p>Drag the slider to set your team size. The timeline below shows where the time actually goes.</p>
+      </div>
+      <div class="demo-frame">
+        <div class="hr-sim">
+          <div class="hr-sim-controls">
+            <div class="hr-sim-slider">
+              <label>Team size</label>
+              <input type="range" id="hrTeamSize" min="10" max="500" [value]="teamSize" step="10" (input)="onSliderInput($event)">
+              <div class="hr-sim-value" id="hrTeamSizeValue">{{ teamSize }}</div>
+            </div>
+            <div class="hr-sim-savings">
+              <div class="label">Hours saved per week</div>
+              <div class="value" id="hrHoursSaved">{{ hoursSaved }}h</div>
+            </div>
+            <div class="hr-sim-savings">
+              <div class="label">Equiv. annual</div>
+              <div class="value" id="hrYearlySavings">${{ yearlySavings }}k</div>
+            </div>
+          </div>
+
+          <div class="hr-toggle-row">
+            <button class="hr-toggle-btn" [class.active]="hrMode === 'before'" (click)="setMode('before')">Before xcorp</button>
+            <button class="hr-toggle-btn" [class.active]="hrMode === 'after'" (click)="setMode('after')">With xcorp</button>
+          </div>
+
+          <div class="hr-week-grid">
+            <div class="hr-week-label"></div>
+            <div class="hr-week-axis">
+              <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+            </div>
+
+            <div class="hr-week-label">HR Lead</div>
+            <div class="hr-week-track" id="hrTrack1">
+              <div *ngFor="let b of getTrackBlocks(0)" class="hr-week-block" [class]="b.type" [style.left.%]="b.start" [style.width.%]="b.width">
+                {{ b.width >= 15 ? labels[b.type] : '' }}
+              </div>
+            </div>
+
+            <div class="hr-week-label">HR Coord.</div>
+            <div class="hr-week-track" id="hrTrack2">
+              <div *ngFor="let b of getTrackBlocks(1)" class="hr-week-block" [class]="b.type" [style.left.%]="b.start" [style.width.%]="b.width">
+                {{ b.width >= 15 ? labels[b.type] : '' }}
+              </div>
+            </div>
+
+            <div class="hr-week-label">Ops Mgr</div>
+            <div class="hr-week-track" id="hrTrack3">
+              <div *ngFor="let b of getTrackBlocks(2)" class="hr-week-block" [class]="b.type" [style.left.%]="b.start" [style.width.%]="b.width">
+                {{ b.width >= 15 ? labels[b.type] : '' }}
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-week-legend">
+            <span class="legend-admin">Manual admin (Excel, emails)</span>
+            <span class="legend-timesheet">Timesheet reconciliation</span>
+            <span class="legend-approval">Approval chasing</span>
+            <span class="legend-strategic">Strategic / people work</span>
+            <span class="legend-recovered">Recovered for high-value work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="role-section">
+    <div class="wrap">
+      <div class="role-head">
+        <span class="strip-pill">Common results in the first 30 days.</span>
+        <h2>What HR teams say</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px;">
+        <div class="role-panel">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--accent);">85%</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Reduction in approval emails</div>
+        </div>
+        <div class="role-panel">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--success);">3.5 days</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Recovered per HR person per month</div>
+        </div>
+        <div class="role-panel">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--purple);">92%</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Less audit prep time</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Ready to give your HR team their time back?</h3>
+      <p>Free trial · No credit card · Vietnamese support included</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+        <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</section>

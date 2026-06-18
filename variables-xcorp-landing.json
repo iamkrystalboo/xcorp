@@ -1,0 +1,1370 @@
+{
+  "version": "1.0.4",
+  "metadata": {},
+  "collections": [
+    {
+      "name": "xcorp",
+      "modes": [
+        {
+          "name": "xcorp",
+          "variables": [
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/0",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/50",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F8FAFC"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F1F5F9"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#E2E8F0"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/300",
+              "type": "color",
+              "isAlias": false,
+              "value": "#CBD5E1"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/400",
+              "type": "color",
+              "isAlias": false,
+              "value": "#94A3B8"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/500",
+              "type": "color",
+              "isAlias": false,
+              "value": "#64748B"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/600",
+              "type": "color",
+              "isAlias": false,
+              "value": "#475569"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/700",
+              "type": "color",
+              "isAlias": false,
+              "value": "#334155"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/800",
+              "type": "color",
+              "isAlias": false,
+              "value": "#1E293B"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Neutral/900",
+              "type": "color",
+              "isAlias": false,
+              "value": "#0F172A"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Blue/50",
+              "type": "color",
+              "isAlias": false,
+              "value": "#EFF6FF"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Blue/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#DBEAFE"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Blue/500",
+              "type": "color",
+              "isAlias": false,
+              "value": "#3B82F6"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Blue/600",
+              "type": "color",
+              "isAlias": false,
+              "value": "#2563EB"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Blue/700",
+              "type": "color",
+              "isAlias": false,
+              "value": "#0053B3"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Blue/800",
+              "type": "color",
+              "isAlias": false,
+              "value": "#1E3A8A"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Brand/Orange/500",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F97316"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Status/Success",
+              "type": "color",
+              "isAlias": false,
+              "value": "#10B981"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Status/Warning",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F59E0B"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Status/Danger",
+              "type": "color",
+              "isAlias": false,
+              "value": "#EF4444"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Status/Danger-Light",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FEF2F2"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Status/Info",
+              "type": "color",
+              "isAlias": false,
+              "value": "#3B82F6"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Extended/Purple",
+              "type": "color",
+              "isAlias": false,
+              "value": "#8B5CF6"
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Extended/Violet",
+              "type": "color",
+              "isAlias": false,
+              "value": "#6D28D9"
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/0",
+              "type": "number",
+              "isAlias": false,
+              "value": 0
+            },
+            {
+              "name": "Tier 1 - Primitive/Color/Extended/Mint",
+              "type": "color",
+              "isAlias": false,
+              "value": "#00B9ED"
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/1",
+              "type": "number",
+              "isAlias": false,
+              "value": 4
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/2",
+              "type": "number",
+              "isAlias": false,
+              "value": 8
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/3",
+              "type": "number",
+              "isAlias": false,
+              "value": 12
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/4",
+              "type": "number",
+              "isAlias": false,
+              "value": 16
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/5",
+              "type": "number",
+              "isAlias": false,
+              "value": 20
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/6",
+              "type": "number",
+              "isAlias": false,
+              "value": 24
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/8",
+              "type": "number",
+              "isAlias": false,
+              "value": 32
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/10",
+              "type": "number",
+              "isAlias": false,
+              "value": 40
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/12",
+              "type": "number",
+              "isAlias": false,
+              "value": 48
+            },
+            {
+              "name": "Tier 1 - Primitive/Spacing/16",
+              "type": "number",
+              "isAlias": false,
+              "value": 64
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/caption",
+              "type": "number",
+              "isAlias": false,
+              "value": 12
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/body-sm",
+              "type": "number",
+              "isAlias": false,
+              "value": 14
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/body-md",
+              "type": "number",
+              "isAlias": false,
+              "value": 16
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/body-lg",
+              "type": "number",
+              "isAlias": false,
+              "value": 18
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/title",
+              "type": "number",
+              "isAlias": false,
+              "value": 24
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/heading-sm",
+              "type": "number",
+              "isAlias": false,
+              "value": 32
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/heading-md",
+              "type": "number",
+              "isAlias": false,
+              "value": 44
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontSize/heading-lg",
+              "type": "number",
+              "isAlias": false,
+              "value": 58
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/font-inter",
+              "type": "string",
+              "isAlias": false,
+              "value": "Inter"
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontWeight/regular",
+              "type": "number",
+              "isAlias": false,
+              "value": 400
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontWeight/medium",
+              "type": "number",
+              "isAlias": false,
+              "value": 500
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontWeight/semibold",
+              "type": "number",
+              "isAlias": false,
+              "value": 600
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/FontWeight/bold",
+              "type": "number",
+              "isAlias": false,
+              "value": 700
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/font-plus-jakarta-sans",
+              "type": "string",
+              "isAlias": false,
+              "value": "Plus Jakarta Sans"
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/LineHeight/tight",
+              "type": "number",
+              "isAlias": false,
+              "value": 1.2000000476837158
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/LineHeight/snug",
+              "type": "number",
+              "isAlias": false,
+              "value": 1.375
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/LineHeight/normal",
+              "type": "number",
+              "isAlias": false,
+              "value": 1.5
+            },
+            {
+              "name": "Tier 1 - Primitive/Typography/LineHeight/relaxed",
+              "type": "number",
+              "isAlias": false,
+              "value": 1.625
+            },
+            {
+              "name": "Tier 1 - Primitive/BorderRadius/none",
+              "type": "number",
+              "isAlias": false,
+              "value": 0
+            },
+            {
+              "name": "Tier 1 - Primitive/BorderRadius/sm",
+              "type": "number",
+              "isAlias": false,
+              "value": 4
+            },
+            {
+              "name": "Tier 1 - Primitive/BorderRadius/md",
+              "type": "number",
+              "isAlias": false,
+              "value": 8
+            },
+            {
+              "name": "Tier 1 - Primitive/BorderRadius/lg",
+              "type": "number",
+              "isAlias": false,
+              "value": 12
+            },
+            {
+              "name": "Tier 1 - Primitive/BorderRadius/xl",
+              "type": "number",
+              "isAlias": false,
+              "value": 16
+            },
+            {
+              "name": "Tier 1 - Primitive/BorderRadius/full",
+              "type": "number",
+              "isAlias": false,
+              "value": 9999
+            },
+            {
+              "name": "Tier 2 - Semantic/Background/bg-default",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/50"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Background/bg-surface",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/0"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Background/bg-surface-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/100"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-heading",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/900"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-body",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/700"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-muted",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/500"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/0"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-inverse-subtle",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/400"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-brand",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/700"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Text/text-hyper",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/600"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Border/border-default",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/200"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Border/border-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/300"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Border/border-focus",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/500"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Background light/bg-light-purple",
+              "type": "color",
+              "isAlias": false,
+              "value": "#8B5CF61A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Background light/bg-light-green",
+              "type": "color",
+              "isAlias": false,
+              "value": "#10B9811A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Background light/bg-light-orange",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F973161A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Background light/bg-light-blue",
+              "type": "color",
+              "isAlias": false,
+              "value": "#3B82F61A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Background light/bg-light-mint",
+              "type": "color",
+              "isAlias": false,
+              "value": "#00F6FF1A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Background light/bg-light-yellow",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F59E0B1A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-primary-default",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/700"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-primary-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/800"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-primary-disabled",
+              "type": "color",
+              "isAlias": false,
+              "value": "#3B82F680"
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-primary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/0"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-secondary-default",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/700"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-secondary-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/600"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-secondary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/0"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-secondary-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/600"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action default/action-secondary-hover-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/500"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-primary-default",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/500"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-primary-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/600"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-primary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/0"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-secondary-default",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F8FAFC1A"
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-secondary-hover",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F8FAFC33"
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-secondary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/0"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-secondary-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/500"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Action inverse/action-secondary-hover-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/600"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/State/Disabled/state-disabled-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/100"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/State/Disabled/state-disabled-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/200"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/State/Disabled/state-disabled-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/400"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/State/Error/state-error-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Status/Danger"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/State/Error/state-error-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Status/Danger-Light"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/State/Error/state-error-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Status/Danger"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Primary/btn-primary-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-primary-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Primary/btn-primary-hover-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-primary-hover"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Primary/btn-primary-press-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-primary-disabled"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Primary/btn-primary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Text/text-inverse"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Primary/btn-primary-disabled-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-primary-disabled"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Primary/btn-primary-disabled-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Disabled/state-disabled-text"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Secondary/btn-secondary-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-secondary-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Secondary/btn-secondary-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-secondary-border"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Secondary/btn-secondary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-secondary-text"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Secondary/btn-secondary-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-secondary-hover"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button default/Secondary/btn-secondary-hover-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-secondary-hover-border"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Default/input-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Background/bg-surface"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Default/input-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Border/border-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Default/input-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Text/text-body"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Default/input-placeholder",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Text/text-muted"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Hover/input-hover-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Border/border-hover"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Focus/input-focus-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Border/border-focus"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Error/input-error-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Error/state-error-border"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Error/input-error-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Error/state-error-bg"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Error/input-error-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Error/state-error-text"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Disabled/input-disabled-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Disabled/state-disabled-bg"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Disabled/input-disabled-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Disabled/state-disabled-border"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Disabled/input-disabled-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/State/Disabled/state-disabled-text"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/PaddingX",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Spacing/4"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/PaddingY",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Spacing/3"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/BorderRadius",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/BorderRadius/md"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Default/card-background",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Background/bg-surface"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Default/card-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Border/border-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Interactive/card-border-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Border/border-hover"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Selected/card-focus-background",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Brand/Blue/50"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Selected/card-focus-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-primary-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/BorderRadius",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/BorderRadius/lg"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Padding",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Spacing/6"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Badge/PaddingX",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Spacing/2"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Badge/PaddingY",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Spacing/1"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Badge/BorderRadius",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/BorderRadius/full"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Badge/Success/badge-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Status/Success"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Badge/Success/badge-text",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF"
+            },
+            {
+              "name": "Tier 3 - Component/Badge/Warning/badge-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Status/Warning"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Badge/Warning/badge-text",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF"
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Primary/btn-primary-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action inverse/action-primary-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Primary/btn-primary-hover-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action inverse/action-primary-hover"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Primary/btn-primary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Text/text-inverse"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Secondary/btn-secondary-bg",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action inverse/action-secondary-default"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Secondary/btn-secondary-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action inverse/action-secondary-border"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Secondary/btn-secondary-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action default/action-secondary-text"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Secondary/btn-secondary-hover",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action inverse/action-secondary-hover"
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button inverse/Secondary/btn-secondary-hover-border",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 2 - Semantic/Action inverse/action-secondary-hover-border"
+              }
+            },
+            {
+              "name": "Tier 2 - Semantic/Border/border-faint",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "xcorp",
+                "name": "Tier 1 - Primitive/Color/Neutral/800"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "modes": [
+        {
+          "name": "Style",
+          "variables": [
+            {
+              "name": "Tier 2 - Semantic/State/FocusRing",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 59,
+                      "g": 130,
+                      "b": 246,
+                      "a": 0.3
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "radius": 0,
+                    "spread": 3
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Button/Primary/FocusRing",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 59,
+                      "g": 130,
+                      "b": 246,
+                      "a": 0.3
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "radius": 0,
+                    "spread": 3
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Input/Focus/Shadow",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 59,
+                      "g": 130,
+                      "b": 246,
+                      "a": 0.3
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "radius": 0,
+                    "spread": 3
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Default/Shadow",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 15,
+                      "g": 23,
+                      "b": 42,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "radius": 6,
+                    "spread": -1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Card/Interactive/Shadow-Hover",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 15,
+                      "g": 23,
+                      "b": 42,
+                      "a": 0.15
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 20
+                    },
+                    "radius": 25,
+                    "spread": -5
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Shadows/SM",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 15,
+                      "g": 23,
+                      "b": 42,
+                      "a": 0.05
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "radius": 2,
+                    "spread": 0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Shadows/MD",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 15,
+                      "g": 23,
+                      "b": 42,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "radius": 6,
+                    "spread": -1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Tier 3 - Component/Shadows/XL",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 15,
+                      "g": 23,
+                      "b": 42,
+                      "a": 0.15
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 20
+                    },
+                    "radius": 25,
+                    "spread": -5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

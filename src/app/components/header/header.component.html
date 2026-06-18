@@ -1,0 +1,175 @@
+<nav class="topnav" (click)="$event.stopPropagation()">
+  <div class="topnav-inner">
+    <a class="brand" routerLink="/home" (click)="closeDropdown()">
+      <div class="brand-mark"></div>
+      <span class="brand-text">XCORP<sup>®</sup></span>
+    </a>
+    <div class="nav-main">
+      <div style="position:relative;">
+        <button class="nav-link" 
+                [class.open]="activeDropdown === 'products'"
+                (click)="toggleDropdown('products', $event)">
+          Products
+          <svg class="chev" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="nav-dropdown products" [class.open]="activeDropdown === 'products'">
+          <div class="dd-grid">
+            <div class="dd-section-label">Product Modules</div>
+            <div class="dd-item" routerLink="/products/okr" routerLinkActive="active" (click)="closeDropdown()">
+              <div class="dd-item-ico">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M17 7l-5 5"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dd-item-title">Goals & Performance</div>
+                <div class="dd-item-sub">OKR/KPI tracking</div>
+              </div>
+            </div>
+            <div class="dd-item" routerLink="/products/project" routerLinkActive="active" (click)="closeDropdown()">
+              <div class="dd-item-ico">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dd-item-title">Project Management</div>
+                <div class="dd-item-sub">Tasks · Milestones · Boards</div>
+              </div>
+            </div>
+            <div class="dd-item" routerLink="/products/automation" routerLinkActive="active" (click)="closeDropdown()">
+              <div class="dd-item-ico">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dd-item-title">Automation Workflow</div>
+                <div class="dd-item-sub">No-code workflow builder</div>
+              </div>
+            </div>
+            <div class="dd-item" routerLink="/products/hr" routerLinkActive="active" (click)="closeDropdown()">
+              <div class="dd-item-ico">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dd-item-title">HR & People Ops</div>
+                <div class="dd-item-sub">Leave · Timesheet · Attendance</div>
+              </div>
+            </div>
+            <div class="dd-item" routerLink="/ai-assistant" routerLinkActive="active" (click)="closeDropdown()">
+              <div class="dd-item-ico purple">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="12" cy="10" r="1"/><path d="M12 10l-2 2 4 4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dd-item-title">AI Assistant</div>
+                <div class="dd-item-sub">Smart summaries · Q&A · Suggestions</div>
+              </div>
+            </div>
+          </div>
+          <div class="dd-footer">
+            <a routerLink="/features" (click)="closeDropdown()">See all features →</a>
+            <a routerLink="/pricing" (click)="closeDropdown()">View pricing →</a>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <button class="nav-link" 
+                [class.open]="activeDropdown === 'solutions'"
+                (click)="toggleDropdown('solutions', $event)">
+          Solutions
+          <svg class="chev" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="nav-dropdown solutions" [class.open]="activeDropdown === 'solutions'">
+          <div class="dd-grid">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <div class="dd-section-label" style="padding-left: 0;">By Role</div>
+              <div class="dd-item" routerLink="/solutions/hr" routerLinkActive="active" (click)="closeDropdown()">
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="dd-item-title">For HR &amp; People Ops</div>
+                  <div class="dd-item-sub">Leave, timesheets, attendance</div>
+                </div>
+              </div>
+              <div class="dd-item" routerLink="/solutions/teams" routerLinkActive="active" (click)="closeDropdown()">
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h6"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="dd-item-title">For Project Managers</div>
+                  <div class="dd-item-sub">Boards, dependencies, integrations</div>
+                </div>
+              </div>
+              <div class="dd-item" routerLink="/solutions/leadership" routerLinkActive="active" (click)="closeDropdown()">
+                <div class="dd-item-ico purple">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M7 8h10"/><path d="M7 12h5"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="dd-item-title">For CEOs &amp; Leadership</div>
+                  <div class="dd-item-sub">Visibility, OKRs, decisions</div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <div class="dd-section-label" style="padding-left: 0;">By Use Case</div>
+              <div class="dd-item" routerLink="/use-cases/drowning-in-apps" routerLinkActive="active" (click)="closeDropdown()">
+                <div class="dd-item-ico">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M7 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M10 11h4"/><path d="M10 15h4"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="dd-item-title">Scattered Info &amp; Apps</div>
+                  <div class="dd-item-sub">Unify your fragmented tools</div>
+                </div>
+              </div>
+              <div class="dd-item" routerLink="/use-cases/ghost-okrs" routerLinkActive="active" (click)="closeDropdown()">
+                <div class="dd-item-ico purple">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3v18h18"/><path d="M18 9l-5 5-2-2-4 4"/><circle cx="18" cy="9" r="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="dd-item-title">Ghost OKRs</div>
+                  <div class="dd-item-sub">Turn goals into daily action</div>
+                </div>
+              </div>
+              <div class="dd-item" routerLink="/use-cases/buried-leave" routerLinkActive="active" (click)="closeDropdown()">
+                <div class="dd-item-ico" style="background:var(--success-light);color:var(--success);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/><path d="M12 18v-4"/><polyline points="9 16 12 19 15 16"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="dd-item-title">Buried Leave Requests</div>
+                  <div class="dd-item-sub">Never lose an approval again</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="nav-link" routerLink="/pricing" routerLinkActive="active" (click)="closeDropdown()">Pricing</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-login" routerLink="/login" (click)="closeDropdown()">Sign in</a>
+      <a class="nav-cta" href="#" (click)="openFreeTrial($event)">Start Free Trial</a>
+    </div>
+  </div>
+</nav>

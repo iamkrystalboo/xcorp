@@ -1,0 +1,212 @@
+<section class="page" id="page-usecase-leave">
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/home">← All solutions</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Use Case · Buried Leave Requests</div>
+          <h1 class="headline">Leave requests <span class="highlight">vanish</span> in Slack threads.</h1>
+          <p class="subhead">Stop losing leave requests in chat threads. Run automatic policy checks and instant manager approvals in one clear dashboard.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">Free 30-day trial<span class="dot">·</span>No credit card<span class="dot">·</span>Vietnamese support</div>
+        </div>
+        <div class="hero-visual">
+          <!-- Leave request chaos visualization -->
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <div style="font-size:13px; font-weight:600; color:#F8FAFC;">Leave Request Trail</div>
+              <span style="background:rgba(239,68,68,0.2); color:#FCA5A5; font-size:10px; font-weight:700; padding:3px 8px; border-radius:999px;">🔥 Lost in chat</span>
+            </div>
+            <!-- Slack message mockup -->
+            <div class="floating-leave-card" style="border-radius:10px; padding:12px; margin-bottom:6px; animation-delay: 0s;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <div style="width:22px; height:22px; border-radius:4px; background:#4A154B; display:flex; align-items:center; justify-content:center; font-size:10px; color:white; font-weight:800;">S</div>
+                <span style="font-size:11px; font-weight:600; color:#1E293B;">Slack · #general</span>
+                <span style="font-size:10px; color:#94A3B8;">Mon 9:14 AM</span>
+              </div>
+              <div style="font-size:11px; color:#475569; padding-left:30px;">"Hey @manager, can I take Thursday and Friday off next week? 🙏"</div>
+            </div>
+            <div class="floating-leave-card" style="background:#F8FAFC !important; border:1px dashed rgba(0,0,0,0.12) !important; border-radius:10px; padding:10px; margin-bottom:6px; text-align:center; animation-delay: 1.3s;">
+              <div style="font-size:11px; color:#94A3B8; font-style:italic;">47 other messages...</div>
+            </div>
+            <div class="floating-leave-card" style="background:#FEF2F2 !important; border:1px solid rgba(239,68,68,0.2) !important; border-radius:10px; padding:12px; margin-bottom:10px; animation-delay: 2.6s;">
+              <div style="font-size:11px; font-weight:700; color:#DC2626; margin-bottom:4px;">⚠️ Thursday 8:00 AM</div>
+              <div style="font-size:11px; color:#64748B;">"Wait — Linh is off today? Who's covering the client call?"</div>
+            </div>
+            <!-- XCorp fix -->
+            <div style="background:linear-gradient(135deg, #059669 0%, #10B981 100%); border:none; border-radius:10px; padding:12px; box-shadow:0 4px 16px rgba(16,185,129,0.3);">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <div style="width:22px; height:22px; border-radius:6px; background:rgba(255,255,255,0.25); display:flex; align-items:center; justify-content:center; font-size:10px; color:white; font-weight:800;">✓</div>
+                <div>
+                  <div style="font-size:11px; font-weight:700; color:#FFFFFF;">XCorp: Auto-approved in 30 seconds</div>
+                  <div style="font-size:10px; color:rgba(255,255,255,0.75);">Calendar updated · Manager notified · Coverage flagged</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pain quote -->
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>"We had coverage gaps because overlapping leaves went unnoticed in Slack. XCorp keeps the team calendar clear and auto-updated."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature strips -->
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">How XCorp Fixes Leave Management</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill danger">The Problem</span>
+          <h3>Organized leave request trails.</h3>
+          <p>DMs hide requests, lose balances, and trigger scheduling conflicts. XCorp gives HR and managers one clean audit trail.</p>
+        </div>
+        <div class="mock">
+          <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.06em;">What happens to leave requests today</div>
+          <div class="mock-row">
+            <div>Submitted via Slack DM</div>
+            <span class="pill warn">no record</span>
+          </div>
+          <div class="mock-row">
+            <div>Manager sees it between 47 msgs</div>
+            <span class="pill bad">easily missed</span>
+          </div>
+          <div class="mock-row">
+            <div>HR finds out after the fact</div>
+            <span class="pill bad">no audit trail</span>
+          </div>
+          <div class="mock-row">
+            <div>Balance tracked in... Excel?</div>
+            <span class="pill bad">error-prone</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill success">One-Click Approval</span>
+          <h3>Smart auto-approvals.</h3>
+          <p>Auto-approve standard leave requests based on policy, and route complex requests to managers with full balance and coverage context.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+            <b style="font-size:14px;">Leave Request Flow</b>
+            <span class="pill good">automated</span>
+          </div>
+          <div class="mock-row">
+            <div><b>Bảo Linh</b>
+              <div style="font-size:11px; color:var(--text-secondary);">1 day annual · Thu Jun 19</div>
+            </div>
+            <span class="pill good">auto-approved ✓</span>
+          </div>
+          <div class="mock-row">
+            <div><b>Minh Hoàng</b>
+              <div style="font-size:11px; color:var(--text-secondary);">Half day · Fri Jun 20</div>
+            </div>
+            <span class="pill good">auto-approved ✓</span>
+          </div>
+          <div class="mock-row" style="flex-direction: column; align-items: stretch; gap: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div><b>Trần Ngọc</b>
+                <div style="font-size:11px; color:var(--text-secondary);">5 days annual · Jun 23–27</div>
+              </div>
+              <span class="pill warn">Awaiting Review</span>
+            </div>
+            <div style="display:flex; gap:6px; margin-top: 4px;">
+              <button class="btn btn-primary" style="font-size:10px; padding:4px 8px; background:var(--success); border-color:var(--success);" (click)="approveDemo()">Approve</button>
+              <button class="btn btn-secondary" style="font-size:10px; padding:4px 8px; background:transparent; color:var(--danger); border-color:var(--danger);" (click)="rejectDemo()">Reject</button>
+            </div>
+          </div>
+          <div style="font-size:11px; color:var(--success); text-align:center; padding-top:8px; font-weight:600;">⚡ Avg. approval time: 34 seconds</div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill purple">Coverage Intelligence</span>
+          <h3>Leave &amp; WFH Team Calendar</h3>
+          <p>View team availability and remote status in one visual calendar. Catch staffing conflicts before leaves are approved.</p>
+        </div>
+        <div class="mock">
+          <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+            <b style="font-size:14px;">Leave &amp; WFH Calendar</b>
+            <span class="pill accent" style="font-size:10px;">this week</span>
+          </div>
+          <div style="background:var(--bg-secondary); border-radius:8px; padding:12px; font-size:11px;">
+            <div style="display:grid; grid-template-columns: 80px repeat(5, 1fr); gap:6px; align-items:center; text-align:center; border-bottom:1px solid var(--border); padding-bottom:6px; margin-bottom:6px; font-weight:700; color:var(--text-secondary);">
+              <div>Team</div>
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span>
+            </div>
+            <div style="display:grid; grid-template-columns: 80px repeat(5, 1fr); gap:6px; align-items:center; text-align:center; margin-bottom:6px;">
+              <div style="text-align:left; font-weight:600;">Trần Ngọc</div>
+              <span style="background:var(--danger-light); color:var(--danger); border-radius:4px; font-size:9px; padding:2px 0;">Leave</span>
+              <span style="background:var(--danger-light); color:var(--danger); border-radius:4px; font-size:9px; padding:2px 0;">Leave</span>
+              <span style="background:var(--danger-light); color:var(--danger); border-radius:4px; font-size:9px; padding:2px 0;">Leave</span>
+              <span style="background:var(--danger-light); color:var(--danger); border-radius:4px; font-size:9px; padding:2px 0;">Leave</span>
+              <span style="background:var(--danger-light); color:var(--danger); border-radius:4px; font-size:9px; padding:2px 0;">Leave</span>
+            </div>
+            <div style="display:grid; grid-template-columns: 80px repeat(5, 1fr); gap:6px; align-items:center; text-align:center; margin-bottom:6px;">
+              <div style="text-align:left; font-weight:600;">Bảo Linh</div>
+              <span>-</span><span>-</span><span>-</span>
+              <span style="background:var(--danger-light); color:var(--danger); border-radius:4px; font-size:9px; padding:2px 0;">Leave</span>
+              <span>-</span>
+            </div>
+            <div style="display:grid; grid-template-columns: 80px repeat(5, 1fr); gap:6px; align-items:center; text-align:center;">
+              <div style="text-align:left; font-weight:600;">Minh Hoàng</div>
+              <span style="background:var(--accent-light); color:var(--accent); border-radius:4px; font-size:9px; padding:2px 0;">WFH</span>
+              <span>-</span>
+              <span style="background:var(--accent-light); color:var(--accent); border-radius:4px; font-size:9px; padding:2px 0;">WFH</span>
+              <span>-</span><span>-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="role-section" style="background:var(--bg-secondary); padding:64px 0;">
+    <div class="wrap">
+      <div class="role-head" style="text-align:center; margin-bottom:32px;">
+        <span class="strip-pill success">Impact</span>
+        <h2 style="margin-top:16px;">Leave management that runs itself.</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px;">
+        <div class="role-panel" style="background:white; border:1px solid var(--border); border-radius:14px; padding:28px; text-align:center;">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--accent);">85%</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Requests auto-approved</div>
+        </div>
+        <div class="role-panel" style="background:white; border:1px solid var(--border); border-radius:14px; padding:28px; text-align:center;">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--success);">34 sec</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Average approval time</div>
+        </div>
+        <div class="role-panel" style="background:white; border:1px solid var(--border); border-radius:14px; padding:28px; text-align:center;">
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--purple);">4.8 hrs</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Saved per manager per month</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Start automating your leave management.</h3>
+      <p>Free 30-day trial · No credit card · Vietnamese support included</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+        <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</section>

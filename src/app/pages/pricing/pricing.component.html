@@ -1,0 +1,494 @@
+<div class="pricing-section">
+  <div class="wrap">
+    <div class="pricing-head">
+      <div class="eyebrow">Pricing</div>
+      <h1>Plans that grow with your team</h1>
+      <p>Start free. Upgrade anytime. No hidden fees.</p>
+    </div>
+
+    <!-- BILLING CYCLE TOGGLE -->
+    <div class="pricing-toggle-row">
+      <button class="pricing-toggle-btn" [class.active]="pricingCycle === 'monthly'" (click)="setPricingCycle('monthly')">
+        Monthly
+      </button>
+      <button class="pricing-toggle-btn" [class.active]="pricingCycle === 'sixmonths'" (click)="setPricingCycle('sixmonths')">
+        6 Months <span class="pricing-toggle-badge">-10%</span>
+      </button>
+      <button class="pricing-toggle-btn" [class.active]="pricingCycle === 'yearly'" (click)="setPricingCycle('yearly')">
+        Yearly <span class="pricing-toggle-badge">-20%</span>
+      </button>
+    </div>
+
+    <!-- PRICING CARDS (3 + Enterprise mini) -->
+    <div class="pricing-grid" id="pricingGrid">
+      <!-- FREE Tier -->
+      <div class="pricing-card" id="pricing-card-free">
+        <div class="pricing-card-top">
+          <div class="pricing-name">Free</div>
+          <p class="pricing-desc">For individuals & small teams exploring.</p>
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">0</span>
+            <span class="pricing-period">/user/mo</span>
+          </div>
+          <div class="pricing-subtext-label">&nbsp;</div>
+        </div>
+        <div class="pricing-card-bottom">
+          <button class="pricing-cta cta-free" (click)="openFreeTrial()">Get Started</button>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> <span>Up to 10 users & 5 projects</span></li>
+            <li><span class="check">✓</span> <span>2.5 GB storage</span></li>
+            <li><span class="check">✓</span> <span>Kanban & List views</span></li>
+            <li><span class="feat-off">—</span> <span>No OKR or automation</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BASIC Tier (Featured) -->
+      <div class="pricing-card featured" id="pricing-card-basic">
+        <div class="pricing-card-top">
+          <div class="pricing-name">Basic</div>
+          <p class="pricing-desc">Core tools for growing teams.</p>
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">{{ getTierPrice('basic', 'combo') }}</span>
+            <span class="pricing-period">/user/mo</span>
+          </div>
+          <div class="pricing-subtext-label">Or from $1/user/mo per module</div>
+        </div>
+        <div class="pricing-card-bottom">
+          <button class="pricing-cta cta-basic" (click)="openFreeTrial()">Start Free Trial →</button>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> <span>Unlimited users & projects</span></li>
+            <li><span class="check">✓</span> <span>1 GB storage per user</span></li>
+            <li><span class="check">✓</span> <span>Task & OKR tracking</span></li>
+            <li><span class="check">✓</span> <span>Timesheets & Leave</span></li>
+            <li><span class="check">✓</span> <span>50 workflow runs/user/mo</span></li>
+            <li><span class="check">✓</span> <span>Docs & 2-month audit log</span></li>
+          </ul>
+        </div>
+        <div class="pricing-badge">MOST POPULAR</div>
+      </div>
+
+      <!-- PROFESSIONAL Tier -->
+      <div class="pricing-card" id="pricing-card-professional">
+        <div class="pricing-card-top">
+          <div class="pricing-name">Professional</div>
+          <p class="pricing-desc">Advanced workflows & strategy.</p>
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">{{ getTierPrice('professional', 'combo') }}</span>
+            <span class="pricing-period">/user/mo</span>
+          </div>
+          <div class="pricing-subtext-label">Or from $1–$3/user/mo per module</div>
+        </div>
+        <div class="pricing-card-bottom">
+          <button class="pricing-cta cta-professional" (click)="openFreeTrial()">Start Free Trial →</button>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> <span>2.5 GB storage per user</span></li>
+            <li><span class="check">✓</span> <span>Gantt, Scrum & Roadmaps</span></li>
+            <li><span class="check">✓</span> <span>Advanced OKR templates</span></li>
+            <li><span class="check">✓</span> <span>Workflow Data Tables</span></li>
+            <li><span class="check">✓</span> <span>100 workflow runs/user/mo</span></li>
+            <li><span class="check">✓</span> <span>6-month audit log</span></li>
+          </ul>
+        </div>
+        <div class="pricing-badge">BEST VALUE</div>
+      </div>
+
+      <!-- ENTERPRISE Tier -->
+      <div class="pricing-card" id="enterpriseSection">
+        <div class="pricing-card-top">
+          <div class="pricing-name">Enterprise</div>
+          <p class="pricing-desc">Built for scale & security.</p>
+          <div class="pricing-price">
+            <span class="pricing-amount">Custom</span>
+          </div>
+          <div class="pricing-subtext-label">Based on your team size & modules</div>
+        </div>
+        <div class="pricing-card-bottom">
+          <button class="pricing-cta cta-enterprise" (click)="openContactSales()">Contact Sales →</button>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> <span>Private Cloud / On-premise</span></li>
+            <li><span class="check">✓</span> <span>Dedicated engineer 24/7</span></li>
+            <li><span class="check">✓</span> <span>Full source code access</span></li>
+            <li><span class="check">✓</span> <span>Unlimited customization</span></li>
+            <li><span class="check">✓</span> <span>Custom SLAs & support</span></li>
+            <li><span class="check">✓</span> <span>Unlimited audit log</span></li>
+          </ul>
+        </div>
+        <div class="pricing-badge">SCALABLE</div>
+      </div>
+    </div>
+
+    <!-- PRICING CALCULATOR -->
+    <div class="calculator-container" id="calculator">
+      <div class="calculator-header">
+        <span class="calculator-pill">Price Estimator</span>
+        <h2>Build your own plan</h2>
+        <p>Pick only the modules you need and see your exact cost.</p>
+      </div>
+
+      <div class="calculator-grid">
+        <!-- Module selection & slider -->
+        <div class="calculator-controls">
+          <!-- Tier selector -->
+          <div class="calc-tier-selector">
+            <span class="calc-label">Feature tier:</span>
+            <div class="calc-tier-btn-group">
+              <button type="button" class="calc-tier-btn" [class.active]="calculatorTier === 'basic'" (click)="setCalculatorTier('basic')">Basic</button>
+              <button type="button" class="calc-tier-btn" [class.active]="calculatorTier === 'professional'" (click)="setCalculatorTier('professional')">Professional</button>
+            </div>
+          </div>
+
+          <!-- User input -->
+          <div class="calc-team-size">
+            <span class="calc-label">Team size:</span>
+            <div class="calc-user-input-wrapper">
+              <input type="number" min="1" max="10000" class="calc-user-number-input" [(ngModel)]="userCount" />
+              <span class="calc-user-input-suffix">users</span>
+            </div>
+          </div>
+
+          <!-- Modules checkboxes -->
+          <div class="calc-modules-section">
+            <span class="calc-label">Modules:</span>
+            <div class="calc-modules-list">
+              <label class="calc-module-item" *ngFor="let mod of calculatorModules" [class.checked]="mod.checked" [class.disabled-free]="getModulePrice(mod) === 0">
+                <input type="checkbox" [(ngModel)]="mod.checked" [disabled]="getModulePrice(mod) === 0" />
+                <div class="calc-module-info">
+                  <div class="calc-module-title-row">
+                    <span class="calc-module-name">{{ mod.name }}</span>
+                    <span class="calc-module-price" *ngIf="getModulePrice(mod) > 0">+${{ getModulePrice(mod) }}/user/mo</span>
+                    <span class="calc-module-price free" *ngIf="getModulePrice(mod) === 0">Included</span>
+                  </div>
+                  <p class="calc-module-desc">{{ calculatorTier === 'basic' ? mod.descBasic : mod.descPro }}</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price displays -->
+        <div class="calculator-results">
+          <div class="result-card">
+            <div class="result-tier-title">Your estimate · {{ calculatorTier | uppercase }}</div>
+            
+            <div class="result-price-block">
+              <div class="result-price-user">
+                <span class="currency">$</span>
+                <span class="amount">{{ getCalculatorCustomPricePerUser() }}</span>
+                <span class="period">/user/mo</span>
+              </div>
+              <div class="result-price-total">
+                Total: <strong>${{ getCalculatorCustomPriceTotalPerMonth() }}</strong> / month
+              </div>
+            </div>
+
+            <!-- Combo suggestion box -->
+            <div class="combo-suggestion-box" [class.highlight]="isComboBetter()">
+              <div class="suggestion-content">
+                <!-- Title -->
+                <h4 *ngIf="!isComboBetter()">{{ calculatorTier | uppercase }} package price</h4>
+                <h4 class="saving-text" *ngIf="isComboBetter()">Save with the full {{ calculatorTier | uppercase }} package</h4>
+                
+                <!-- Description -->
+                <p *ngIf="!isComboBetter()">
+                  Get all features of this tier for just 
+                  <strong>${{ getCalculatorComboPricePerUser() }}</strong>/user/mo 
+                  (Total <strong>${{ getCalculatorComboPriceTotalPerMonth() }}</strong>/mo)
+                </p>
+                
+                <p class="saving-desc" *ngIf="isComboBetter()">
+                  It's cheaper to buy the full package! You get all modules in this tier for less.
+                </p>
+
+                <!-- Comparison row for up-sale -->
+                <div class="price-comparison-row" *ngIf="isComboBetter()">
+                  <span>Custom Modules:</span>
+                  <span class="price-old">${{ getCalculatorCustomPricePerUser() }}</span>
+                  <span class="arrow">→</span>
+                  <span>Full Package:</span>
+                  <span class="price-new">${{ getCalculatorComboPricePerUser() }}/user/mo</span>
+                </div>
+
+                <!-- Savings tag & CTA row -->
+                <div class="suggestion-action-row" *ngIf="isComboBetter()">
+                  <div class="savings-tag">
+                    🎉 SAVE <strong>${{ getCalculatorSavingsPerMonth() }}</strong>/mo
+                  </div>
+                  <button type="button" class="suggestion-cta" (click)="scrollToPackage(calculatorTier)">
+                    View Package & Save →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button class="calc-cta-btn" (click)="openQuoteModal()">Request Custom Quote →</button>
+            <div class="calc-cta-subtext">30-day free trial · Cancel anytime</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES COMPARISON (4 COLUMNS) -->
+<div class="comparison-section">
+  <div class="wrap">
+    <div class="pricing-comparison">
+      <h3>Compare all features</h3>
+      <div class="comparison-scroll-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="comparison-feature-header">Features</th>
+              <th class="comparison-tier-header">Free</th>
+              <th class="comparison-tier-header">Basic</th>
+              <th class="comparison-tier-header">Professional</th>
+              <th class="comparison-tier-header ent-col">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Core Limits -->
+            <tr class="comparison-group-row">
+              <td colspan="5">Resources & Limits</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Projects</td>
+              <td class="cell-limit">5 max</td>
+              <td class="cell-check">Unlimited</td>
+              <td class="cell-check">Unlimited</td>
+              <td class="cell-check ent-cell">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Users</td>
+              <td class="cell-limit">10 max</td>
+              <td class="cell-check">Unlimited</td>
+              <td class="cell-check">Unlimited</td>
+              <td class="cell-check ent-cell">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Storage</td>
+              <td class="cell-check">2.5 GB total</td>
+              <td class="cell-check">1 GB/user</td>
+              <td class="cell-check">2.5 GB/user</td>
+              <td class="cell-check ent-cell">Custom</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Audit log</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">60 days</td>
+              <td class="cell-check">6 months</td>
+              <td class="cell-check ent-cell">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Workflow runs</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">50/user/mo</td>
+              <td class="cell-check">100/user/mo</td>
+              <td class="cell-check ent-cell">Custom</td>
+            </tr>
+
+            <!-- Project Management -->
+            <tr class="comparison-group-row">
+              <td colspan="5">Task & Project Management</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Kanban & List</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Sprints & Backlog</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Epics & Releases</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Roadmap & Storyline</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Gantt Charts</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Scrum Projects</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+
+            <!-- OKR Board -->
+            <tr class="comparison-group-row">
+              <td colspan="5">OKR & Goal Tracking</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">OKR tracking</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">Basic</td>
+              <td class="cell-check">Full</td>
+              <td class="cell-check ent-cell">Custom</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">OKR settings & cycles</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Advanced templates</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Personal OKR dashboard</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+
+            <!-- Workflow -->
+            <tr class="comparison-group-row">
+              <td colspan="5">Workflow Automation</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Workflow designer</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">Basic</td>
+              <td class="cell-check">Full</td>
+              <td class="cell-check ent-cell">Custom</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Integrations</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Data Tables</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+
+            <!-- HR -->
+            <tr class="comparison-group-row">
+              <td colspan="5">HR & People Ops</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Timesheets</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Leave & Approvals</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Document storage</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">✓</td>
+            </tr>
+
+            <!-- Infrastructure -->
+            <tr class="comparison-group-row">
+              <td colspan="5">Infrastructure & Security</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Shared Cloud (SaaS)</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check">✓</td>
+              <td class="cell-check ent-cell">Optional</td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">On-premise / Private Cloud</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check ent-cell"><strong>✓</strong></td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Source code access</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check ent-cell"><strong>✓</strong></td>
+            </tr>
+            <tr>
+              <td class="comparison-feature">Support SLA</td>
+              <td class="cell-dash">—</td>
+              <td class="cell-check">Email</td>
+              <td class="cell-check">Priority (4h)</td>
+              <td class="cell-check ent-cell"><strong>24/7 Dedicated</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq-section-wrapper">
+  <div class="wrap">
+    <div class="pricing-faq">
+      <h2>Frequently asked questions</h2>
+      <p class="faq-subtitle">Everything you need to know about pricing and billing.</p>
+      
+      <div class="faq-grid">
+        <div class="faq-item" *ngFor="let item of faqContent" [class.open]="item.open" (click)="toggleFaq(item)">
+          <div class="faq-question">
+            <span>{{ item.q }}</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">{{ item.a }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM CTA -->
+<div class="bottom-cta-section">
+  <div class="wrap">
+    <h3>Ready to streamline your team?</h3>
+    <p>30-day free trial · No credit card · Cancel anytime</p>
+    <div class="cta-row">
+      <button class="btn btn-primary" (click)="openFreeTrial()">Start Free Trial</button>
+      <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a Demo</button>
+    </div>
+  </div>
+</div>

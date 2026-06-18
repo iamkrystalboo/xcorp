@@ -1,0 +1,350 @@
+<div class="page-project-container">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/features">← See all features</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Project & Task Management</div>
+          <h1 class="headline">See everything.<br />Miss nothing.</h1>
+          <p class="subhead">Kanban, Gantt, and List — all in one place. Milestones, dependencies, workloads — nothing gets overlooked.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">No credit card required<span class="dot">·</span>Setup in under 10 minutes</div>
+        </div>
+        <div class="hero-visual">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <div style="font-size:13px; font-weight:600; color:#fff;">Sprint 24 — Mobile v2</div>
+            <span class="strip-pill">3 views</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">To do · 4</div>
+              <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px;">
+                <b style="color:var(--text-primary);">Auth refactor</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">TN</span>Jun 12</div>
+              </div>
+              <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px;">
+                <b style="color:var(--text-primary);">Settings</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">BL</span>Jun 14</div>
+              </div>
+            </div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">In progress · 3</div>
+              <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px;">
+                <b style="color:var(--text-primary);">Push notifs</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">TN</span>Jun 15</div>
+              </div>
+              <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px;">
+                <b style="color:var(--text-primary);">Onboarding</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">MH</span>Jun 13</div>
+              </div>
+            </div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">Done · 7</div>
+              <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px; opacity:0.6;">
+                <s>Splash screen</s>
+              </div>
+              <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px; opacity:0.6;">
+                <s>Login UI</s>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:14px; padding:10px 12px; background:var(--accent-light); border-radius:8px; font-size:12px; color:var(--accent); font-weight:500; display:flex; align-items:center; gap:8px;">
+            <span>●</span>
+            <span>Workload: <b>Trần Ngọc 12 SP / 15 SP</b> — within capacity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAIN -->
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>Tasks in Asana, updates in Slack, deadlines in email. By the time something's blocked, it's already late — and someone, somewhere, is quietly burning out.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">What you get</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Multiple views</span>
+          <h3>Kanban, List, Gantt — switch without losing context.</h3>
+          <p>Same data, three angles. Move between views without re-mapping your mental model or re-importing anything.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row" style="border:none; padding-bottom:14px;">
+            <div style="display:flex; gap:2px; background:var(--bg-secondary); padding:3px; border-radius:8px; border:1px solid var(--border);">
+              <span style="padding:5px 12px; background:white; border:1px solid var(--border); border-radius:6px; font-size:12px; font-weight:600;">Kanban</span>
+              <span style="padding:5px 12px; font-size:12px; color:var(--text-secondary); font-weight:600;">List</span>
+              <span style="padding:5px 12px; font-size:12px; color:var(--text-secondary); font-weight:600;">Gantt</span>
+            </div>
+            <span class="strip-pill">Live sync</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:8px; min-height:80px;">
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">TO DO</div>
+              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">Auth refactor</div>
+            </div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:8px;">
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">DOING</div>
+              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">Push notifs</div>
+            </div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:8px;">
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">DONE</div>
+              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">Login UI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Task Finder &amp; Backlog</span>
+          <h3>Find any task in seconds, across all epics.</h3>
+          <p>Use rich filtering to locate tasks by assignee, epic, status, or release. No more scrolling through endless lists to find your work.</p>
+        </div>
+        <div class="mock">
+          <div style="background:var(--bg-secondary); border-radius:6px; padding:8px 12px; margin-bottom:12px; display:flex; align-items:center; gap:8px; border:1px solid var(--border);">
+            <span style="color:var(--text-secondary);">🔍</span>
+            <input type="text" value="assignee: @trầnngọc epic: Mobile-v2" disabled style="background:none; border:none; color:var(--text-primary); font-size:12px; width:100%; font-family:inherit;" />
+          </div>
+          <div class="mock-row">
+            <div><b>Auth flow refactor</b>
+              <div style="font-size:11px; color:var(--text-secondary);">Epic: Mobile v2 · Release v2.4</div>
+            </div>
+            <span class="pill neutral">To do</span>
+          </div>
+          <div class="mock-row">
+            <div><b>Push notifications</b>
+              <div style="font-size:11px; color:var(--text-secondary);">Epic: Mobile v2 · Release v2.4</div>
+            </div>
+            <span class="pill accent">In progress</span>
+          </div>
+          <div class="mock-row">
+            <div><b>Login UI polishing</b>
+              <div style="font-size:11px; color:var(--text-secondary);">Epic: Mobile v2 · Release v2.4</div>
+            </div>
+            <span class="pill good">Done</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Story Points &amp; Gantt View</span>
+          <h3>Balance workloads using Story Points.</h3>
+          <p>View capacity mapped to individual commitments in Story Points. Track team bandwidth and Gantt schedules without manual time-tracking sheets.</p>
+        </div>
+        <div class="mock">
+          <div style="padding:8px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
+              <span><span class="avatar">TN</span>Trần Ngọc</span><b style="color:var(--accent);">12 SP / 15 SP</b>
+            </div>
+            <div class="bar"><span class="good" style="width:80%; background:var(--accent);"></span></div>
+          </div>
+          <div style="padding:8px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
+              <span><span class="avatar">BL</span>Bảo Linh</span><b style="color:var(--success);">8 SP / 15 SP</b>
+            </div>
+            <div class="bar"><span class="good" style="width:53%;"></span></div>
+          </div>
+          <div style="padding:8px 0;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
+              <span><span class="avatar">MH</span>Minh Hoàng</span><b style="color:var(--warning);">14 SP / 15 SP</b>
+            </div>
+            <div class="bar"><span class="warn" style="width:93%;"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Slack & GitHub</span>
+          <h3>Your existing tools stay connected.</h3>
+          <p>No forced migration. Slack threads, GitHub PRs, commits — everything flows into the task it belongs to.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">#</span>
+              <div><b>#sprint-24</b>
+                <div style="font-size:11px; color:var(--text-secondary);">"PR ready for review"</div>
+              </div>
+            </div>
+            <span class="strip-pill">linked</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:26px; height:26px; background:var(--text-primary); border-radius:6px; color:white; font-size:13px; display:inline-flex; align-items:center; justify-content:center;">⌥</span>
+              <div><b>PR #418</b>
+                <div style="font-size:11px; color:var(--text-secondary);">Auth flow refactor</div>
+              </div>
+            </div>
+            <span class="pill good">merged</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">@</span>
+              <div><b>@trầnngọc</b>
+                <div style="font-size:11px; color:var(--text-secondary);">"Push notifs blocked — see PR #421"</div>
+              </div>
+            </div>
+            <span class="pill neutral">2m ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE DEMO -->
+  <div class="demo-section">
+    <div class="wrap">
+      <div class="demo-head">
+        <span class="strip-pill">Interactive demo</span>
+        <h2>Try moving a task — see what unblocks.</h2>
+        <p>Drag cards in Kanban. Sort columns or cycle status in List. Drag and resize timelines in Gantt.</p>
+      </div>
+      <div class="demo-frame">
+        <div class="demo-toolbar">
+          <div class="demo-tabs">
+            <button class="demo-tab" [class.active]="activeView === 'kanban'" (click)="switchView('kanban')">Kanban</button>
+            <button class="demo-tab" [class.active]="activeView === 'list'" (click)="switchView('list')">List</button>
+            <button class="demo-tab" [class.active]="activeView === 'gantt'" (click)="switchView('gantt')">Gantt</button>
+          </div>
+          <span class="demo-hint">
+            <span class="blink"></span>
+            <span *ngIf="activeView === 'kanban'">Drag cards between columns</span>
+            <span *ngIf="activeView === 'list'">Click headers to sort · Click status to cycle</span>
+            <span *ngIf="activeView === 'gantt'">Drag bars to shift · Drag edges to resize dates</span>
+          </span>
+        </div>
+
+        <div class="pm-board">
+          <!-- KANBAN VIEW -->
+          <div class="kanban" *ngIf="activeView === 'kanban'">
+            <div *ngFor="let col of statusOrder" class="k-col" (dragover)="onDragOver($event)" (drop)="onDrop($event, col)">
+              <h4>
+                <span>{{ statusLabel[col] }}</span>
+                <span class="k-count">{{ getTasksByStatus(col).length }}</span>
+              </h4>
+              <div *ngFor="let t of getTasksByStatus(col)" class="k-card" draggable="true" (dragstart)="onDragStart($event, t.id)" [style.opacity]="t.status === 'done' ? '0.65' : '1'">
+                <div class="k-title">
+                  <span *ngIf="t.status === 'done'"><s>{{ t.title }}</s></span>
+                  <span *ngIf="t.status !== 'done'">{{ t.title }}</span>
+                </div>
+                <div class="k-meta">
+                  <span class="avatar">{{ t.initials }}</span>
+                  <span>{{ t.assignee }} · {{ t.due }}</span>
+                </div>
+                <div *ngIf="t.dep" class="k-dep" style="color: var(--danger); font-size: 11px; font-weight: 600; margin-top: 4px; display: flex; align-items: center; gap: 4px;">
+                  <span>⚠️ Blocker:</span>
+                  <span>{{ t.dep === 'api' ? 'External API Stuck' : 'Auth Flow Refactor' }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LIST VIEW -->
+          <div class="list-view" [class.active]="activeView === 'list'" *ngIf="activeView === 'list'">
+            <div class="list-header">
+              <div (click)="sortList('title')">Task <span class="sort-ind">↑</span></div>
+              <div (click)="sortList('assignee')">Assignee <span class="sort-ind">↑</span></div>
+              <div (click)="sortList('status')">Status <span class="sort-ind">↑</span></div>
+              <div (click)="sortList('due')">Due <span class="sort-ind">↑</span></div>
+            </div>
+            <div class="list-body">
+              <div *ngFor="let t of getSortedTasks()" class="list-row">
+                <div class="task-title">{{ t.title }}</div>
+                <div><span class="avatar">{{ t.initials }}</span>{{ t.assignee }}</div>
+                <div>
+                  <span class="pill status-pill" [ngClass]="statusPillClass[t.status]" (click)="cycleStatus(t)">
+                    {{ statusLabel[t.status] }}
+                  </span>
+                </div>
+                <div style="color:var(--ink-dim);">{{ t.due }}</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GANTT VIEW -->
+          <div class="gantt" [class.active]="activeView === 'gantt'" *ngIf="activeView === 'gantt'">
+            <div class="gantt-axis">
+              <div>Task</div>
+              <div class="gantt-axis-labels">
+                <span>Jun 5</span><span>Jun 9</span><span>Jun 13</span><span>Jun 17</span>
+                <span>Jun 21</span><span>Jun 25</span><span>Jun 29</span><span>Jul 3</span>
+              </div>
+            </div>
+            <div class="gantt-body">
+              <div *ngFor="let t of getVisibleGanttTasks()" class="gantt-row">
+                <div>{{ t.title }}</div>
+                <div class="gantt-track">
+                  <div class="gantt-bar" 
+                       [ngClass]="t.status"
+                       [style.left.%]="dayToPct(t.start)" 
+                       [style.width.%]="dayToPct(t.end) - dayToPct(t.start)"
+                       (mousedown)="startGanttDrag($event, t.id, 'move')">
+                    
+                    <div class="gantt-resize-handle start" (mousedown)="startGanttDrag($event, t.id, 'resize-start')"></div>
+                    <span class="bar-label">{{ dayLabel(t.start) }} – {{ dayLabel(t.end) }}</span>
+                    <div class="gantt-resize-handle end" (mousedown)="startGanttDrag($event, t.id, 'resize-end')"></div>
+                    
+                    <span class="gantt-tooltip">{{ t.title }}: {{ dayLabel(t.start) }} → {{ dayLabel(t.end) }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLE TABS -->
+  <div class="role-section">
+    <div class="wrap">
+      <div class="role-head">
+        <span class="strip-pill">Built for your role</span>
+        <h2>One tool, three views of value.</h2>
+      </div>
+      <div class="role-tabs-row">
+        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">CEO</button>
+        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">Team lead</button>
+        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">HR / Ops</button>
+      </div>
+      <div class="role-panel">
+        <ul>
+          <li *ngFor="let item of roleContent[activeRole]">
+            <svg class="check" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10.5L8 14.5L16 5.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{ item }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM CTA -->
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Ready to ship projects on time?</h3>
+      <p>Free trial · No credit card · Setup in 10 minutes</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+        <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</div>

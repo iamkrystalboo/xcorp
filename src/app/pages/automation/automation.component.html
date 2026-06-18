@@ -1,0 +1,317 @@
+<div class="page-auto-container">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <a class="back-link" routerLink="/features">← See all features</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Automation Workflow</div>
+          <h1 class="headline">Automate the repetitive.</h1>
+          <p class="subhead">Approvals, notifications, handoffs — running themselves. Connect with +300 tools (Slack, Jira, GitHub, Gmail) without writing code or waiting on IT.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+            <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+          </div>
+          <div class="microcopy">No credit card required<span class="dot">·</span>Setup in under 10 minutes</div>
+        </div>
+        <div class="hero-visual">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <div style="font-size:13px; font-weight:600; color:#fff;">Leave approval — auto</div>
+            <span class="pill good">running</span>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px 12px; display:flex; align-items:center; gap:10px; font-size:12px;">
+              <span class="ico trig">⚡</span>
+              <div>
+                <div style="font-size:9px; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">Trigger</div>
+                <b>Leave request submitted</b>
+              </div>
+            </div>
+            <div style="height:14px; width:2px; background:var(--border); margin-left:24px;"></div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px 12px; display:flex; align-items:center; gap:10px; font-size:12px;">
+              <span class="ico cond">◇</span>
+              <div>
+                <div style="font-size:9px; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">Condition</div>
+                <b>If days ≤ 2 → auto-approve</b>
+              </div>
+            </div>
+            <div style="height:14px; width:2px; background:var(--border); margin-left:24px;"></div>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px 12px; display:flex; align-items:center; gap:10px; font-size:12px;">
+              <span class="ico act">▶</span>
+              <div>
+                <div style="font-size:9px; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">Action</div>
+                <b>Notify team lead in Slack</b>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:14px; padding:8px 12px; background:rgba(16, 185, 129, 0.1); border-radius:8px; font-size:11px; color:var(--success); font-weight:600; font-family:var(--mono);">
+            ✓ Last run 09:14 — completed in 1.2s
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAIN -->
+  <div class="pain-section">
+    <div class="wrap">
+      <div class="pain-line">
+        <p>Approvals stuck in inboxes. Handoffs forgotten between people. Every new hire breaks the workflow because nobody wrote it down. The process lives in someone's head — and walks out the door when they leave.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="feat-section">
+    <div class="wrap">
+      <div class="feat-eyebrow">WHAT YOU GET</div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Visual workflow builder</span>
+          <h3>No-code, low-code — your call.</h3>
+          <p>Drag triggers, conditions, and actions onto a canvas. Build a working automation in minutes. Power users can drop in custom logic when they need it.</p>
+        </div>
+        <div class="mock">
+          <div style="display:grid; grid-template-columns:auto 1fr; gap:10px; font-size:12px;">
+            <span class="ico trig" style="width:32px; height:32px;">⚡</span>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); padding:8px 12px; border-radius:6px;">
+              <div style="font-size:10px; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.06em;">When</div>
+              <b>New leave request</b>
+            </div>
+            <span class="ico cond" style="width:32px; height:32px;">◇</span>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); padding:8px 12px; border-radius:6px;">
+              <div style="font-size:10px; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.06em;">If</div>
+              <b>Manager available & days ≤ 3</b>
+            </div>
+            <span class="ico act" style="width:32px; height:32px;">▶</span>
+            <div style="background:var(--bg-secondary); border:1px solid var(--border); padding:8px 12px; border-radius:6px;">
+              <div style="font-size:10px; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.06em;">Then</div>
+              <b>Auto-approve & notify in #hr</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip reverse">
+        <div class="strip-text">
+          <span class="strip-pill">Custom actions & conditions</span>
+          <h3>Built around how your team actually works.</h3>
+          <p>Not a generic template engine. Conditions branch on real data — workload, budget, role, location. Actions touch real tools.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row">
+            <div><b>If</b> deal > $50k</div>
+            <span class="strip-pill">condition</span>
+          </div>
+          <div class="mock-row" style="padding-left:18px;">
+            <div><b>Then</b> escalate to VP Sales</div>
+            <span class="pill good">action</span>
+          </div>
+          <div class="mock-row" style="padding-left:18px;">
+            <div><b>And</b> create approval task</div>
+            <span class="pill good">action</span>
+          </div>
+          <div class="mock-row">
+            <div><b>Else</b> auto-approve</div>
+            <span class="pill good">action</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-text">
+          <span class="strip-pill">Instant notifications</span>
+          <h3>Right person. Right step. No spam.</h3>
+          <p>Slack or email — your choice per workflow. Notifications fire on state changes, not on every tick. Quiet by default, loud when it matters.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">#</span>
+              <div><b>#approvals</b>
+                <div style="font-size:11px; color:var(--text-secondary);">"Bảo Linh's leave needs your OK"</div>
+              </div>
+            </div>
+            <span class="strip-pill">now</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">@</span>
+              <div><b>@minhhoang</b>
+                <div style="font-size:11px; color:var(--text-secondary);">"Approval done — auto-logged"</div>
+              </div>
+            </div>
+            <span class="pill good">1m</span>
+          </div>
+          <div class="mock-row">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:26px; height:26px; background:#d44638; border-radius:6px; color:white; font-size:13px; display:inline-flex; align-items:center; justify-content:center;">✉</span>
+              <div><b>Weekly digest</b>
+                <div style="font-size:11px; color:var(--text-secondary);">"12 workflows ran · 0 errors"</div>
+              </div>
+            </div>
+            <span class="pill neutral">Mon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE DEMO -->
+  <div class="demo-section">
+    <div class="wrap">
+      <div class="demo-head">
+        <span class="strip-pill">Interactive demo</span>
+        <h2>Build a workflow. Run it.</h2>
+        <p>Drag blocks from the left onto the canvas. Hit Run when you're ready.</p>
+      </div>
+      <div class="demo-frame">
+        <div class="auto-builder">
+          <!-- PALETTE SIDEBAR -->
+          <div class="auto-palette" style="max-height: 480px; overflow-y: auto; padding-right: 4px;">
+            <h4>Triggers</h4>
+            <div *ngFor="let item of triggers" class="palette-item" draggable="true" (dragstart)="onDragStart($event, item.type, item.label)">
+              <span class="ico trig">⚡</span> {{ item.label }}
+            </div>
+
+            <h4 style="margin-top:14px;">Conditions</h4>
+            <div *ngFor="let item of conditions" class="palette-item" draggable="true" (dragstart)="onDragStart($event, item.type, item.label)">
+              <span class="ico cond">◇</span> {{ item.label }}
+            </div>
+
+            <h4 style="margin-top:14px;">AI &amp; Agents</h4>
+            <div *ngFor="let item of aiAgents" class="palette-item" draggable="true" (dragstart)="onDragStart($event, item.type, item.label)">
+              <span class="ico act">🤖</span> {{ item.label }}
+            </div>
+
+            <h4 style="margin-top:14px;">Apps</h4>
+            <div *ngFor="let item of apps" class="palette-item" draggable="true" (dragstart)="onDragStart($event, item.type, item.label)">
+              <span class="ico act">🔌</span> {{ item.label }}
+            </div>
+
+            <h4 style="margin-top:14px;">Utilities</h4>
+            <div *ngFor="let item of utilities" class="palette-item" draggable="true" (dragstart)="onDragStart($event, item.type, item.label)">
+              <span class="ico cond">⚙️</span> {{ item.label }}
+            </div>
+
+            <h4 style="margin-top:14px;">Actions</h4>
+            <div *ngFor="let item of actions" class="palette-item" draggable="true" (dragstart)="onDragStart($event, item.type, item.label)">
+              <span class="ico act">▶</span> {{ item.label }}
+            </div>
+          </div>
+
+          <!-- CANVAS & RUNNER -->
+          <div>
+            <div class="auto-canvas" [class.over]="isDragOver" (dragover)="onDragOver($event)" (dragleave)="onDragLeave()" (drop)="onDrop($event)">
+              <div *ngIf="workflow.length === 0" class="auto-empty">
+                <div class="arrow">↑</div>
+                Drag blocks here.<br />Start with a trigger, end with an action.
+              </div>
+
+              <ng-container *ngFor="let node of workflow; let i = index">
+                <div class="auto-node">
+                  <span class="ico" [ngClass]="node.type === 'trigger' ? 'trig' : node.type === 'condition' ? 'cond' : 'act'">
+                    {{ getNodeIcon(node) }}
+                  </span>
+                  <div>
+                    <div class="node-type">{{ node.type }}</div>
+                    <div class="node-label">{{ node.label }}</div>
+                  </div>
+                  <span class="node-x" (click)="removeNode(i)">✕</span>
+                </div>
+                
+                <div *ngIf="i < workflow.length - 1" class="auto-connector"></div>
+              </ng-container>
+            </div>
+
+            <div class="auto-run">
+              <span class="demo-hint">
+                <span class="blink"></span>
+                <span>{{ runStatus }}</span>
+              </span>
+              <button class="auto-run-btn" [disabled]="!isRunnable()" (click)="runWorkflow()">Run workflow</button>
+            </div>
+
+            <div class="auto-log">
+              <div *ngIf="runLog.length === 0" style="color:#999;">// log will appear here…</div>
+              <div *ngFor="let line of runLog" class="log-line" [style.color]="line.startsWith('[done]') ? '#7cffb0' : ''">
+                {{ line }}
+              </div>
+            </div>
+
+            <!-- Run History -->
+            <div class="auto-history" style="margin-top: 14px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 12px;">
+              <h5 style="margin: 0 0 8px 0; font-size: 12px; color: var(--text-primary); display: flex; justify-content: space-between; align-items: center;">
+                <span>Run History</span>
+                <button style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 11px;" (click)="clearHistory()">Clear</button>
+              </h5>
+              <div class="auto-history-list" style="max-height: 120px; overflow-y: auto; font-size: 11px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
+                <div *ngIf="autoRuns.length === 0" style="color: var(--text-muted); font-style: italic;">No past runs yet. Build a workflow and click Run.</div>
+                
+                <div *ngFor="let run of autoRuns" class="history-item" (click)="viewPastRun(run)" style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; background: white; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; transition: background 0.2s;">
+                  <span style="font-weight: 600; color: var(--accent);">Run at {{ run.timestamp }}</span>
+                  <span style="color: var(--text-muted);">{{ run.nodes.length }} nodes · Success</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLE TABS -->
+  <div class="role-section">
+    <div class="wrap">
+      <div class="role-head">
+        <span class="strip-pill">Built for your role</span>
+        <h2>One engine, three jobs done quietly.</h2>
+        <p class="role-subhead">Different roles, same problem: too many tools, too little visibility. Here's what changes.</p>
+      </div>
+      <div class="role-tabs-row">
+        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">CEO</button>
+        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">Team lead</button>
+        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">HR / Ops</button>
+      </div>
+      <div class="role-cards-grid">
+        <div *ngFor="let card of roleContent[activeRole]" class="role-card">
+          <div class="role-icon-box" [ngClass]="card.color">
+            <!-- Sparkle Icon -->
+            <svg *ngIf="card.icon === 'sparkle'" class="role-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/>
+            </svg>
+            <!-- Network Icon -->
+            <svg *ngIf="card.icon === 'network'" class="role-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="16" y="16" width="6" height="6" rx="1"/>
+              <rect x="2" y="16" width="6" height="6" rx="1"/>
+              <rect x="9" y="2" width="6" height="6" rx="1"/>
+              <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/>
+              <path d="M12 12V8"/>
+            </svg>
+            <!-- Search Icon -->
+            <svg *ngIf="card.icon === 'search'" class="role-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.3-4.3"/>
+            </svg>
+          </div>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM CTA -->
+  <div class="bottom-cta-section">
+    <div class="wrap">
+      <h3>Ready to automate the repetitive?</h3>
+      <p>Free trial · No credit card · Setup in 10 minutes</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
+        <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+      </div>
+    </div>
+  </div>
+</div>
