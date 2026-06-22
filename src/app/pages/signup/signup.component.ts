@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { NgIf, NgClass } from '@angular/common';
@@ -6,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [RouterLink, NgIf, NgClass, FormsModule],
+  imports: [RouterLink, NgIf, NgClass, FormsModule, TranslatePipe],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
 })

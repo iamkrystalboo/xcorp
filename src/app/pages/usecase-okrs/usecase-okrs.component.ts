@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -6,7 +7,7 @@ import { ModalService } from '../../services/modal.service';
 @Component({
   selector: 'app-usecase-okrs',
   standalone: true,
-  imports: [NgIf, RouterLink],
+  imports: [NgIf, RouterLink, TranslatePipe],
   templateUrl: './usecase-okrs.component.html',
   styleUrl: './usecase-okrs.component.css'
 })

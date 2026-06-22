@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { NgIf, NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -13,7 +14,7 @@ interface DashboardTile {
 @Component({
   selector: 'app-solution-ceo',
   standalone: true,
-  imports: [NgIf, NgClass, RouterLink],
+  imports: [NgIf, NgClass, RouterLink, TranslatePipe],
   templateUrl: './solution-ceo.component.html',
   styleUrl: './solution-ceo.component.css'
 })

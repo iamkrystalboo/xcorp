@@ -3,46 +3,52 @@
     <div class="footer-brand-col">
       <a routerLink="/home" class="footer-logo">
         <div class="brand-mark"></div>
-        <span class="brand-text">XCORP<sup>®</sup></span>
+        <span class="brand-text">{{ 'footer.xcorp' | translate }}<sup>®</sup></span>
       </a>
-      <p class="footer-tagline">One system for every team.<br>Less chaos. More clarity.</p>
+      <p class="footer-tagline">{{ 'footer.oneSystemForEveryTeam' | translate }}<br>{{ 'footer.lessChaosMoreClarity' | translate }}</p>
     </div>
     <div class="footer-links-col">
       <div class="footer-link-group">
-        <div class="footer-group-title">PRODUCT</div>
-        <a routerLink="/features">All Features</a>
-        <a routerLink="/products/okr">Goals &amp; Performance</a>
-        <a routerLink="/products/project">Project Management</a>
-        <a routerLink="/products/automation">Automation Workflow</a>
-        <a routerLink="/products/hr">HR &amp; People Ops</a>
-        <a routerLink="/ai-assistant">AI Assistant</a>
+        <div class="footer-group-title">{{ 'footer.product' | translate }}</div>
+        <a routerLink="/features">{{ 'footer.allFeatures' | translate }}</a>
+        <a routerLink="/products/okr">{{ 'footer.goalsPerformance' | translate }}</a>
+        <a routerLink="/products/project">{{ 'footer.projectManagement' | translate }}</a>
+        <a routerLink="/products/automation">{{ 'footer.automationWorkflow' | translate }}</a>
+        <a routerLink="/products/hr">{{ 'footer.hrPeopleOps' | translate }}</a>
+        <a routerLink="/ai-assistant">{{ 'footer.aiAssistant' | translate }}</a>
       </div>
       <div class="footer-link-group">
-        <div class="footer-group-title">SOLUTIONS</div>
-        <div class="footer-sub-title">BY ROLE</div>
-        <a routerLink="/solutions/leadership">For Leadership</a>
-        <a routerLink="/solutions/teams">For Project Managers</a>
-        <a routerLink="/solutions/hr">For HR &amp; People Ops</a>
-        <div class="footer-sub-title" style="margin-top: 16px;">BY USE CASE</div>
-        <a routerLink="/use-cases/drowning-in-apps">Scattered Info &amp; Apps</a>
-        <a routerLink="/use-cases/ghost-okrs">Ghost OKRs</a>
-        <a routerLink="/use-cases/buried-leave">Buried Leave Requests</a>
+        <div class="footer-group-title">{{ 'footer.solutions' | translate }}</div>
+        <div class="footer-sub-title">{{ 'footer.byRole' | translate }}</div>
+        <a routerLink="/solutions/leadership">{{ 'footer.forLeadership' | translate }}</a>
+        <a routerLink="/solutions/teams">{{ 'footer.forProjectManagers' | translate }}</a>
+        <a routerLink="/solutions/hr">{{ 'footer.forHrPeopleOps' | translate }}</a>
+        <div class="footer-sub-title" style="margin-top: 16px;">{{ 'footer.byUseCase' | translate }}</div>
+        <a routerLink="/use-cases/drowning-in-apps">{{ 'footer.scatteredInfoApps' | translate }}</a>
+        <a routerLink="/use-cases/ghost-okrs">{{ 'footer.ghostOkrs' | translate }}</a>
+        <a routerLink="/use-cases/buried-leave">{{ 'footer.buriedLeaveRequests' | translate }}</a>
       </div>
       <div class="footer-link-group">
-        <div class="footer-group-title">COMPANY</div>
-        <a routerLink="/pricing">Pricing</a>
-        <a href="#" (click)="openFreeTrial($event)">Free Trial</a>
-        <a href="#" (click)="openDemo($event)">Schedule a Demo</a>
-        <a href="#">Contact Us</a>
+        <div class="footer-group-title">{{ 'footer.company' | translate }}</div>
+        <a routerLink="/pricing">{{ 'footer.pricing' | translate }}</a>
+        <a href="#" (click)="openFreeTrial($event)">{{ 'footer.freeTrial' | translate }}</a>
+        <a href="#" (click)="openDemo($event)">{{ 'footer.scheduleADemo' | translate }}</a>
+        <a href="#">{{ 'footer.contactUs' | translate }}</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="wrap footer-bottom-inner">
-      <div>© 2025 XCorp. All rights reserved.</div>
+      <div>{{ 'footer.2025XcorpAllRightsReserved' | translate }}</div>
+      
+      <button class="lang-toggle" (click)="toggleLanguage()" aria-label="Toggle Language">
+        <span class="lang-flag">{{ currentLang() === 'en' ? '🇬🇧' : '🇻🇳' }}</span>
+        <span class="lang-text">{{ currentLang() === 'en' ? 'English' : 'Tiếng Việt' }}</span>
+      </button>
+
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="#">{{ 'footer.privacyPolicy' | translate }}</a>
+        <a href="#">{{ 'footer.termsOfService' | translate }}</a>
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +20,7 @@ interface RunHistoryItem {
 @Component({
   selector: 'app-automation',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink],
+  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink, TranslatePipe],
   templateUrl: './automation.component.html',
   styleUrl: './automation.component.css'
 })

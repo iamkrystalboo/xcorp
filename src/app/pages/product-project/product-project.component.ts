@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component, HostListener } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +21,7 @@ interface TaskItem {
 @Component({
   selector: 'app-product-project',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink],
+  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink, TranslatePipe],
   templateUrl: './product-project.component.html',
   styleUrl: './product-project.component.css'
 })

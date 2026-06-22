@@ -1,59 +1,59 @@
 <section class="page" id="page-solution-pm">
   <div class="hero">
     <div class="wrap">
-      <a class="back-link" routerLink="/home">← All solutions</a>
+      <a class="back-link" routerLink="/home">{{ 'solutionPm.allSolutions' | translate }}</a>
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Solutions · For Project Managers</div>
-          <h1 class="headline">Ship projects. Stop babysitting status updates.</h1>
-          <p class="subhead">Connect your tasks, chats, and timelines. Switch views instantly and catch blockers before they delay your release.</p>
+          <div class="eyebrow">{{ 'solutionPm.solutionsForProjectManagers' | translate }}</div>
+          <h1 class="headline">{{ 'solutionPm.shipProjectsStopBabysittingStatus' | translate }}</h1>
+          <p class="subhead">{{ 'solutionPm.connectYourTasksChatsAnd' | translate }}</p>
           <div class="cta-row">
-            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
-            <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+            <button class="btn btn-primary" (click)="openFreeTrial()">{{ 'solutionPm.startFreeTrial' | translate }}</button>
+            <button class="btn btn-secondary" (click)="openScheduleDemo()">{{ 'solutionPm.scheduleADemo' | translate }}</button>
           </div>
-          <div class="microcopy">Free 30-day trial<span class="dot">·</span>GitHub & Slack integration<span class="dot">·</span>Import from Asana</div>
+          <div class="microcopy">{{ 'solutionPm.free30DayTrial' | translate }}<span class="dot">{{ 'solutionPm.text_7' | translate }}</span>{{ 'solutionPm.githubSlackIntegration' | translate }}<span class="dot">{{ 'solutionPm.text_7' | translate }}</span>{{ 'solutionPm.importFromAsana' | translate }}</div>
         </div>
         <div class="hero-visual">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-            <div style="font-size:13px; font-weight:600; color:#fff;">Sprint 24 — Mobile v2</div>
-            <span class="strip-pill">3 views</span>
+            <div style="font-size:13px; font-weight:600; color:#fff;">{{ 'solutionPm.sprint24MobileV2' | translate }}</div>
+            <span class="strip-pill">{{ 'solutionPm.3Views' | translate }}</span>
           </div>
           <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:14px;">
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">To do · 4</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'solutionPm.toDo4' | translate }}</div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Auth refactor</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">TN</span>Jun 12</div>
+                <b style="color:var(--text-primary);">{{ 'solutionPm.authRefactor' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'solutionPm.tn' | translate }}</span>{{ 'solutionPm.jun12' | translate }}</div>
               </div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Settings</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">BL</span>Jun 14</div>
+                <b style="color:var(--text-primary);">{{ 'solutionPm.settings' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'solutionPm.bl' | translate }}</span>{{ 'solutionPm.jun14' | translate }}</div>
               </div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">In progress · 3</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'solutionPm.inProgress3' | translate }}</div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Push notifs</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">TN</span>Jun 15</div>
+                <b style="color:var(--text-primary);">{{ 'solutionPm.pushNotifs' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'solutionPm.tn' | translate }}</span>{{ 'solutionPm.jun15' | translate }}</div>
               </div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Onboarding</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">MH</span>Jun 13</div>
+                <b style="color:var(--text-primary);">{{ 'solutionPm.onboarding' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'solutionPm.mh' | translate }}</span>{{ 'solutionPm.jun13' | translate }}</div>
               </div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">Done · 7</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'solutionPm.done7' | translate }}</div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px; opacity:0.6;">
-                <s>Splash screen</s>
+                <s>{{ 'solutionPm.splashScreen' | translate }}</s>
               </div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px; opacity:0.6;">
-                <s>Login UI</s>
+                <s>{{ 'solutionPm.loginUi' | translate }}</s>
               </div>
             </div>
           </div>
           <div style="margin-top:14px; padding:10px 12px; background:var(--accent-light); border-radius:8px; font-size:12px; color:var(--accent); font-weight:500; display:flex; align-items:center; gap:8px;">
-            <span>●</span>
-            <span>Workload: <b>Trần Ngọc 12 SP / 15 SP</b> — within capacity</span>
+            <span>{{ 'solutionPm.text_28' | translate }}</span>
+            <span>{{ 'solutionPm.workload' | translate }} <b>{{ 'solutionPm.trNNgC12' | translate }}</b> {{ 'solutionPm.withinCapacity' | translate }}</span>
           </div>
         </div>
       </div>
@@ -63,43 +63,43 @@
   <div class="pain-section">
     <div class="wrap">
       <div class="pain-line">
-        <p>Standups are too late to catch blockers. When one task slips, it delays your entire launch. XCorp flags blockers instantly.</p>
+        <p>{{ 'solutionPm.standupsAreTooLateTo' | translate }}</p>
       </div>
     </div>
   </div>
 
   <div class="feat-section">
     <div class="wrap">
-      <div class="feat-eyebrow">How xcorp catches it sooner</div>
+      <div class="feat-eyebrow">{{ 'solutionPm.howXcorpCatchesItSooner' | translate }}</div>
 
       <div class="strip">
         <div class="strip-text">
-          <span class="strip-pill">Unified views</span>
-          <h3>Flexible project views.</h3>
-          <p>Switch between Kanban, List, and Gantt views instantly. Keep devs, PMs, and leadership aligned on the same source of truth.</p>
+          <span class="strip-pill">{{ 'solutionPm.unifiedViews' | translate }}</span>
+          <h3>{{ 'solutionPm.flexibleProjectViews' | translate }}</h3>
+          <p>{{ 'solutionPm.switchBetweenKanbanListAnd' | translate }}</p>
         </div>
         <div class="mock">
           <div style="display:flex; gap:4px; background:var(--bg-secondary); padding:3px; border-radius:8px; margin-bottom:14px; border:1px solid var(--border); width:fit-content;">
-            <span style="padding:5px 12px; background:white; border:1px solid var(--border); border-radius:6px; font-size:11px; font-weight:600;">Kanban</span>
-            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">List</span>
-            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">Gantt</span>
-            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">Workload</span>
+            <span style="padding:5px 12px; background:white; border:1px solid var(--border); border-radius:6px; font-size:11px; font-weight:600;">{{ 'solutionPm.kanban' | translate }}</span>
+            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">{{ 'solutionPm.list' | translate }}</span>
+            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">{{ 'solutionPm.gantt' | translate }}</span>
+            <span style="padding:5px 12px; font-size:11px; color:var(--text-secondary); font-weight:600;">{{ 'solutionPm.workload_1' | translate }}</span>
           </div>
           <div style="padding:6px 0;">
             <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
-              <span><b>Trần Ngọc</b></span><b style="color:var(--success);">12 SP / 15 SP</b>
+              <span><b>{{ 'solutionPm.trNNgC' | translate }}</b></span><b style="color:var(--success);">{{ 'solutionPm.12Sp15Sp' | translate }}</b>
             </div>
             <div class="bar"><span class="good" style="width:80%"></span></div>
           </div>
           <div style="padding:6px 0;">
             <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
-              <span><b>Bảo Linh</b></span><b style="color:var(--warning);">8 SP / 15 SP</b>
+              <span><b>{{ 'solutionPm.bOLinh' | translate }}</b></span><b style="color:var(--warning);">{{ 'solutionPm.8Sp15Sp' | translate }}</b>
             </div>
             <div class="bar"><span class="warn" style="width:53%"></span></div>
           </div>
           <div style="padding:6px 0;">
             <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
-              <span><b>Minh Hoàng</b></span><b style="color:var(--success);">6 SP / 15 SP</b>
+              <span><b>{{ 'solutionPm.minhHoNg' | translate }}</b></span><b style="color:var(--success);">{{ 'solutionPm.6Sp15Sp' | translate }}</b>
             </div>
             <div class="bar"><span class="good" style="width:40%"></span></div>
           </div>
@@ -108,37 +108,37 @@
 
       <div class="strip reverse">
         <div class="strip-text">
-          <span class="strip-pill">Slack & GitHub</span>
-          <h3>Integrated tool ecosystem.</h3>
-          <p>Sync pull requests, GitHub comments, and Slack discussions directly to your tasks. Keep using your favorite tools seamlessly.</p>
+          <span class="strip-pill">{{ 'solutionPm.slackGithub' | translate }}</span>
+          <h3>{{ 'solutionPm.integratedToolEcosystem' | translate }}</h3>
+          <p>{{ 'solutionPm.syncPullRequestsGithubComments' | translate }}</p>
         </div>
         <div class="mock">
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
               <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center;">#</span>
-              <div><b>#sprint-24</b>
-                <div style="font-size:11px; color:var(--text-secondary);">"PR ready for review"</div>
+              <div><b>{{ 'solutionPm.sprint24' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'solutionPm.prReadyForReview' | translate }}</div>
               </div>
             </div>
-            <span class="pill accent">linked</span>
+            <span class="pill accent">{{ 'solutionPm.linked' | translate }}</span>
           </div>
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:26px; height:26px; background:var(--text-primary); border-radius:6px; color:white; font-size:13px; display:flex; align-items:center; justify-content:center;">⌥</span>
-              <div><b>PR #418</b>
-                <div style="font-size:11px; color:var(--text-secondary);">Auth flow refactor</div>
+              <span style="width:26px; height:26px; background:var(--text-primary); border-radius:6px; color:white; font-size:13px; display:flex; align-items:center; justify-content:center;">{{ 'solutionPm.text_53' | translate }}</span>
+              <div><b>{{ 'solutionPm.pr418' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'solutionPm.authFlowRefactor' | translate }}</div>
               </div>
             </div>
-            <span class="pill good">merged</span>
+            <span class="pill good">{{ 'solutionPm.merged' | translate }}</span>
           </div>
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center;">@</span>
-              <div><b>@trầnngọc</b>
-                <div style="font-size:11px; color:var(--text-secondary);">"Updated task to 12 SP — check PR #421"</div>
+              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center;">{{ 'solutionPm.text_57' | translate }}</span>
+              <div><b>{{ 'solutionPm.trNngC' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'solutionPm.updatedTaskTo12Sp' | translate }}</div>
               </div>
             </div>
-            <span class="pill neutral">2m ago</span>
+            <span class="pill neutral">{{ 'solutionPm.2mAgo' | translate }}</span>
           </div>
         </div>
       </div>
@@ -149,32 +149,32 @@
   <div class="demo-section">
     <div class="wrap">
       <div class="demo-head">
-        <span class="strip-pill">Interactive simulator</span>
-        <h2>Workload Balancing &amp; Blocker mitigation.</h2>
-        <p>Trigger the automatic re-assignment of tasks when engineering capacity is overloaded. Watch the timeline log capacity calculations live.</p>
+        <span class="strip-pill">{{ 'solutionPm.interactiveSimulator' | translate }}</span>
+        <h2>{{ 'solutionPm.workload_1' | translate }} Balancing &amp; Blocker mitigation.</h2>
+        <p>{{ 'solutionPm.triggerTheAutomaticReAssignment' | translate }}</p>
       </div>
       <div class="demo-frame">
         <div class="pm-sandbox" style="display: grid; grid-template-columns: 320px 1fr; gap: 20px;">
           <!-- LEFT: SPRINT CARDS -->
           <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 18px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <h4 style="margin: 0; font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em;">Sprint Active Tasks</h4>
-              <button class="btn btn-secondary" style="font-size: 10px; padding: 4px 8px;" (click)="resetPmSandbox()">Reset</button>
+              <h4 style="margin: 0; font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em;">{{ 'solutionPm.sprintActiveTasks' | translate }}</h4>
+              <button class="btn btn-secondary" style="font-size: 10px; padding: 4px 8px;" (click)="resetPmSandbox()">{{ 'solutionPm.reset' | translate }}</button>
             </div>
             <div style="display: flex; flex-direction: column; gap: 6px;">
               <div *ngFor="let card of pmCards" class="pm-card" [class.blocked]="card.status === 'blocked'" [class.affected]="card.isBalanced" [attr.data-id]="card.id">
                 <div class="pm-card-title">{{ card.title }}</div>
                 <div class="pm-card-meta">
                   <span class="avatar" style="width:16px;height:16px;font-size:8px;margin-right:4px;">{{ card.assignee }}</span> 
-                  Assignee: {{ card.assignee === 'TN' ? 'Trần Ngọc' : card.assignee === 'BL' ? 'Bảo Linh' : 'Minh Hoàng' }}
+                  {{ 'solutionPm.assignee' | translate }}: {{ card.assignee === 'TN' ? 'Trần Ngọc' : card.assignee === 'BL' ? 'Bảo Linh' : 'Minh Hoàng' }}
                 </div>
-                <div *ngIf="card.status === 'blocked'" class="pm-card-flag danger">⚠️ Blocked (Payment Gateway)</div>
-                <div *ngIf="card.isBalanced" class="pm-card-flag warning">🔄 Reassigned Automatically</div>
+                <div *ngIf="card.status === 'blocked'" class="pm-card-flag danger">{{ 'solutionPm.blockedPaymentGateway' | translate }}</div>
+                <div *ngIf="card.isBalanced" class="pm-card-flag warning">{{ 'solutionPm.reassignedAutomatically' | translate }}</div>
               </div>
             </div>
             <div style="margin-top: 14px;">
               <button class="btn btn-primary" id="pmInjectBtn" [disabled]="isInjectDisabled" (click)="injectBlocker()" style="width: 100%; font-size: 12px; padding: 10px;">
-                ⚡ Balance Sprint Workload
+                {{ 'solutionPm.balanceSprintWorkload' | translate }}
               </button>
             </div>
           </div>
@@ -183,7 +183,7 @@
           <div class="pm-comparison">
             <!-- MANUAL TIMELINE -->
             <div class="pm-timeline-card bad">
-              <h5>❌ Manual Coordination</h5>
+              <h5>{{ 'solutionPm.manualCoordination' | translate }}</h5>
               <div class="big-stat" id="pmStatBad">{{ statBad }}</div>
               <div class="big-stat-label" id="pmStatBadLabel">{{ statBadLabel }}</div>
               <div id="pmEventsBad" style="display:flex; flex-direction:column; gap:8px;">
@@ -196,7 +196,7 @@
 
             <!-- AUTOMATIC TIMELINE -->
             <div class="pm-timeline-card good">
-              <h5>✅ XCorp Auto-Balance</h5>
+              <h5>{{ 'solutionPm.xcorpAutoBalance' | translate }}</h5>
               <div class="big-stat" id="pmStatGood">{{ statGood }}</div>
               <div class="big-stat-label" id="pmStatGoodLabel">{{ statGoodLabel }}</div>
               <div id="pmEventsGood" style="display:flex; flex-direction:column; gap:8px;">
@@ -215,21 +215,21 @@
   <div class="role-section">
     <div class="wrap">
       <div class="role-head">
-        <span class="strip-pill">PM impact</span>
-        <h2>Numbers from teams who switched.</h2>
+        <span class="strip-pill">{{ 'solutionPm.pmImpact' | translate }}</span>
+        <h2>{{ 'solutionPm.numbersFromTeamsWhoSwitched' | translate }}</h2>
       </div>
       <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px;">
         <div class="role-panel">
-          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--accent);">30s</div>
-          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Median blocker detection (vs. 2 days previously)</div>
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--accent);">{{ 'solutionPm.30s' | translate }}</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">{{ 'solutionPm.medianBlockerDetectionVs2' | translate }}</div>
         </div>
         <div class="role-panel">
-          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--success);">6h → 30min</div>
-          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">Weekly status meetings</div>
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--success);">{{ 'solutionPm.6h30min' | translate }}</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">{{ 'solutionPm.weeklyStatusMeetings' | translate }}</div>
         </div>
         <div class="role-panel">
-          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--purple);">2.3×</div>
-          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">On-time sprint delivery rate</div>
+          <div style="font-family:'Plus Jakarta Sans'; font-weight:800; font-size:32px; color:var(--purple);">{{ 'solutionPm.23' | translate }}</div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:6px;">{{ 'solutionPm.onTimeSprintDeliveryRate' | translate }}</div>
         </div>
       </div>
     </div>
@@ -237,11 +237,11 @@
 
   <div class="bottom-cta-section">
     <div class="wrap">
-      <h3>Ready to ship projects on time?</h3>
-      <p>Free trial · No credit card · Import from Asana included</p>
+      <h3>{{ 'solutionPm.readyToShipProjectsOn' | translate }}</h3>
+      <p>{{ 'solutionPm.freeTrialNoCreditCard' | translate }}</p>
       <div class="cta-row">
-        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
-        <button class="btn btn-secondary" (click)="openScheduleDemo()">Schedule a demo</button>
+        <button class="btn btn-primary" (click)="openFreeTrial()">{{ 'solutionPm.startFreeTrial' | translate }}</button>
+        <button class="btn btn-secondary" (click)="openScheduleDemo()">{{ 'solutionPm.scheduleADemo' | translate }}</button>
       </div>
     </div>
   </div>

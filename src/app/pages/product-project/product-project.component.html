@@ -2,59 +2,59 @@
   <!-- HERO -->
   <div class="hero">
     <div class="wrap">
-      <a class="back-link" routerLink="/features">← See all features</a>
+      <a class="back-link" routerLink="/features">{{ 'productProject.seeAllFeatures' | translate }}</a>
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Project & Task Management</div>
-          <h1 class="headline">See everything.<br />Miss nothing.</h1>
-          <p class="subhead">Kanban, Gantt, and List — all in one place. Milestones, dependencies, workloads — nothing gets overlooked.</p>
+          <div class="eyebrow">{{ 'productProject.projectTaskManagement' | translate }}</div>
+          <h1 class="headline">{{ 'productProject.seeEverything' | translate }}<br />{{ 'productProject.missNothing' | translate }}</h1>
+          <p class="subhead">{{ 'productProject.kanbanGanttAndListAll' | translate }}</p>
           <div class="cta-row">
-            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
-            <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+            <button class="btn btn-primary" (click)="openFreeTrial()">{{ 'productProject.startFreeTrial' | translate }}</button>
+            <button class="btn btn-secondary" (click)="openDemo()">{{ 'productProject.scheduleADemo' | translate }}</button>
           </div>
-          <div class="microcopy">No credit card required<span class="dot">·</span>Setup in under 10 minutes</div>
+          <div class="microcopy">{{ 'productProject.noCreditCardRequired' | translate }}<span class="dot">{{ 'productProject.text_8' | translate }}</span>{{ 'productProject.setupInUnder10Minutes' | translate }}</div>
         </div>
         <div class="hero-visual">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-            <div style="font-size:13px; font-weight:600; color:#fff;">Sprint 24 — Mobile v2</div>
-            <span class="strip-pill">3 views</span>
+            <div style="font-size:13px; font-weight:600; color:#fff;">{{ 'productProject.sprint24MobileV2' | translate }}</div>
+            <span class="strip-pill">{{ 'productProject.3Views' | translate }}</span>
           </div>
           <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">To do · 4</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'productProject.toDo4' | translate }}</div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Auth refactor</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">TN</span>Jun 12</div>
+                <b style="color:var(--text-primary);">{{ 'productProject.authRefactor' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'productProject.tn' | translate }}</span>{{ 'productProject.jun12' | translate }}</div>
               </div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Settings</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">BL</span>Jun 14</div>
+                <b style="color:var(--text-primary);">{{ 'productProject.settings' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'productProject.bl' | translate }}</span>{{ 'productProject.jun14' | translate }}</div>
               </div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">In progress · 3</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'productProject.inProgress3' | translate }}</div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Push notifs</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">TN</span>Jun 15</div>
+                <b style="color:var(--text-primary);">{{ 'productProject.pushNotifs' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'productProject.tn' | translate }}</span>{{ 'productProject.jun15' | translate }}</div>
               </div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px;">
-                <b style="color:var(--text-primary);">Onboarding</b>
-                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">MH</span>Jun 13</div>
+                <b style="color:var(--text-primary);">{{ 'productProject.onboarding' | translate }}</b>
+                <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;"><span class="avatar" style="width:16px;height:16px;font-size:8px;">{{ 'productProject.mh' | translate }}</span>{{ 'productProject.jun13' | translate }}</div>
               </div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:10px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">Done · 7</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'productProject.done7' | translate }}</div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; margin-bottom:6px; font-size:12px; opacity:0.6;">
-                <s>Splash screen</s>
+                <s>{{ 'productProject.splashScreen' | translate }}</s>
               </div>
               <div style="background:white; padding:8px; border:1px solid var(--border); border-radius:6px; font-size:12px; opacity:0.6;">
-                <s>Login UI</s>
+                <s>{{ 'productProject.loginUi' | translate }}</s>
               </div>
             </div>
           </div>
           <div style="margin-top:14px; padding:10px 12px; background:var(--accent-light); border-radius:8px; font-size:12px; color:var(--accent); font-weight:500; display:flex; align-items:center; gap:8px;">
-            <span>●</span>
-            <span>Workload: <b>Trần Ngọc 12 SP / 15 SP</b> — within capacity</span>
+            <span>{{ 'productProject.text_28' | translate }}</span>
+            <span>{{ 'productProject.workload' | translate }} <b>{{ 'productProject.trNNgC12' | translate }}</b> {{ 'productProject.withinCapacity' | translate }}</span>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
   <div class="pain-section">
     <div class="wrap">
       <div class="pain-line">
-        <p>Tasks in Asana, updates in Slack, deadlines in email. By the time something's blocked, it's already late — and someone, somewhere, is quietly burning out.</p>
+        <p>{{ 'productProject.tasksInAsanaUpdatesIn' | translate }}</p>
       </div>
     </div>
   </div>
@@ -73,35 +73,35 @@
   <!-- FEATURES -->
   <div class="feat-section">
     <div class="wrap">
-      <div class="feat-eyebrow">What you get</div>
+      <div class="feat-eyebrow">{{ 'productProject.whatYouGet' | translate }}</div>
 
       <div class="strip">
         <div class="strip-text">
-          <span class="strip-pill">Multiple views</span>
-          <h3>Kanban, List, Gantt — switch without losing context.</h3>
-          <p>Same data, three angles. Move between views without re-mapping your mental model or re-importing anything.</p>
+          <span class="strip-pill">{{ 'productProject.multipleViews' | translate }}</span>
+          <h3>{{ 'productProject.kanbanListGanttSwitchWithout' | translate }}</h3>
+          <p>{{ 'productProject.sameDataThreeAnglesMove' | translate }}</p>
         </div>
         <div class="mock">
           <div class="mock-row" style="border:none; padding-bottom:14px;">
             <div style="display:flex; gap:2px; background:var(--bg-secondary); padding:3px; border-radius:8px; border:1px solid var(--border);">
-              <span style="padding:5px 12px; background:white; border:1px solid var(--border); border-radius:6px; font-size:12px; font-weight:600;">Kanban</span>
-              <span style="padding:5px 12px; font-size:12px; color:var(--text-secondary); font-weight:600;">List</span>
-              <span style="padding:5px 12px; font-size:12px; color:var(--text-secondary); font-weight:600;">Gantt</span>
+              <span style="padding:5px 12px; background:white; border:1px solid var(--border); border-radius:6px; font-size:12px; font-weight:600;">{{ 'productProject.kanban' | translate }}</span>
+              <span style="padding:5px 12px; font-size:12px; color:var(--text-secondary); font-weight:600;">{{ 'productProject.list' | translate }}</span>
+              <span style="padding:5px 12px; font-size:12px; color:var(--text-secondary); font-weight:600;">{{ 'productProject.gantt' | translate }}</span>
             </div>
-            <span class="strip-pill">Live sync</span>
+            <span class="strip-pill">{{ 'productProject.liveSync' | translate }}</span>
           </div>
           <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:8px; min-height:80px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">TO DO</div>
-              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">Auth refactor</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">{{ 'productProject.toDo' | translate }}</div>
+              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">{{ 'productProject.authRefactor' | translate }}</div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:8px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">DOING</div>
-              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">Push notifs</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">{{ 'productProject.doing' | translate }}</div>
+              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">{{ 'productProject.pushNotifs' | translate }}</div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:8px;">
-              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">DONE</div>
-              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">Login UI</div>
+              <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">{{ 'productProject.done' | translate }}</div>
+              <div style="background:white; border:1px solid var(--border); padding:6px 8px; border-radius:4px; font-size:11px; font-weight:500;">{{ 'productProject.loginUi' | translate }}</div>
             </div>
           </div>
         </div>
@@ -109,58 +109,58 @@
 
       <div class="strip reverse">
         <div class="strip-text">
-          <span class="strip-pill">Task Finder &amp; Backlog</span>
-          <h3>Find any task in seconds, across all epics.</h3>
-          <p>Use rich filtering to locate tasks by assignee, epic, status, or release. No more scrolling through endless lists to find your work.</p>
+          <span class="strip-pill">{{ 'productProject.task' | translate }} Finder &amp; Backlog</span>
+          <h3>{{ 'productProject.findAnyTaskInSeconds' | translate }}</h3>
+          <p>{{ 'productProject.useRichFilteringToLocate' | translate }}</p>
         </div>
         <div class="mock">
           <div style="background:var(--bg-secondary); border-radius:6px; padding:8px 12px; margin-bottom:12px; display:flex; align-items:center; gap:8px; border:1px solid var(--border);">
-            <span style="color:var(--text-secondary);">🔍</span>
+            <span style="color:var(--text-secondary);">{{ 'productProject.text_47' | translate }}</span>
             <input type="text" value="assignee: @trầnngọc epic: Mobile-v2" disabled style="background:none; border:none; color:var(--text-primary); font-size:12px; width:100%; font-family:inherit;" />
           </div>
           <div class="mock-row">
-            <div><b>Auth flow refactor</b>
-              <div style="font-size:11px; color:var(--text-secondary);">Epic: Mobile v2 · Release v2.4</div>
+            <div><b>{{ 'productProject.authFlowRefactor' | translate }}</b>
+              <div style="font-size:11px; color:var(--text-secondary);">{{ 'productProject.epicMobileV2ReleaseV2' | translate }}</div>
             </div>
-            <span class="pill neutral">To do</span>
+            <span class="pill neutral">{{ 'productProject.toDo_1' | translate }}</span>
           </div>
           <div class="mock-row">
-            <div><b>Push notifications</b>
-              <div style="font-size:11px; color:var(--text-secondary);">Epic: Mobile v2 · Release v2.4</div>
+            <div><b>{{ 'productProject.pushNotifications' | translate }}</b>
+              <div style="font-size:11px; color:var(--text-secondary);">{{ 'productProject.epicMobileV2ReleaseV2' | translate }}</div>
             </div>
-            <span class="pill accent">In progress</span>
+            <span class="pill accent">{{ 'productProject.inProgress' | translate }}</span>
           </div>
           <div class="mock-row">
-            <div><b>Login UI polishing</b>
-              <div style="font-size:11px; color:var(--text-secondary);">Epic: Mobile v2 · Release v2.4</div>
+            <div><b>{{ 'productProject.loginUiPolishing' | translate }}</b>
+              <div style="font-size:11px; color:var(--text-secondary);">{{ 'productProject.epicMobileV2ReleaseV2' | translate }}</div>
             </div>
-            <span class="pill good">Done</span>
+            <span class="pill good">{{ 'productProject.done_1' | translate }}</span>
           </div>
         </div>
       </div>
 
       <div class="strip">
         <div class="strip-text">
-          <span class="strip-pill">Story Points &amp; Gantt View</span>
-          <h3>Balance workloads using Story Points.</h3>
-          <p>View capacity mapped to individual commitments in Story Points. Track team bandwidth and Gantt schedules without manual time-tracking sheets.</p>
+          <span class="strip-pill">Story Points &amp; {{ 'productProject.gantt' | translate }} View</span>
+          <h3>{{ 'productProject.balanceWorkloadsUsingStoryPoints' | translate }}</h3>
+          <p>{{ 'productProject.viewCapacityMappedToIndividual' | translate }}</p>
         </div>
         <div class="mock">
           <div style="padding:8px 0;">
             <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
-              <span><span class="avatar">TN</span>Trần Ngọc</span><b style="color:var(--accent);">12 SP / 15 SP</b>
+              <span><span class="avatar">{{ 'productProject.tn' | translate }}</span>{{ 'productProject.trNNgC' | translate }}</span><b style="color:var(--accent);">{{ 'productProject.12Sp15Sp' | translate }}</b>
             </div>
             <div class="bar"><span class="good" style="width:80%; background:var(--accent);"></span></div>
           </div>
           <div style="padding:8px 0;">
             <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
-              <span><span class="avatar">BL</span>Bảo Linh</span><b style="color:var(--success);">8 SP / 15 SP</b>
+              <span><span class="avatar">{{ 'productProject.bl' | translate }}</span>{{ 'productProject.bOLinh' | translate }}</span><b style="color:var(--success);">{{ 'productProject.8Sp15Sp' | translate }}</b>
             </div>
             <div class="bar"><span class="good" style="width:53%;"></span></div>
           </div>
           <div style="padding:8px 0;">
             <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;">
-              <span><span class="avatar">MH</span>Minh Hoàng</span><b style="color:var(--warning);">14 SP / 15 SP</b>
+              <span><span class="avatar">{{ 'productProject.mh' | translate }}</span>{{ 'productProject.minhHoNg' | translate }}</span><b style="color:var(--warning);">{{ 'productProject.14Sp15Sp' | translate }}</b>
             </div>
             <div class="bar"><span class="warn" style="width:93%;"></span></div>
           </div>
@@ -169,37 +169,37 @@
 
       <div class="strip reverse">
         <div class="strip-text">
-          <span class="strip-pill">Slack & GitHub</span>
-          <h3>Your existing tools stay connected.</h3>
-          <p>No forced migration. Slack threads, GitHub PRs, commits — everything flows into the task it belongs to.</p>
+          <span class="strip-pill">{{ 'productProject.slackGithub' | translate }}</span>
+          <h3>{{ 'productProject.yourExistingToolsStayConnected' | translate }}</h3>
+          <p>{{ 'productProject.noForcedMigrationSlackThreads' | translate }}</p>
         </div>
         <div class="mock">
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
               <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">#</span>
-              <div><b>#sprint-24</b>
-                <div style="font-size:11px; color:var(--text-secondary);">"PR ready for review"</div>
+              <div><b>{{ 'productProject.sprint24' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'productProject.prReadyForReview' | translate }}</div>
               </div>
             </div>
-            <span class="strip-pill">linked</span>
+            <span class="strip-pill">{{ 'productProject.linked' | translate }}</span>
           </div>
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:26px; height:26px; background:var(--text-primary); border-radius:6px; color:white; font-size:13px; display:inline-flex; align-items:center; justify-content:center;">⌥</span>
-              <div><b>PR #418</b>
-                <div style="font-size:11px; color:var(--text-secondary);">Auth flow refactor</div>
+              <span style="width:26px; height:26px; background:var(--text-primary); border-radius:6px; color:white; font-size:13px; display:inline-flex; align-items:center; justify-content:center;">{{ 'productProject.text_70' | translate }}</span>
+              <div><b>{{ 'productProject.pr418' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'productProject.authFlowRefactor' | translate }}</div>
               </div>
             </div>
-            <span class="pill good">merged</span>
+            <span class="pill good">{{ 'productProject.merged' | translate }}</span>
           </div>
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">@</span>
-              <div><b>@trầnngọc</b>
-                <div style="font-size:11px; color:var(--text-secondary);">"Push notifs blocked — see PR #421"</div>
+              <span style="width:26px; height:26px; background:#4a154b; border-radius:6px; color:white; font-size:13px; font-weight:700; display:inline-flex; align-items:center; justify-content:center;">{{ 'productProject.text_73' | translate }}</span>
+              <div><b>{{ 'productProject.trNngC' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'productProject.pushNotifsBlockedSeePr' | translate }}</div>
               </div>
             </div>
-            <span class="pill neutral">2m ago</span>
+            <span class="pill neutral">{{ 'productProject.2mAgo' | translate }}</span>
           </div>
         </div>
       </div>
@@ -210,22 +210,22 @@
   <div class="demo-section">
     <div class="wrap">
       <div class="demo-head">
-        <span class="strip-pill">Interactive demo</span>
-        <h2>Try moving a task — see what unblocks.</h2>
-        <p>Drag cards in Kanban. Sort columns or cycle status in List. Drag and resize timelines in Gantt.</p>
+        <span class="strip-pill">{{ 'productProject.interactiveDemo' | translate }}</span>
+        <h2>{{ 'productProject.tryMovingATaskSee' | translate }}</h2>
+        <p>{{ 'productProject.dragCardsInKanbanSort' | translate }}</p>
       </div>
       <div class="demo-frame">
         <div class="demo-toolbar">
           <div class="demo-tabs">
-            <button class="demo-tab" [class.active]="activeView === 'kanban'" (click)="switchView('kanban')">Kanban</button>
-            <button class="demo-tab" [class.active]="activeView === 'list'" (click)="switchView('list')">List</button>
-            <button class="demo-tab" [class.active]="activeView === 'gantt'" (click)="switchView('gantt')">Gantt</button>
+            <button class="demo-tab" [class.active]="activeView === 'kanban'" (click)="switchView('kanban')">{{ 'productProject.kanban' | translate }}</button>
+            <button class="demo-tab" [class.active]="activeView === 'list'" (click)="switchView('list')">{{ 'productProject.list' | translate }}</button>
+            <button class="demo-tab" [class.active]="activeView === 'gantt'" (click)="switchView('gantt')">{{ 'productProject.gantt' | translate }}</button>
           </div>
           <span class="demo-hint">
             <span class="blink"></span>
-            <span *ngIf="activeView === 'kanban'">Drag cards between columns</span>
-            <span *ngIf="activeView === 'list'">Click headers to sort · Click status to cycle</span>
-            <span *ngIf="activeView === 'gantt'">Drag bars to shift · Drag edges to resize dates</span>
+            <span *ngIf="activeView === 'kanban'">{{ 'productProject.dragCardsBetweenColumns' | translate }}</span>
+            <span *ngIf="activeView === 'list'">{{ 'productProject.clickHeadersToSortClick' | translate }}</span>
+            <span *ngIf="activeView === 'gantt'">{{ 'productProject.dragBarsToShiftDrag' | translate }}</span>
           </span>
         </div>
 
@@ -244,10 +244,10 @@
                 </div>
                 <div class="k-meta">
                   <span class="avatar">{{ t.initials }}</span>
-                  <span>{{ t.assignee }} · {{ t.due }}</span>
+                  <span>{{ t.assignee }} {{ 'productProject.text_8' | translate }} {{ t.due }}</span>
                 </div>
                 <div *ngIf="t.dep" class="k-dep" style="color: var(--danger); font-size: 11px; font-weight: 600; margin-top: 4px; display: flex; align-items: center; gap: 4px;">
-                  <span>⚠️ Blocker:</span>
+                  <span>{{ 'productProject.blocker' | translate }}</span>
                   <span>{{ t.dep === 'api' ? 'External API Stuck' : 'Auth Flow Refactor' }}</span>
                 </div>
               </div>
@@ -257,10 +257,10 @@
           <!-- LIST VIEW -->
           <div class="list-view" [class.active]="activeView === 'list'" *ngIf="activeView === 'list'">
             <div class="list-header">
-              <div (click)="sortList('title')">Task <span class="sort-ind">↑</span></div>
-              <div (click)="sortList('assignee')">Assignee <span class="sort-ind">↑</span></div>
-              <div (click)="sortList('status')">Status <span class="sort-ind">↑</span></div>
-              <div (click)="sortList('due')">Due <span class="sort-ind">↑</span></div>
+              <div (click)="sortList('title')">{{ 'productProject.task' | translate }} <span class="sort-ind">{{ 'productProject.text_85' | translate }}</span></div>
+              <div (click)="sortList('assignee')">{{ 'productProject.assignee' | translate }} <span class="sort-ind">{{ 'productProject.text_85' | translate }}</span></div>
+              <div (click)="sortList('status')">{{ 'productProject.status' | translate }} <span class="sort-ind">{{ 'productProject.text_85' | translate }}</span></div>
+              <div (click)="sortList('due')">{{ 'productProject.due' | translate }} <span class="sort-ind">{{ 'productProject.text_85' | translate }}</span></div>
             </div>
             <div class="list-body">
               <div *ngFor="let t of getSortedTasks()" class="list-row">
@@ -279,10 +279,10 @@
           <!-- GANTT VIEW -->
           <div class="gantt" [class.active]="activeView === 'gantt'" *ngIf="activeView === 'gantt'">
             <div class="gantt-axis">
-              <div>Task</div>
+              <div>{{ 'productProject.task' | translate }}</div>
               <div class="gantt-axis-labels">
-                <span>Jun 5</span><span>Jun 9</span><span>Jun 13</span><span>Jun 17</span>
-                <span>Jun 21</span><span>Jun 25</span><span>Jun 29</span><span>Jul 3</span>
+                <span>{{ 'productProject.jun5' | translate }}</span><span>{{ 'productProject.jun9' | translate }}</span><span>{{ 'productProject.jun13' | translate }}</span><span>{{ 'productProject.jun17' | translate }}</span>
+                <span>{{ 'productProject.jun21' | translate }}</span><span>{{ 'productProject.jun25' | translate }}</span><span>{{ 'productProject.jun29' | translate }}</span><span>{{ 'productProject.jul3' | translate }}</span>
               </div>
             </div>
             <div class="gantt-body">
@@ -315,21 +315,21 @@
   <div class="role-section">
     <div class="wrap">
       <div class="role-head">
-        <span class="strip-pill">Built for your role</span>
-        <h2>One tool, three views of value.</h2>
+        <span class="strip-pill">{{ 'productProject.builtForYourRole' | translate }}</span>
+        <h2>{{ 'productProject.oneToolThreeViewsOf' | translate }}</h2>
       </div>
       <div class="role-tabs-row">
-        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">CEO</button>
-        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">Team lead</button>
-        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">HR / Ops</button>
+        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">{{ 'productProject.ceo' | translate }}</button>
+        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">{{ 'productProject.teamLead' | translate }}</button>
+        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">{{ 'productProject.hrOps' | translate }}</button>
       </div>
       <div class="role-panel">
         <ul>
-          <li *ngFor="let item of roleContent[activeRole]">
+          <li *ngFor="let item of roleContent[activeRole]; let i = index">
             <svg class="check" viewBox="0 0 20 20" fill="none">
               <path d="M4 10.5L8 14.5L16 5.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span>{{ item }}</span>
+            <span>{{ 'productProject.roleContent.' + activeRole + '.' + i | translate : item }}</span>
           </li>
         </ul>
       </div>
@@ -339,11 +339,11 @@
   <!-- BOTTOM CTA -->
   <div class="bottom-cta-section">
     <div class="wrap">
-      <h3>Ready to ship projects on time?</h3>
-      <p>Free trial · No credit card · Setup in 10 minutes</p>
+      <h3>{{ 'productProject.readyToShipProjectsOn' | translate }}</h3>
+      <p>{{ 'productProject.freeTrialNoCreditCard' | translate }}</p>
       <div class="cta-row">
-        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
-        <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+        <button class="btn btn-primary" (click)="openFreeTrial()">{{ 'productProject.startFreeTrial' | translate }}</button>
+        <button class="btn btn-secondary" (click)="openDemo()">{{ 'productProject.scheduleADemo' | translate }}</button>
       </div>
     </div>
   </div>

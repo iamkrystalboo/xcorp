@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component, OnInit } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +21,7 @@ interface OkrItem {
 @Component({
   selector: 'app-okr',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink],
+  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink, TranslatePipe],
   templateUrl: './okr.component.html',
   styleUrl: './okr.component.css'
 })

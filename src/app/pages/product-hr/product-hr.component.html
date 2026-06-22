@@ -2,44 +2,44 @@
   <!-- HERO -->
   <div class="hero">
     <div class="wrap">
-      <a class="back-link" routerLink="/features">← See all features</a>
+      <a class="back-link" routerLink="/features">{{ 'productHr.seeAllFeatures' | translate }}</a>
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">HR & People Ops</div>
-          <h1 class="headline">HR isn't paperwork.</h1>
-          <p class="subhead">Automate leave, timesheets, and attendance — so HR can focus on people, not spreadsheets.</p>
+          <div class="eyebrow">{{ 'productHr.hrPeopleOps' | translate }}</div>
+          <h1 class="headline">{{ 'productHr.hrIsnTPaperwork' | translate }}</h1>
+          <p class="subhead">{{ 'productHr.automateLeaveTimesheetsAndAttendance' | translate }}</p>
           <div class="cta-row">
-            <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
-            <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+            <button class="btn btn-primary" (click)="openFreeTrial()">{{ 'productHr.startFreeTrial' | translate }}</button>
+            <button class="btn btn-secondary" (click)="openDemo()">{{ 'productHr.scheduleADemo' | translate }}</button>
           </div>
-          <div class="microcopy">No credit card required<span class="dot">·</span>Setup in under 10 minutes</div>
+          <div class="microcopy">{{ 'productHr.noCreditCardRequired' | translate }}<span class="dot">{{ 'productHr.text_7' | translate }}</span>{{ 'productHr.setupInUnder10Minutes' | translate }}</div>
         </div>
         <div class="hero-visual">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-            <div style="font-size:13px; font-weight:600; color:#fff;">June — at a glance</div>
-            <span class="strip-pill">live</span>
+            <div style="font-size:13px; font-weight:600; color:#fff;">{{ 'productHr.juneAtAGlance' | translate }}</div>
+            <span class="strip-pill">{{ 'productHr.live' | translate }}</span>
           </div>
           <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:14px;">
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
               <div style="font-size:22px; font-weight:700; color:var(--text-primary);">47</div>
-              <div style="font-size:11px; color:var(--text-secondary);">Headcount</div>
+              <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.headcount' | translate }}</div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
               <div style="font-size:22px; font-weight:700; color:var(--text-primary);">12</div>
-              <div style="font-size:11px; color:var(--text-secondary);">On leave</div>
+              <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.onLeave' | translate }}</div>
             </div>
             <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
               <div style="font-size:22px; font-weight:700; color:var(--success);">98%</div>
-              <div style="font-size:11px; color:var(--text-secondary);">Check-in rate</div>
+              <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.checkInRate' | translate }}</div>
             </div>
           </div>
           <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; padding:12px;">
-            <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">Pending</div>
+            <div style="font-size:10px; color:var(--text-secondary); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em;">{{ 'productHr.pending' | translate }}</div>
             <div style="display:flex; justify-content:space-between; font-size:12px; padding:6px 0; border-bottom:1px solid var(--border);">
-              <span><span class="avatar">BL</span>Bảo Linh — 1 day</span><span class="pill warn">awaiting</span>
+              <span><span class="avatar">{{ 'productHr.bl' | translate }}</span>{{ 'productHr.bOLinh1Day' | translate }}</span><span class="pill warn">{{ 'productHr.awaiting' | translate }}</span>
             </div>
             <div style="display:flex; justify-content:space-between; font-size:12px; padding:6px 0;">
-              <span><span class="avatar">MH</span>Minh Hoàng — half day</span><span class="pill good">auto-approved</span>
+              <span><span class="avatar">{{ 'productHr.mh' | translate }}</span>{{ 'productHr.minhHoNgHalfDay' | translate }}</span><span class="pill good">{{ 'productHr.autoApproved' | translate }}</span>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
   <div class="pain-section">
     <div class="wrap">
       <div class="pain-line">
-        <p>Leave requests in Slack. Timesheets in Excel. Attendance verified by phone call. End of every month, HR spends half a day reconciling spreadsheets that should never have existed.</p>
+        <p>{{ 'productHr.leaveRequestsInSlackTimesheets' | translate }}</p>
       </div>
     </div>
   </div>
@@ -59,99 +59,99 @@
   <!-- FEATURES -->
   <div class="feat-section">
     <div class="wrap">
-      <div class="feat-eyebrow">What you get</div>
+      <div class="feat-eyebrow">{{ 'productHr.whatYouGet' | translate }}</div>
 
       <div class="strip">
         <div class="strip-text">
-          <span class="strip-pill">Leave Management</span>
-          <h3>Automated or manual reviews — you choose the policy.</h3>
-          <p>Define rules to auto-approve short requests (e.g., under 2 days), while routing longer leaves to managers for manual, one-click approve/reject decisions.</p>
+          <span class="strip-pill">{{ 'productHr.leaveManagement' | translate }}</span>
+          <h3>{{ 'productHr.automatedOrManualReviewsYou' | translate }}</h3>
+          <p>{{ 'productHr.defineRulesToAutoApprove' | translate }}</p>
         </div>
         <div class="mock">
           <div style="background:var(--bg-secondary); border-radius:8px; padding:12px; margin-bottom:8px; border:1px solid var(--border);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-              <span><b>Bảo Linh — 3 days leave</b></span>
-              <span class="pill warn">Needs Review</span>
+              <span><b>{{ 'productHr.bOLinh3Days' | translate }}</b></span>
+              <span class="pill warn">{{ 'productHr.needsReview' | translate }}</span>
             </div>
-            <div style="font-size:11px; color:var(--text-secondary); margin-bottom:8px;">Reason: Family event · Dates: Jun 14-16</div>
+            <div style="font-size:11px; color:var(--text-secondary); margin-bottom:8px;">{{ 'productHr.reasonFamilyEventDatesJun' | translate }}</div>
             <div style="display:flex; gap:6px;">
-              <button class="btn btn-primary" style="padding:4px 8px; font-size:10px;">Approve</button>
-              <button class="btn btn-secondary" style="padding:4px 8px; font-size:10px;">Reject</button>
+              <button class="btn btn-primary" style="padding:4px 8px; font-size:10px;">{{ 'productHr.approve' | translate }}</button>
+              <button class="btn btn-secondary" style="padding:4px 8px; font-size:10px;">{{ 'productHr.reject' | translate }}</button>
             </div>
           </div>
           <div style="background:var(--bg-secondary); border-radius:8px; padding:12px; border:1px solid var(--border);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-              <span><b>Minh Hoàng — 1 day leave</b></span>
-              <span class="pill good">Auto-Approved</span>
+              <span><b>{{ 'productHr.minhHoNg1Day' | translate }}</b></span>
+              <span class="pill good">{{ 'productHr.autoApproved_1' | translate }}</span>
             </div>
-            <div style="font-size:11px; color:var(--text-secondary);">Reason: Regular checkup · Date: Jun 12 (Under 2-day policy auto-approved)</div>
+            <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.reasonRegularCheckupDateJun' | translate }}</div>
           </div>
         </div>
       </div>
 
       <div class="strip reverse">
         <div class="strip-text">
-          <span class="strip-pill">Timesheet & attendance</span>
-          <h3>Payroll-ready, on demand.</h3>
-          <p>Hours roll up from check-ins automatically. Export to your payroll system in one click. No more month-end Excel archaeology.</p>
+          <span class="strip-pill">{{ 'productHr.timesheetAttendance' | translate }}</span>
+          <h3>{{ 'productHr.payrollReadyOnDemand' | translate }}</h3>
+          <p>{{ 'productHr.hoursRollUpFromCheck' | translate }}</p>
         </div>
         <div class="mock">
           <div class="mock-row" style="border:none; padding-bottom:8px;">
-            <b style="font-size:14px;">June timesheet</b>
-            <span class="pill good">payroll-ready</span>
+            <b style="font-size:14px;">{{ 'productHr.juneTimesheet' | translate }}</b>
+            <span class="pill good">{{ 'productHr.payrollReady' | translate }}</span>
           </div>
           <div class="mock-row">
-            <div><span class="avatar">TN</span>Trần Ngọc</div>
-            <span style="font-family:'Fira Code', monospace; font-size:12px;">168h · 0 overtime</span>
+            <div><span class="avatar">{{ 'productHr.tn' | translate }}</span>{{ 'productHr.trNNgC' | translate }}</div>
+            <span style="font-family:'Fira Code', monospace; font-size:12px;">{{ 'productHr.168h0Overtime' | translate }}</span>
           </div>
           <div class="mock-row">
-            <div><span class="avatar">BL</span>Bảo Linh</div>
-            <span style="font-family:'Fira Code', monospace; font-size:12px;">160h · 4h OT</span>
+            <div><span class="avatar">{{ 'productHr.bl' | translate }}</span>{{ 'productHr.bOLinh' | translate }}</div>
+            <span style="font-family:'Fira Code', monospace; font-size:12px;">{{ 'productHr.160h4hOt' | translate }}</span>
           </div>
           <div class="mock-row">
-            <div><span class="avatar">MH</span>Minh Hoàng</div>
-            <span style="font-family:'Fira Code', monospace; font-size:12px;">152h · 2 leave</span>
+            <div><span class="avatar">{{ 'productHr.mh' | translate }}</span>{{ 'productHr.minhHoNg' | translate }}</div>
+            <span style="font-family:'Fira Code', monospace; font-size:12px;">{{ 'productHr.152h2Leave' | translate }}</span>
           </div>
           <div class="mock-row" style="border:none; padding-top:10px;">
-            <button class="btn btn-primary" style="font-size:12px; padding:8px 14px;">↓ Export to payroll</button>
-            <span style="font-size:11px; color:var(--text-secondary);">CSV · Vietnam format</span>
+            <button class="btn btn-primary" style="font-size:12px; padding:8px 14px;">{{ 'productHr.exportToPayroll' | translate }}</button>
+            <span style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.csvVietnamFormat' | translate }}</span>
           </div>
         </div>
       </div>
 
       <div class="strip">
         <div class="strip-text">
-          <span class="strip-pill">GPS check-in</span>
-          <h3>Field or office — always accounted for.</h3>
-          <p>One tap on the phone. Location confirmed, time logged, manager notified. No more "did you actually visit the client today?" phone calls.</p>
+          <span class="strip-pill">{{ 'productHr.gpsCheckIn' | translate }}</span>
+          <h3>{{ 'productHr.fieldOrOfficeAlwaysAccounted' | translate }}</h3>
+          <p>{{ 'productHr.oneTapOnThePhone' | translate }}</p>
         </div>
         <div class="mock">
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:32px; height:32px; background:rgba(16, 185, 129, 0.1); border-radius:6px; color:var(--success); display:inline-flex; align-items:center; justify-content:center;">📍</span>
-              <div><b>Bảo Linh</b>
-                <div style="font-size:11px; color:var(--text-secondary);">Client site, District 1 · 09:04</div>
+              <span style="width:32px; height:32px; background:rgba(16, 185, 129, 0.1); border-radius:6px; color:var(--success); display:inline-flex; align-items:center; justify-content:center;">{{ 'productHr.text_51' | translate }}</span>
+              <div><b>{{ 'productHr.bOLinh' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.clientSiteDistrict109' | translate }}</div>
               </div>
             </div>
-            <span class="pill good">on-site</span>
+            <span class="pill good">{{ 'productHr.onSite' | translate }}</span>
           </div>
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:32px; height:32px; background:var(--accent-light); border-radius:6px; color:var(--accent); display:inline-flex; align-items:center; justify-content:center;">🏢</span>
-              <div><b>Trần Ngọc</b>
-                <div style="font-size:11px; color:var(--text-secondary);">HQ office · 08:51</div>
+              <span style="width:32px; height:32px; background:var(--accent-light); border-radius:6px; color:var(--accent); display:inline-flex; align-items:center; justify-content:center;">{{ 'productHr.text_54' | translate }}</span>
+              <div><b>{{ 'productHr.trNNgC' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.hqOffice0851' | translate }}</div>
               </div>
             </div>
-            <span class="pill good">on-site</span>
+            <span class="pill good">{{ 'productHr.onSite' | translate }}</span>
           </div>
           <div class="mock-row">
             <div style="display:flex; align-items:center; gap:10px;">
-              <span style="width:32px; height:32px; background:rgba(245, 158, 11, 0.1); border-radius:6px; color:var(--warning); display:inline-flex; align-items:center; justify-content:center;">🏡</span>
-              <div><b>Minh Hoàng</b>
-                <div style="font-size:11px; color:var(--text-secondary);">Remote — approved</div>
+              <span style="width:32px; height:32px; background:rgba(245, 158, 11, 0.1); border-radius:6px; color:var(--warning); display:inline-flex; align-items:center; justify-content:center;">{{ 'productHr.text_56' | translate }}</span>
+              <div><b>{{ 'productHr.minhHoNg' | translate }}</b>
+                <div style="font-size:11px; color:var(--text-secondary);">{{ 'productHr.remoteApproved' | translate }}</div>
               </div>
             </div>
-            <span class="pill warn">remote</span>
+            <span class="pill warn">{{ 'productHr.remote' | translate }}</span>
           </div>
         </div>
       </div>
@@ -162,80 +162,80 @@
   <div class="demo-section">
     <div class="wrap">
       <div class="demo-head">
-        <span class="strip-pill">Interactive demo</span>
-        <h2>Request leave. Watch it route itself.</h2>
-        <p>Fill the form on the left. The approval flow on the right runs live.</p>
+        <span class="strip-pill">{{ 'productHr.interactiveDemo' | translate }}</span>
+        <h2>{{ 'productHr.requestLeaveWatchItRoute' | translate }}</h2>
+        <p>{{ 'productHr.fillTheFormOnThe' | translate }}</p>
       </div>
       <div class="demo-frame">
         <div class="hr-demo">
           <!-- REQUEST FORM -->
           <form class="hr-form" (submit)="handleSubmit(); $event.preventDefault();" style="max-height: 480px; overflow-y: auto; padding-right: 4px;">
-            <h4>Request leave</h4>
+            <h4>{{ 'productHr.requestLeave' | translate }}</h4>
             <div class="field">
-              <label>To (required)</label>
+              <label>{{ 'productHr.toRequired' | translate }}</label>
               <select [(ngModel)]="toManager" name="toManager" required>
-                <option value="">Select manager...</option>
-                <option value="pm">Project Manager</option>
-                <option value="ceo">CEO</option>
+                <option value="">{{ 'productHr.selectManager' | translate }}</option>
+                <option value="pm">{{ 'productHr.projectManager' | translate }}</option>
+                <option value="ceo">{{ 'productHr.ceo' | translate }}</option>
               </select>
             </div>
             <div class="field">
-              <label>CC</label>
+              <label>{{ 'productHr.cc' | translate }}</label>
               <input type="text" [(ngModel)]="ccEmail" name="ccEmail" placeholder="e.g. hr@xcorp.com">
             </div>
             <div class="field">
-              <label>Leave type (required)</label>
+              <label>{{ 'productHr.leaveTypeRequired' | translate }}</label>
               <select [(ngModel)]="leaveType" name="leaveType" required>
-                <option value="">Select type...</option>
-                <option value="annual">Annual leave</option>
-                <option value="sick">Sick leave</option>
-                <option value="personal">Personal</option>
+                <option value="">{{ 'productHr.selectType' | translate }}</option>
+                <option value="annual">{{ 'productHr.annualLeave' | translate }}</option>
+                <option value="sick">{{ 'productHr.sickLeave' | translate }}</option>
+                <option value="personal">{{ 'productHr.personal' | translate }}</option>
               </select>
             </div>
             <div class="field">
-              <label>Available</label>
+              <label>{{ 'productHr.available' | translate }}</label>
               <input type="text" [value]="getAvailableText()" disabled
                 style="opacity: 0.8; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; width: 100%;">
             </div>
             <div class="field">
-              <label>If Approved</label>
+              <label>{{ 'productHr.ifApproved' | translate }}</label>
               <input type="text" [value]="getIfApprovedText()" disabled
                 style="opacity: 0.8; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; width: 100%;">
             </div>
             <div class="field">
-              <label>From Date (required)</label>
+              <label>{{ 'productHr.fromDateRequired' | translate }}</label>
               <input type="date" [(ngModel)]="fromDate" name="fromDate" required style="width: 100%;">
             </div>
             <div class="field">
-              <label>To Date (required)</label>
+              <label>{{ 'productHr.toDateRequired' | translate }}</label>
               <input type="date" [(ngModel)]="toDate" name="toDate" required style="width: 100%;">
             </div>
             <div class="field">
-              <label>Period (AM/PM)</label>
+              <label>{{ 'productHr.periodAmPm' | translate }}</label>
               <select [(ngModel)]="period" name="period">
-                <option value="full">Full Day</option>
-                <option value="am">AM (Morning)</option>
-                <option value="pm">PM (Afternoon)</option>
+                <option value="full">{{ 'productHr.fullDay' | translate }}</option>
+                <option value="am">{{ 'productHr.amMorning' | translate }}</option>
+                <option value="pm">{{ 'productHr.pmAfternoon' | translate }}</option>
               </select>
             </div>
             <div class="field">
-              <label>Reason Detail</label>
+              <label>{{ 'productHr.reasonDetail' | translate }}</label>
               <textarea [(ngModel)]="reason" name="reason" placeholder="Reason details..."
                 style="width: 100%; min-height: 60px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; background: white; color: var(--text-primary); font-family: inherit; font-size: 13px;"></textarea>
             </div>
             <div style="display: flex; gap: 8px; margin-top: 14px;">
-              <button type="button" class="hr-cancel-btn" (click)="handleCancel()">Cancel</button>
+              <button type="button" class="hr-cancel-btn" (click)="handleCancel()">{{ 'productHr.cancel' | translate }}</button>
               <button type="submit" class="hr-submit" [disabled]="isProcessing" style="flex: 1; margin: 0;">{{ submitButtonText }}</button>
             </div>
             <div class="hr-balance" style="margin-top: 14px; display: flex; justify-content: space-between;">
-              <span>Annual leave balance</span>
-              <span><b>{{ hrBalance }}</b> / 15 days</span>
+              <span>{{ 'productHr.annualLeaveBalance' | translate }}</span>
+              <span><b>{{ hrBalance }}</b> {{ 'productHr.15Days' | translate }}</span>
             </div>
           </form>
 
           <!-- FLOW LOGS -->
           <div class="hr-flow">
-            <h4>Approval flow</h4>
+            <h4>{{ 'productHr.approvalFlow' | translate }}</h4>
             
             <div *ngFor="let s of steps" class="hr-step" [ngClass]="s.status" [style.borderColor]="s.status === 'rejected' ? 'var(--danger)' : ''">
               <span class="step-ico" [style.background]="s.status === 'rejected' ? 'var(--danger)' : ''">{{ s.index }}</span>
@@ -248,10 +248,10 @@
 
             <!-- Manual actions overlay -->
             <div *ngIf="showManualActions" id="hr-manual-actions" style="display:flex; gap:8px; margin-top:12px; padding:10px; background:var(--accent-light); border-radius:8px; border:1px solid var(--accent); justify-content:space-between; align-items:center;">
-              <span style="font-size:12px; font-weight:600; color:var(--accent);">Manual Approval Required:</span>
+              <span style="font-size:12px; font-weight:600; color:var(--accent);">{{ 'productHr.manualApprovalRequired' | translate }}</span>
               <div style="display:flex; gap:6px;">
-                <button type="button" class="btn btn-primary" style="padding:4px 8px; font-size:11px; margin:0;" (click)="handleManualApprove()">Approve</button>
-                <button type="button" class="btn btn-secondary" style="padding:4px 8px; font-size:11px; margin:0; background: var(--ds-color-neutral-100); color: var(--text-primary); border-color: var(--border);" (click)="handleManualReject()">Reject</button>
+                <button type="button" class="btn btn-primary" style="padding:4px 8px; font-size:11px; margin:0;" (click)="handleManualApprove()">{{ 'productHr.approve' | translate }}</button>
+                <button type="button" class="btn btn-secondary" style="padding:4px 8px; font-size:11px; margin:0; background: var(--ds-color-neutral-100); color: var(--text-primary); border-color: var(--border);" (click)="handleManualReject()">{{ 'productHr.reject' | translate }}</button>
               </div>
             </div>
           </div>
@@ -264,21 +264,21 @@
   <div class="role-section">
     <div class="wrap">
       <div class="role-head">
-        <span class="strip-pill">Built for your role</span>
-        <h2>One HR system, three jobs simplified.</h2>
+        <span class="strip-pill">{{ 'productHr.builtForYourRole' | translate }}</span>
+        <h2>{{ 'productHr.oneHrSystemThreeJobs' | translate }}</h2>
       </div>
       <div class="role-tabs-row">
-        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">HR / Ops</button>
-        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">CEO</button>
-        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">Team lead</button>
+        <button class="role-tab" [class.active]="activeRole === 'hr'" (click)="activeRole = 'hr'">{{ 'productHr.hrOps' | translate }}</button>
+        <button class="role-tab" [class.active]="activeRole === 'ceo'" (click)="activeRole = 'ceo'">{{ 'productHr.ceo' | translate }}</button>
+        <button class="role-tab" [class.active]="activeRole === 'lead'" (click)="activeRole = 'lead'">{{ 'productHr.teamLead' | translate }}</button>
       </div>
       <div class="role-panel">
         <ul>
-          <li *ngFor="let item of roleContent[activeRole]">
+          <li *ngFor="let item of roleContent[activeRole]; let i = index">
             <svg class="check" viewBox="0 0 20 20" fill="none">
               <path d="M4 10.5L8 14.5L16 5.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span>{{ item }}</span>
+            <span>{{ 'productHr.roleContent.' + activeRole + '.' + i | translate : item }}</span>
           </li>
         </ul>
       </div>
@@ -288,11 +288,11 @@
   <!-- BOTTOM CTA -->
   <div class="bottom-cta-section">
     <div class="wrap">
-      <h3>Ready to give your HR team their time back?</h3>
-      <p>Free trial · No credit card · Setup in 10 minutes</p>
+      <h3>{{ 'productHr.readyToGiveYourHr' | translate }}</h3>
+      <p>{{ 'productHr.freeTrialNoCreditCard' | translate }}</p>
       <div class="cta-row">
-        <button class="btn btn-primary" (click)="openFreeTrial()">Start free trial →</button>
-        <button class="btn btn-secondary" (click)="openDemo()">Schedule a demo</button>
+        <button class="btn btn-primary" (click)="openFreeTrial()">{{ 'productHr.startFreeTrial' | translate }}</button>
+        <button class="btn btn-secondary" (click)="openDemo()">{{ 'productHr.scheduleADemo' | translate }}</button>
       </div>
     </div>
   </div>

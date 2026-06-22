@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component, OnInit } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -31,7 +32,7 @@ interface SuggestChip {
 @Component({
   selector: 'app-usecase-scattered',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, RouterLink],
+  imports: [NgIf, NgFor, NgClass, RouterLink, TranslatePipe],
   templateUrl: './usecase-scattered.component.html',
   styleUrl: './usecase-scattered.component.css'
 })

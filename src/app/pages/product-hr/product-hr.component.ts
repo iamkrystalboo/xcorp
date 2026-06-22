@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +16,7 @@ interface FlowStep {
 @Component({
   selector: 'app-product-hr',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink],
+  imports: [NgIf, NgFor, NgClass, FormsModule, RouterLink, TranslatePipe],
   templateUrl: './product-hr.component.html',
   styleUrl: './product-hr.component.css'
 })

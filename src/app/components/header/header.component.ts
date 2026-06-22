@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd, RouterLink, RouterLinkActive } from '@angular/router';
 import { NgClass, NgIf } from '@angular/common';
@@ -8,7 +9,7 @@ import { ModalService } from '../../services/modal.service';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgClass, NgIf],
+  imports: [RouterLink, RouterLinkActive, NgClass, NgIf, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

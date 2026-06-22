@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { NgIf, NgClass } from '@angular/common';
@@ -7,7 +8,7 @@ import { ModalService } from '../../services/modal.service';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterLink, NgIf, NgClass, FormsModule],
+  imports: [RouterLink, NgIf, NgClass, FormsModule, TranslatePipe],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -20,7 +21,7 @@ interface SandboxEvent {
 @Component({
   selector: 'app-solution-pm',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, RouterLink],
+  imports: [NgIf, NgFor, NgClass, RouterLink, TranslatePipe],
   templateUrl: './solution-pm.component.html',
   styleUrl: './solution-pm.component.css'
 })

@@ -2,21 +2,21 @@
   <div class="topnav-inner">
     <a class="brand" routerLink="/home" (click)="closeDropdown()">
       <div class="brand-mark"></div>
-      <span class="brand-text">XCORP<sup>®</sup></span>
+      <span class="brand-text">{{ 'header.xcorp' | translate }}<sup>®</sup></span>
     </a>
     <div class="nav-main">
       <div style="position:relative;">
         <button class="nav-link" 
                 [class.open]="activeDropdown === 'products'"
                 (click)="toggleDropdown('products', $event)">
-          Products
+          {{ 'header.products' | translate }}
           <svg class="chev" viewBox="0 0 12 12" fill="none">
             <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
         <div class="nav-dropdown products" [class.open]="activeDropdown === 'products'">
           <div class="dd-grid">
-            <div class="dd-section-label">Product Modules</div>
+            <div class="dd-section-label">{{ 'header.productModules' | translate }}</div>
             <div class="dd-item" routerLink="/products/okr" routerLinkActive="active" (click)="closeDropdown()">
               <div class="dd-item-ico">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -24,8 +24,8 @@
                 </svg>
               </div>
               <div>
-                <div class="dd-item-title">Goals & Performance</div>
-                <div class="dd-item-sub">OKR/KPI tracking</div>
+                <div class="dd-item-title">{{ 'header.goalsPerformance' | translate }}</div>
+                <div class="dd-item-sub">{{ 'header.okrKpiTracking' | translate }}</div>
               </div>
             </div>
             <div class="dd-item" routerLink="/products/project" routerLinkActive="active" (click)="closeDropdown()">
@@ -35,8 +35,8 @@
                 </svg>
               </div>
               <div>
-                <div class="dd-item-title">Project Management</div>
-                <div class="dd-item-sub">Tasks · Milestones · Boards</div>
+                <div class="dd-item-title">{{ 'header.projectManagement' | translate }}</div>
+                <div class="dd-item-sub">{{ 'header.tasksMilestonesBoards' | translate }}</div>
               </div>
             </div>
             <div class="dd-item" routerLink="/products/automation" routerLinkActive="active" (click)="closeDropdown()">
@@ -46,8 +46,8 @@
                 </svg>
               </div>
               <div>
-                <div class="dd-item-title">Automation Workflow</div>
-                <div class="dd-item-sub">No-code workflow builder</div>
+                <div class="dd-item-title">{{ 'header.automationWorkflow' | translate }}</div>
+                <div class="dd-item-sub">{{ 'header.noCodeWorkflowBuilder' | translate }}</div>
               </div>
             </div>
             <div class="dd-item" routerLink="/products/hr" routerLinkActive="active" (click)="closeDropdown()">
@@ -57,8 +57,8 @@
                 </svg>
               </div>
               <div>
-                <div class="dd-item-title">HR & People Ops</div>
-                <div class="dd-item-sub">Leave · Timesheet · Attendance</div>
+                <div class="dd-item-title">{{ 'header.hrPeopleOps' | translate }}</div>
+                <div class="dd-item-sub">{{ 'header.leaveTimesheetAttendance' | translate }}</div>
               </div>
             </div>
             <div class="dd-item" routerLink="/ai-assistant" routerLinkActive="active" (click)="closeDropdown()">
@@ -68,14 +68,14 @@
                 </svg>
               </div>
               <div>
-                <div class="dd-item-title">AI Assistant</div>
-                <div class="dd-item-sub">Smart summaries · Q&A · Suggestions</div>
+                <div class="dd-item-title">{{ 'header.aiAssistant' | translate }}</div>
+                <div class="dd-item-sub">{{ 'header.smartSummariesQASuggestions' | translate }}</div>
               </div>
             </div>
           </div>
           <div class="dd-footer">
-            <a routerLink="/features" (click)="closeDropdown()">See all features →</a>
-            <a routerLink="/pricing" (click)="closeDropdown()">View pricing →</a>
+            <a routerLink="/features" (click)="closeDropdown()">{{ 'header.seeAllFeatures' | translate }}</a>
+            <a routerLink="/pricing" (click)="closeDropdown()">{{ 'header.viewPricing' | translate }}</a>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
         <button class="nav-link" 
                 [class.open]="activeDropdown === 'solutions'"
                 (click)="toggleDropdown('solutions', $event)">
-          Solutions
+          {{ 'header.solutions' | translate }}
           <svg class="chev" viewBox="0 0 12 12" fill="none">
             <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -91,7 +91,7 @@
         <div class="nav-dropdown solutions" [class.open]="activeDropdown === 'solutions'">
           <div class="dd-grid">
             <div style="display: flex; flex-direction: column; gap: 4px;">
-              <div class="dd-section-label" style="padding-left: 0;">By Role</div>
+              <div class="dd-section-label" style="padding-left: 0;">{{ 'header.byRole' | translate }}</div>
               <div class="dd-item" routerLink="/solutions/hr" routerLinkActive="active" (click)="closeDropdown()">
                 <div class="dd-item-ico">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -99,8 +99,8 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="dd-item-title">For HR &amp; People Ops</div>
-                  <div class="dd-item-sub">Leave, timesheets, attendance</div>
+                  <div class="dd-item-title">{{ 'header.forHrPeopleOps' | translate }}</div>
+                  <div class="dd-item-sub">{{ 'header.leaveTimesheetsAttendance' | translate }}</div>
                 </div>
               </div>
               <div class="dd-item" routerLink="/solutions/teams" routerLinkActive="active" (click)="closeDropdown()">
@@ -110,8 +110,8 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="dd-item-title">For Project Managers</div>
-                  <div class="dd-item-sub">Boards, dependencies, integrations</div>
+                  <div class="dd-item-title">{{ 'header.forProjectManagers' | translate }}</div>
+                  <div class="dd-item-sub">{{ 'header.boardsDependenciesIntegrations' | translate }}</div>
                 </div>
               </div>
               <div class="dd-item" routerLink="/solutions/leadership" routerLinkActive="active" (click)="closeDropdown()">
@@ -121,13 +121,13 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="dd-item-title">For CEOs &amp; Leadership</div>
-                  <div class="dd-item-sub">Visibility, OKRs, decisions</div>
+                  <div class="dd-item-title">{{ 'header.forCeosLeadership' | translate }}</div>
+                  <div class="dd-item-sub">{{ 'header.visibilityOkrsDecisions' | translate }}</div>
                 </div>
               </div>
             </div>
             <div style="display: flex; flex-direction: column; gap: 4px;">
-              <div class="dd-section-label" style="padding-left: 0;">By Use Case</div>
+              <div class="dd-section-label" style="padding-left: 0;">{{ 'header.byUseCase' | translate }}</div>
               <div class="dd-item" routerLink="/use-cases/drowning-in-apps" routerLinkActive="active" (click)="closeDropdown()">
                 <div class="dd-item-ico">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -135,8 +135,8 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="dd-item-title">Scattered Info &amp; Apps</div>
-                  <div class="dd-item-sub">Unify your fragmented tools</div>
+                  <div class="dd-item-title">{{ 'header.scatteredInfoApps' | translate }}</div>
+                  <div class="dd-item-sub">{{ 'header.unifyYourFragmentedTools' | translate }}</div>
                 </div>
               </div>
               <div class="dd-item" routerLink="/use-cases/ghost-okrs" routerLinkActive="active" (click)="closeDropdown()">
@@ -146,8 +146,8 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="dd-item-title">Ghost OKRs</div>
-                  <div class="dd-item-sub">Turn goals into daily action</div>
+                  <div class="dd-item-title">{{ 'header.ghostOkrs' | translate }}</div>
+                  <div class="dd-item-sub">{{ 'header.turnGoalsIntoDailyAction' | translate }}</div>
                 </div>
               </div>
               <div class="dd-item" routerLink="/use-cases/buried-leave" routerLinkActive="active" (click)="closeDropdown()">
@@ -157,19 +157,19 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="dd-item-title">Buried Leave Requests</div>
-                  <div class="dd-item-sub">Never lose an approval again</div>
+                  <div class="dd-item-title">{{ 'header.buriedLeaveRequests' | translate }}</div>
+                  <div class="dd-item-sub">{{ 'header.neverLoseAnApprovalAgain' | translate }}</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="nav-link" routerLink="/pricing" routerLinkActive="active" (click)="closeDropdown()">Pricing</a>
+      <a class="nav-link" routerLink="/pricing" routerLinkActive="active" (click)="closeDropdown()">{{ 'header.pricing' | translate }}</a>
     </div>
     <div class="nav-right">
-      <a class="nav-login" routerLink="/login" (click)="closeDropdown()">Sign in</a>
-      <a class="nav-cta" href="#" (click)="openFreeTrial($event)">Start Free Trial</a>
+      <a class="nav-login" routerLink="/login" (click)="closeDropdown()">{{ 'header.signIn' | translate }}</a>
+      <a class="nav-cta" href="#" (click)="openFreeTrial($event)">{{ 'header.startFreeTrial' | translate }}</a>
     </div>
   </div>
 </nav>

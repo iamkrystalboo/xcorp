@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component, effect } from '@angular/core';
 import { NgIf, NgClass, NgFor, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -6,7 +7,7 @@ import { ModalService } from '../../services/modal.service';
 @Component({
   selector: 'app-global-modals',
   standalone: true,
-  imports: [NgIf, NgClass, NgFor, UpperCasePipe, FormsModule],
+  imports: [NgIf, NgClass, NgFor, UpperCasePipe, FormsModule, TranslatePipe],
   templateUrl: './global-modals.component.html',
   styleUrl: './global-modals.component.css'
 })

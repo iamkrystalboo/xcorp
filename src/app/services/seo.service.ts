@@ -1,18 +1,38 @@
-import { Injectable } from '@angular/core';
+import { Injectable, effect, inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
+import { TranslationService } from './translation.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SEOService {
-  constructor(
-    private titleService: Title,
-    private metaService: Meta,
-    private router: Router,
-    private activatedRoute: ActivatedRoute
-  ) {}
+  private titleService = inject(Title);
+  private metaService = inject(Meta);
+  private router = inject(Router);
+  private activatedRoute = inject(ActivatedRoute);
+  private translationService = inject(TranslationService);
+
+  private currentRouteData: { titleKey: string; defaultTitle: string; descKey: string; defaultDesc: string } | null = null;
+
+  constructor() {
+    // Reactively update page headers when language changes
+    effect(() => {
+      // Access the signal to trigger execution on change
+      const lang = this.translationService.currentLang();
+      if (this.currentRouteData) {
+        const title = this.translationService.translate(this.currentRouteData.titleKey);
+        const description = this.translationService.translate(this.currentRouteData.descKey);
+
+        this.titleService.setTitle(title !== this.currentRouteData.titleKey ? title : this.currentRouteData.defaultTitle);
+        this.metaService.updateTag({
+          name: 'description',
+          content: description !== this.currentRouteData.descKey ? description : this.currentRouteData.defaultDesc
+        });
+      }
+    });
+  }
 
   init(): void {
     this.router.events.pipe(
@@ -26,13 +46,22 @@ export class SEOService {
       }),
       filter(route => route.outlet === 'primary')
     ).subscribe(route => {
-      // Update Title
-      const title = route.snapshot.data['title'] || 'xcorp — Products & Solutions';
-      this.titleService.setTitle(title);
+      const defaultTitle = route.snapshot.data['title'] || 'xcorp — Products & Solutions';
+      const defaultDesc = route.snapshot.data['description'] || 'One system for every team. Replaces app chaos with a single, clear command center.';
+      
+      // Compute path-based keys, e.g. for '/products/okr' path is 'products_okr'
+      const url = this.router.url.split('?')[0]; // Remove query params
+      const cleanPath = url.replace(/^\/+|\/+$/g, '').replace(/\//g, '_') || 'home';
 
-      // Update Meta Description
-      const description = route.snapshot.data['description'] || 'One system for every team. Replaces app chaos with a single, clear command center.';
-      this.metaService.updateTag({ name: 'description', content: description });
+      this.currentRouteData = {
+        titleKey: `routes.${cleanPath}.title`,
+        defaultTitle,
+        descKey: `routes.${cleanPath}.description`,
+        defaultDesc
+      };
+
+      // Trigger effect update
+      this.translationService.currentLang.set(this.translationService.currentLang());
     });
   }
 }

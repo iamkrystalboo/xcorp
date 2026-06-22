@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component, OnInit } from '@angular/core';
 import { NgIf, NgFor, NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -12,7 +13,7 @@ interface WeekBlock {
 @Component({
   selector: 'app-solution-hr',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass, RouterLink],
+  imports: [NgIf, NgFor, NgClass, RouterLink, TranslatePipe],
   templateUrl: './solution-hr.component.html',
   styleUrl: './solution-hr.component.css'
 })

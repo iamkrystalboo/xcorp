@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { NgIf, NgClass, NgFor, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -27,7 +28,7 @@ interface FAQItem {
 @Component({
   selector: 'app-pricing',
   standalone: true,
-  imports: [NgIf, NgClass, NgFor, UpperCasePipe, FormsModule],
+  imports: [NgIf, NgClass, NgFor, UpperCasePipe, FormsModule, TranslatePipe],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.css'
 })

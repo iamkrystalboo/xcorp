@@ -1,3 +1,4 @@
+import { TranslatePipe } from '../../pipes/translate.pipe';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalService } from '../../services/modal.service';
@@ -5,7 +6,7 @@ import { ModalService } from '../../services/modal.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
